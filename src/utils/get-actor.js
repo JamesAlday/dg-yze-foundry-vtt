@@ -2,15 +2,15 @@ export async function getActiveActor() {
   let actor;
   if (game.user.isGM && canvas.ready && canvas.tokens.controlled.length > 1) {
     return chooseActor(canvas.tokens.controlled.map(t => t.actor), {
-      title: game.i18n.localize('T2K4E.MACRO.GetActorTitle'),
-      notes: game.i18n.localize('T2K4E.MACRO.GetActorHint'),
+      title: game.i18n.localize('DGYZE.MACRO.GetActorTitle'),
+      notes: game.i18n.localize('DGYZE.MACRO.GetActorHint'),
     });
   }
   const speaker = ChatMessage.getSpeaker();
   if (speaker.token) actor = game.actors.tokens[speaker.token];
   if (!actor) actor = game.actors.get(speaker.actor);
   if (!actor) {
-    ui.notifications.warn(game.i18n.format('T2K4E.MACRO.NoActor', {
+    ui.notifications.warn(game.i18n.format('DGYZE.MACRO.NoActor', {
       actor: speaker.alias,
     }));
     return;
@@ -45,12 +45,12 @@ export async function chooseActor(actors = [], options = {}) {
   const actorId = await Dialog.prompt({
     title: options.title ?? 'Choose an Actor',
     content,
-    label: game.i18n.localize('T2K4E.Dialog.Actions.Ok'),
+    label: game.i18n.localize('DGYZE.Dialog.Actions.Ok'),
     callback: html => html[0].querySelector('form').actor.value,
     rejectClose: false,
     options: {
       width: 400,
-      classes: ['t2k4e', 'dialog'],
+      classes: ['dgyze', 'dialog'],
       minimizable: false,
     },
   });

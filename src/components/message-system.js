@@ -3,7 +3,7 @@
 /* -------------------------------------------- */
 import semverComp from '@utils/semver-compare';
 
-const SYSTEM_NAME = 't2k4e';
+const SYSTEM_NAME = 'dgyze';
 
 export default async function displayMessages() {
   const messages = await fetch(`systems/${SYSTEM_NAME}/assets/messages/messages.jsonc`)
@@ -50,7 +50,7 @@ const displayPrompt = (title, content) => {
   content = content.replace('{name}', game.user.name);
   return Dialog.prompt({
     title: title,
-    content: `<img src="systems/t2k4e/assets/t2k-banner-small.webp"/>${content}`,
+    content: `<img src="systems/dgyze/assets/t2k-banner-small.webp"/>${content}`,
     label: 'Understood!',
     options: { width: 400, classes: [SYSTEM_NAME, 'dialog'] },
     callback: () => setDisplayed(title),

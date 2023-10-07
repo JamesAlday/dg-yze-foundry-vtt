@@ -13,9 +13,9 @@
 
       <div class="info">
         <h1 class="name">
-          <input type="text" name="name" value="{{actor.name}}" placeholder="{{localize 'T2K4E.ItemSheet.Name'}}"/>
+          <input type="text" name="name" value="{{actor.name}}" placeholder="{{localize 'DGYZE.ItemSheet.Name'}}"/>
         <h2 class="type">
-          <input type="text" name="system.vehicleType" value="{{system.vehicleType}}" placeholder="{{localize 'T2K4E.VehicleSheet.VehicleType'}}"/>
+          <input type="text" name="system.vehicleType" value="{{system.vehicleType}}" placeholder="{{localize 'DGYZE.VehicleSheet.VehicleType'}}"/>
         </h2>
       </div>
 
@@ -24,7 +24,7 @@
 
         {{!-- MOVEMENT --}}
         <div class="movement-type flexcol">
-          <label>{{localize "T2K4E.VehicleSheet.Movement"}}</label>
+          <label>{{localize "DGYZE.VehicleSheet.Movement"}}</label>
           <select name="system.movement.type">
             <option value=""></option>
             {{selectOptions config.vehicle.movementTypes selected=system.movement.type localize=true}}
@@ -32,7 +32,7 @@
         </div>
 
         <div class="combat-speed flexcol">
-          <label>{{localize "T2K4E.VehicleSheet.CombatSpeed"}}</label>
+          <label>{{localize "DGYZE.VehicleSheet.CombatSpeed"}}</label>
           <div class="flexrow">
             <input type="number" name="system.movement.combat.onRoad" value={{system.movement.combat.onRoad}} data-dtype="Number"/>
             <span class="sep">/</span>
@@ -41,7 +41,7 @@
         </div>
 
         <div class="travel-speed flexcol">
-          <label>{{localize "T2K4E.VehicleSheet.TravelSpeed"}}</label>
+          <label>{{localize "DGYZE.VehicleSheet.TravelSpeed"}}</label>
           <div class="flexrow">
             <input type="number" name="system.movement.travel.onRoad" value={{system.movement.travel.onRoad}} data-dtype="Number"/>
             <span class="sep">/</span>
@@ -51,7 +51,7 @@
 
         {{!-- FUEL --}}
         <div class="fuel-type flexcol">
-          <label>{{localize "T2K4E.VehicleSheet.Fuel"}}</label>
+          <label>{{localize "DGYZE.VehicleSheet.Fuel"}}</label>
           <div class="flexrow">
             <select name="system.fuel.type">
               <option value=""></option>
@@ -62,7 +62,7 @@
         </div>
 
         <div class="fuel-cap flexcol">
-          <label>{{localize "T2K4E.VehicleSheet.FuelCapacity"}}</label>
+          <label>{{localize "DGYZE.VehicleSheet.FuelCapacity"}}</label>
           <div class="flexrow">
             <input type="number" name="system.fuel.value" value="{{system.fuel.value}}" data-dtype="Number"/>
             <span class="sep">/</span>
@@ -71,13 +71,13 @@
         </div>
 
         <div class="fuel-consumption flexcol">
-          <label>{{localize "T2K4E.VehicleSheet.FuelConsumption"}}</label>
+          <label>{{localize "DGYZE.VehicleSheet.FuelConsumption"}}</label>
           <input type="number" name="system.fuel.cons" value={{system.fuel.cons}} data-dtype="Number"/>
         </div>
 
         {{!-- RELIABILITY --}}
         <div class="reliability flexcol">
-          <label>{{localize "T2K4E.VehicleSheet.Reliability"}}</label>
+          <label>{{localize "DGYZE.VehicleSheet.Reliability"}}</label>
           <div class="flexrow">
             <input type="number" name="system.reliability.value" value="{{system.reliability.value}}" data-dtype="Number"/>
             <span class="sep">/</span>
@@ -87,7 +87,7 @@
 
         {{!-- PRICE --}}
         <div class="price flexcol">
-          <label>{{localize "T2K4E.VehicleSheet.Price"}}</label>
+          <label>{{localize "DGYZE.VehicleSheet.Price"}}</label>
           <input type="number" name="system.price" value={{system.price}} data-dtype="Number"/>
         </div>
 
@@ -102,12 +102,12 @@
   {{!-- ================================================== --}}
 
   <nav class="sheet-tabs slanted-tabs flexrow" data-group="primary">
-    {{!-- <a class="item" data-tab="features">{{localize "T2K4E.ItemSheet.FeaturesTab"}}</a> --}}
-    <a class="item" data-tab="crew">{{localize "T2K4E.VehicleSheet.CrewTab"}}</a>
-    <a class="item" data-tab="components">{{localize "T2K4E.VehicleSheet.ComponentsTab"}}</a>
-    <a class="item" data-tab="combat">{{localize "T2K4E.VehicleSheet.CombatTab"}}</a>
-    <a class="item" data-tab="cargo">{{localize "T2K4E.VehicleSheet.CargoTab"}}</a>
-    <a class="item" data-tab="description">{{localize "T2K4E.ActorSheet.NoteTab"}}</a>
+    {{!-- <a class="item" data-tab="features">{{localize "DGYZE.ItemSheet.FeaturesTab"}}</a> --}}
+    <a class="item" data-tab="crew">{{localize "DGYZE.VehicleSheet.CrewTab"}}</a>
+    <a class="item" data-tab="components">{{localize "DGYZE.VehicleSheet.ComponentsTab"}}</a>
+    <a class="item" data-tab="combat">{{localize "DGYZE.VehicleSheet.CombatTab"}}</a>
+    <a class="item" data-tab="cargo">{{localize "DGYZE.VehicleSheet.CargoTab"}}</a>
+    <a class="item" data-tab="description">{{localize "DGYZE.ActorSheet.NoteTab"}}</a>
   </nav>
 
   {{!-- ================================================== --}}
@@ -118,28 +118,28 @@
 
     {{!-- Crew Tab --}}
     <div class="tab tab-crew flexcol" data-group="primary" data-tab="crew">
-      {{> "systems/t2k4e/templates/actor/parts/vehicle-crew.hbs"}}
+      {{> "systems/dgyze/templates/actor/parts/vehicle-crew.hbs"}}
     </div>
 
     {{!-- Components Tab --}}
     <div class="tab tab-components" data-group="primary" data-tab="components">
-      {{> "systems/t2k4e/templates/actor/parts/vehicle-components.hbs"}}
+      {{> "systems/dgyze/templates/actor/parts/vehicle-components.hbs"}}
     </div>
 
     {{!-- Combat Tab --}}
     <div class="tab tab-combat" data-group="primary" data-tab="combat">
 {{!-- DO NOT ADD INDENT: HandlebarJS+TextArea BUG --}}
-{{> "systems/t2k4e/templates/actor/parts/vehicle-combat.hbs"}}
+{{> "systems/dgyze/templates/actor/parts/vehicle-combat.hbs"}}
     </div>
 
     {{!-- Cargo Tab --}}
     <div class="tab tab-cargo flexcol" data-group="primary" data-tab="cargo">
-      {{> "systems/t2k4e/templates/actor/parts/vehicle-cargo.hbs"}}
+      {{> "systems/dgyze/templates/actor/parts/vehicle-cargo.hbs"}}
     </div>
 
     {{!-- Description Tab --}}
     <div class="tab tab-description" data-group="primary" data-tab="description">
-      {{> "systems/t2k4e/templates/actor/parts/actor-description.hbs"}}
+      {{> "systems/dgyze/templates/actor/parts/actor-description.hbs"}}
     </div>
 
   </section>

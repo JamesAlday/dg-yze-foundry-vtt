@@ -6,14 +6,14 @@
  */
 export function registerSystemSettings() {
   // Tracks the system version.
-  game.settings.register('t2k4e', 'systemMigrationVersion', {
+  game.settings.register('dgyze', 'systemMigrationVersion', {
     config: false,
     scope: 'world',
     name: 'System Migration Version',
     type: String,
     default: '',
   });
-  game.settings.register('t2k4e', 'messages', {
+  game.settings.register('dgyze', 'messages', {
     name: 'Displayed Messages',
     hint: 'Used to track which messages have been displayed',
     scope: 'world',
@@ -22,7 +22,7 @@ export function registerSystemSettings() {
     default: [],
   });
 
-  game.settings.register('t2k4e', 'hideCapacitiesButtons', {
+  game.settings.register('dgyze', 'hideCapacitiesButtons', {
     config: true,
     scope: 'world',
     name: 'SETTINGS.hideCapacitiesButtons.name',
@@ -31,7 +31,7 @@ export function registerSystemSettings() {
     default: false,
   });
 
-  game.settings.register('t2k4e', 'hideWeaponProps', {
+  game.settings.register('dgyze', 'hideWeaponProps', {
     config: true,
     scope: 'world',
     name: 'SETTINGS.hideWeaponProps.name',
@@ -40,7 +40,7 @@ export function registerSystemSettings() {
     default: false,
   });
 
-  game.settings.register('t2k4e', 'trackPcAmmo', {
+  game.settings.register('dgyze', 'trackPcAmmo', {
     config: true,
     scope: 'world',
     name: 'SETTINGS.trackPcAmmo.name',
@@ -49,7 +49,7 @@ export function registerSystemSettings() {
     default: true,
   });
 
-  game.settings.register('t2k4e', 'trackNpcAmmo', {
+  game.settings.register('dgyze', 'trackNpcAmmo', {
     config: true,
     scope: 'world',
     name: 'SETTINGS.trackNpcAmmo.name',
@@ -58,7 +58,7 @@ export function registerSystemSettings() {
     default: false,
   });
 
-  game.settings.register('t2k4e', 'trackVehicleAmmo', {
+  game.settings.register('dgyze', 'trackVehicleAmmo', {
     config: true,
     scope: 'world',
     name: 'SETTINGS.trackVehicleAmmo.name',
@@ -67,7 +67,7 @@ export function registerSystemSettings() {
     default: true,
   });
 
-  game.settings.register('t2k4e', 'showTaskCheckOptions', {
+  game.settings.register('dgyze', 'showTaskCheckOptions', {
     config: true,
     scope: 'client',
     name: 'SETTINGS.showTaskCheckOptions.name',
@@ -76,7 +76,7 @@ export function registerSystemSettings() {
     default: true,
   });
 
-  game.settings.register('t2k4e', 'closeRollTooltipDelay', {
+  game.settings.register('dgyze', 'closeRollTooltipDelay', {
     config: true,
     scope: 'client',
     name: 'SETTINGS.closeRollTooltipDelay.name',
@@ -85,7 +85,7 @@ export function registerSystemSettings() {
     default: 60,
   });
 
-  game.settings.register('t2k4e', 'defaultCharTokenSize', {
+  game.settings.register('dgyze', 'defaultCharTokenSize', {
     config: true,
     scope: 'world',
     name: 'SETTINGS.defaultCharTokenSize.name',
@@ -94,7 +94,7 @@ export function registerSystemSettings() {
     default: 1,
   });
 
-  game.settings.register('t2k4e', 'travelRollAllowPush', {
+  game.settings.register('dgyze', 'travelRollAllowPush', {
     config: false,
     scope: 'world',
     name: 'FLPS.SETTINGS.ALLOW_PUSH',

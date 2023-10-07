@@ -12,7 +12,7 @@ export default class ActorSheetT2KUnit extends ActorSheetT2K {
   /** @override */
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ['t2k4e', 'sheet', 'item', 'unit'],
+      classes: ['dgyze', 'sheet', 'item', 'unit'],
       width: 400,
       height: 550,
       tabs: [{ navSelector: '.sheet-tabs', contentSelector: '.sheet-body', initial: 'features' }],

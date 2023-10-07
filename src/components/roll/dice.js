@@ -1,6 +1,6 @@
 import T2KDialog from '../dialog/dialog.js';
 import { YearZeroRoll } from 'yzur';
-import { T2K4E } from '../../system/config.js';
+import { DGYZE } from '../../system/config.js';
 import { range } from '@utils/utils.js';
 
 /* -------------------------------------------- */
@@ -42,7 +42,7 @@ export class T2KRoller {
    * @async
    */
   static async taskCheck({
-    title = 'Twilight 2000 4E – Task Check',
+    title = 'Delta Green – Task Check',
     actor = null,
     item = null,
     attributeName = null,
@@ -62,7 +62,7 @@ export class T2KRoller {
     rollMode = rollMode ?? game.settings.get('core', 'rollMode');
 
     // 2 — Checks if we ask for options (roll dialog).
-    const showTaskCheckOptions = game.settings.get('t2k4e', 'showTaskCheckOptions');
+    const showTaskCheckOptions = game.settings.get('dgyze', 'showTaskCheckOptions');
     if (!skipDialog && askForOptions !== showTaskCheckOptions) {
       // 2.1 — Prepares a formula.
       const formula = YearZeroRoll.forge(
@@ -134,7 +134,7 @@ export class T2KRoller {
 
     // 7 — Evaluates the roll.
     await roll.roll({ async: true });
-    console.log('t2k4e | ROLL', roll.name, roll);
+    console.log('dgyze | ROLL', roll.name, roll);
 
     // 8 — Sends the message and returns.
     if (sendMessage) {
@@ -150,7 +150,7 @@ export class T2KRoller {
    * @returns {Promise<YearZeroRoll|ChatMessage>}
    */
   static async cufCheck({
-    title = game.i18n.localize('T2K4E.Dialog.CuF.CoolnessUnderFire'),
+    title = game.i18n.localize('DGYZE.Dialog.CuF.CoolnessUnderFire'),
     actor = null,
     unitMorale = false,
     modifier = 0,
@@ -213,7 +213,7 @@ export async function rollPush(roll, { message } = {}) {
   if (!message) return roll.toMessage();
 
   // Gets all the message's flags.
-  const flags = message.getFlag('t2k4e', 'data') ?? {};
+  const flags = message.getFlag('dgyze', 'data') ?? {};
   const oldAmmoSpent = flags.ammoSpent || 0;
   let newAmmoSpent = -Math.max(1, roll.ammoSpent + 1);
   const actorId = roll.options.actorId;
@@ -244,9 +244,9 @@ export async function rollPush(roll, { message } = {}) {
 
   // Updates the ammunition.
   if (ammo) {
-    const track = (actor.type === 'character' && game.settings.get('t2k4e', 'trackPcAmmo'))
-      || (actor.type === 'npc' && game.settings.get('t2k4e', 'trackNpcAmmo'))
-      || (actor.type === 'vehicle' && game.settings.get('t2k4e', 'trackVehicleAmmo'));
+    const track = (actor.type === 'character' && game.settings.get('dgyze', 'trackPcAmmo'))
+      || (actor.type === 'npc' && game.settings.get('dgyze', 'trackNpcAmmo'))
+      || (actor.type === 'vehicle' && game.settings.get('dgyze', 'trackVehicleAmmo'));
 
     if (track) {
       flagData.ammoSpent = oldAmmoSpent;
@@ -261,7 +261,7 @@ export async function rollPush(roll, { message } = {}) {
 
   // Updates message's flags.
   if (!foundry.utils.isEmpty(flagData)) {
-    await m.setFlag('t2k4e', 'data', flagData);
+    await m.setFlag('dgyze', 'data', flagData);
   }
 
   return m;
@@ -278,7 +278,7 @@ export async function rollPush(roll, { message } = {}) {
 export function getDieSize(score) {
   if (typeof score !== 'string') throw new TypeError(`Die Score Not a String: "${score}"`);
   if (score.length !== 1) throw new SyntaxError(`Die Score Incorrect: "${score}"`);
-  const size = T2K4E.dieSizesMap.get(score);
+  const size = DGYZE.dieSizesMap.get(score);
   if (size == undefined) throw new RangeError(`Die Size Not Found! Score: "${score}"`);
   return size;
 }
@@ -294,9 +294,9 @@ export function getDieSize(score) {
  */
 export function getAttributeAndSkill(skillName, system, attributeName = null) {
   const skill = system.skills[skillName].value;
-  attributeName = attributeName ?? T2K4E.skillsMap[skillName];
+  attributeName = attributeName ?? DGYZE.skillsMap[skillName];
   const attribute = system.attributes[attributeName].value;
-  const title = game.i18n.localize(T2K4E.skills[skillName]);
+  const title = game.i18n.localize(DGYZE.skills[skillName]);
   return { title, attribute, skill, attributeName, skillName };
 }
 
@@ -351,7 +351,7 @@ export function getRollingActor({ actorId, tokenKey } = {}) {
 
 export function registerDsN(dice3d) {
   dice3d.addSystem({
-    id: 't2k4e',
+    id: 'dgyze',
     name: 'Twilight 2000 4E',
   }, 'preferred');
 
@@ -398,169 +398,169 @@ export function registerDsN(dice3d) {
   dice3d.addDicePreset({
     type: 'd6',
     labels: [
-      'systems/t2k4e/assets/dice/d6/t2k_d6_1_dsn.png',
+      'systems/dgyze/assets/dice/d6/t2k_d6_1_dsn.png',
       '2',
       '3',
       '4',
       '5',
-      'systems/t2k4e/assets/dice/d6/t2k_d6_6_dsn.png',
+      'systems/dgyze/assets/dice/d6/t2k_d6_6_dsn.png',
     ],
     // eslint-disable-next-line no-sparse-arrays
     bumpMaps: [
-      'systems/t2k4e/assets/dice/d6/t2k_d6_1_dsn_bump.png',,,,,
-      'systems/t2k4e/assets/dice/d6/t2k_d6_6_dsn_bump.png',
+      'systems/dgyze/assets/dice/d6/t2k_d6_1_dsn_bump.png',,,,,
+      'systems/dgyze/assets/dice/d6/t2k_d6_6_dsn_bump.png',
     ],
-    system: 't2k4e',
+    system: 'dgyze',
     colorset: 't2k-base',
   }, 'd6');
 
   dice3d.addDicePreset({
     type: 'd8',
     labels: [
-      'systems/t2k4e/assets/dice/d8/t2k_d8_1_dsn.png',
+      'systems/dgyze/assets/dice/d8/t2k_d8_1_dsn.png',
       '2',
       '3',
       '4',
       '5',
-      'systems/t2k4e/assets/dice/d8/t2k_d8_6_dsn.png',
-      'systems/t2k4e/assets/dice/d8/t2k_d8_7_dsn.png',
-      'systems/t2k4e/assets/dice/d8/t2k_d8_8_dsn.png',
+      'systems/dgyze/assets/dice/d8/t2k_d8_6_dsn.png',
+      'systems/dgyze/assets/dice/d8/t2k_d8_7_dsn.png',
+      'systems/dgyze/assets/dice/d8/t2k_d8_8_dsn.png',
     ],
     // eslint-disable-next-line no-sparse-arrays
     bumpMaps: [
-      'systems/t2k4e/assets/dice/d8/t2k_d8_1_dsn_bump.png',,,,,
-      'systems/t2k4e/assets/dice/d8/t2k_d8_6_dsn_bump.png',
-      'systems/t2k4e/assets/dice/d8/t2k_d8_7_dsn_bump.png',
-      'systems/t2k4e/assets/dice/d8/t2k_d8_8_dsn_bump.png',
+      'systems/dgyze/assets/dice/d8/t2k_d8_1_dsn_bump.png',,,,,
+      'systems/dgyze/assets/dice/d8/t2k_d8_6_dsn_bump.png',
+      'systems/dgyze/assets/dice/d8/t2k_d8_7_dsn_bump.png',
+      'systems/dgyze/assets/dice/d8/t2k_d8_8_dsn_bump.png',
     ],
-    system: 't2k4e',
+    system: 'dgyze',
     colorset: 't2k-base',
   }, 'd8');
 
   dice3d.addDicePreset({
     type: 'd10',
     labels: [
-      'systems/t2k4e/assets/dice/d10/t2k_d10_1_dsn.png',
+      'systems/dgyze/assets/dice/d10/t2k_d10_1_dsn.png',
       '2',
       '3',
       '4',
       '5',
-      'systems/t2k4e/assets/dice/d10/t2k_d10_6_dsn.png',
-      'systems/t2k4e/assets/dice/d10/t2k_d10_7_dsn.png',
-      'systems/t2k4e/assets/dice/d10/t2k_d10_8_dsn.png',
-      'systems/t2k4e/assets/dice/d10/t2k_d10_9_dsn.png',
-      'systems/t2k4e/assets/dice/d10/t2k_d10_10_dsn.png',
+      'systems/dgyze/assets/dice/d10/t2k_d10_6_dsn.png',
+      'systems/dgyze/assets/dice/d10/t2k_d10_7_dsn.png',
+      'systems/dgyze/assets/dice/d10/t2k_d10_8_dsn.png',
+      'systems/dgyze/assets/dice/d10/t2k_d10_9_dsn.png',
+      'systems/dgyze/assets/dice/d10/t2k_d10_10_dsn.png',
     ],
     // eslint-disable-next-line no-sparse-arrays
     bumpMaps: [
-      'systems/t2k4e/assets/dice/d10/t2k_d10_1_dsn_bump.png',,,,,
-      'systems/t2k4e/assets/dice/d10/t2k_d10_6_dsn_bump.png',
-      'systems/t2k4e/assets/dice/d10/t2k_d10_7_dsn_bump.png',
-      'systems/t2k4e/assets/dice/d10/t2k_d10_8_dsn_bump.png',
-      'systems/t2k4e/assets/dice/d10/t2k_d10_9_dsn_bump.png',
-      'systems/t2k4e/assets/dice/d10/t2k_d10_10_dsn_bump.png',
+      'systems/dgyze/assets/dice/d10/t2k_d10_1_dsn_bump.png',,,,,
+      'systems/dgyze/assets/dice/d10/t2k_d10_6_dsn_bump.png',
+      'systems/dgyze/assets/dice/d10/t2k_d10_7_dsn_bump.png',
+      'systems/dgyze/assets/dice/d10/t2k_d10_8_dsn_bump.png',
+      'systems/dgyze/assets/dice/d10/t2k_d10_9_dsn_bump.png',
+      'systems/dgyze/assets/dice/d10/t2k_d10_10_dsn_bump.png',
     ],
-    system: 't2k4e',
+    system: 'dgyze',
     colorset: 't2k-base',
   }, 'd10');
 
   dice3d.addDicePreset({
     type: 'd12',
     labels: [
-      'systems/t2k4e/assets/dice/d12/t2k_d12_1_dsn.png',
+      'systems/dgyze/assets/dice/d12/t2k_d12_1_dsn.png',
       '2',
       '3',
       '4',
       '5',
-      'systems/t2k4e/assets/dice/d12/t2k_d12_6_dsn.png',
-      'systems/t2k4e/assets/dice/d12/t2k_d12_7_dsn.png',
-      'systems/t2k4e/assets/dice/d12/t2k_d12_8_dsn.png',
-      'systems/t2k4e/assets/dice/d12/t2k_d12_9_dsn.png',
-      'systems/t2k4e/assets/dice/d12/t2k_d12_10_dsn.png',
-      'systems/t2k4e/assets/dice/d12/t2k_d12_11_dsn.png',
-      'systems/t2k4e/assets/dice/d12/t2k_d12_12_dsn.png',
+      'systems/dgyze/assets/dice/d12/t2k_d12_6_dsn.png',
+      'systems/dgyze/assets/dice/d12/t2k_d12_7_dsn.png',
+      'systems/dgyze/assets/dice/d12/t2k_d12_8_dsn.png',
+      'systems/dgyze/assets/dice/d12/t2k_d12_9_dsn.png',
+      'systems/dgyze/assets/dice/d12/t2k_d12_10_dsn.png',
+      'systems/dgyze/assets/dice/d12/t2k_d12_11_dsn.png',
+      'systems/dgyze/assets/dice/d12/t2k_d12_12_dsn.png',
     ],
     // eslint-disable-next-line no-sparse-arrays
     bumpMaps: [
-      'systems/t2k4e/assets/dice/d12/t2k_d12_1_dsn_bump.png',,,,,
-      'systems/t2k4e/assets/dice/d12/t2k_d12_6_dsn_bump.png',
-      'systems/t2k4e/assets/dice/d12/t2k_d12_7_dsn_bump.png',
-      'systems/t2k4e/assets/dice/d12/t2k_d12_8_dsn_bump.png',
-      'systems/t2k4e/assets/dice/d12/t2k_d12_9_dsn_bump.png',
-      'systems/t2k4e/assets/dice/d12/t2k_d12_10_dsn_bump.png',
-      'systems/t2k4e/assets/dice/d12/t2k_d12_11_dsn_bump.png',
-      'systems/t2k4e/assets/dice/d12/t2k_d12_12_dsn_bump.png',
+      'systems/dgyze/assets/dice/d12/t2k_d12_1_dsn_bump.png',,,,,
+      'systems/dgyze/assets/dice/d12/t2k_d12_6_dsn_bump.png',
+      'systems/dgyze/assets/dice/d12/t2k_d12_7_dsn_bump.png',
+      'systems/dgyze/assets/dice/d12/t2k_d12_8_dsn_bump.png',
+      'systems/dgyze/assets/dice/d12/t2k_d12_9_dsn_bump.png',
+      'systems/dgyze/assets/dice/d12/t2k_d12_10_dsn_bump.png',
+      'systems/dgyze/assets/dice/d12/t2k_d12_11_dsn_bump.png',
+      'systems/dgyze/assets/dice/d12/t2k_d12_12_dsn_bump.png',
     ],
-    system: 't2k4e',
+    system: 'dgyze',
     colorset: 't2k-base',
   }, 'd12');
 
   dice3d.addDicePreset({
     type: 'dm',
     labels: [
-      'systems/t2k4e/assets/dice/dm/t2k_dm_1_dsn.png',
+      'systems/dgyze/assets/dice/dm/t2k_dm_1_dsn.png',
       '2',
       '3',
       '4',
       '5',
-      'systems/t2k4e/assets/dice/dm/t2k_dm_6_dsn.png',
+      'systems/dgyze/assets/dice/dm/t2k_dm_6_dsn.png',
     ],
     // eslint-disable-next-line no-sparse-arrays
     bumpMaps: [
-      'systems/t2k4e/assets/dice/dm/t2k_dm_1_dsn.png',,,,,
-      'systems/t2k4e/assets/dice/dm/t2k_dm_6_dsn.png',
+      'systems/dgyze/assets/dice/dm/t2k_dm_1_dsn.png',,,,,
+      'systems/dgyze/assets/dice/dm/t2k_dm_6_dsn.png',
     ],
-    system: 't2k4e',
+    system: 'dgyze',
     colorset: 't2k-ammo',
   }, 'd6');
 
   dice3d.addDicePreset({
     type: 'dl',
     labels: [
-      'systems/t2k4e/assets/dice/dl/hit_L.png',
-      'systems/t2k4e/assets/dice/dl/hit_T.png',
-      'systems/t2k4e/assets/dice/dl/hit_T.png',
-      'systems/t2k4e/assets/dice/dl/hit_T.png',
-      'systems/t2k4e/assets/dice/dl/hit_A.png',
-      'systems/t2k4e/assets/dice/dl/hit_H.png',
+      'systems/dgyze/assets/dice/dl/hit_L.png',
+      'systems/dgyze/assets/dice/dl/hit_T.png',
+      'systems/dgyze/assets/dice/dl/hit_T.png',
+      'systems/dgyze/assets/dice/dl/hit_T.png',
+      'systems/dgyze/assets/dice/dl/hit_A.png',
+      'systems/dgyze/assets/dice/dl/hit_H.png',
     ],
     bumpMaps: [
-      'systems/t2k4e/assets/dice/dl/hit_L.png',
-      'systems/t2k4e/assets/dice/dl/hit_T.png',
-      'systems/t2k4e/assets/dice/dl/hit_T.png',
-      'systems/t2k4e/assets/dice/dl/hit_T.png',
-      'systems/t2k4e/assets/dice/dl/hit_A.png',
-      'systems/t2k4e/assets/dice/dl/hit_H.png',
+      'systems/dgyze/assets/dice/dl/hit_L.png',
+      'systems/dgyze/assets/dice/dl/hit_T.png',
+      'systems/dgyze/assets/dice/dl/hit_T.png',
+      'systems/dgyze/assets/dice/dl/hit_T.png',
+      'systems/dgyze/assets/dice/dl/hit_A.png',
+      'systems/dgyze/assets/dice/dl/hit_H.png',
     ],
-    system: 't2k4e',
+    system: 'dgyze',
     colorset: 't2k-loc',
   }, 'd6');
 
   dice3d.addDicePreset({
     type: 'd2',
     labels: range(2),
-    system: 't2k4e',
+    system: 'dgyze',
     colorset: 't2k-ammo',
   }, 'd2');
 
   dice3d.addDicePreset({
     type: 'd4',
     labels: range(4),
-    system: 't2k4e',
+    system: 'dgyze',
     colorset: 't2k-base',
   }, 'd4');
 
   dice3d.addDicePreset({
     type: 'd100',
     labels: ['10', '20', '30', '40', '50', '60', '70', '80', '90', '00'],
-    system: 't2k4e',
+    system: 'dgyze',
     colorset: 't2k-base',
   }, 'd100');
 
   dice3d.addDicePreset({
     type: 'd20',
     labels: range(20),
-    system: 't2k4e',
+    system: 'dgyze',
     colorset: 't2k-base',
   }, 'd20');
 }

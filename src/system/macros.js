@@ -1,4 +1,4 @@
-import { T2K4E } from './config';
+import { DGYZE } from './config';
 import { getActiveActor } from '@utils/get-actor';
 
 /**
@@ -36,7 +36,7 @@ export function createT2KMacro(data, slot) {
 
 export async function setupMacroFolder() {
   if (!game.user.isGM) return;
-  const folderName = T2K4E.systemMacroFolder;
+  const folderName = DGYZE.systemMacroFolder;
   const folder = game.folders
     .filter(f => f.type === 'Macro')
     .find(f => f.name === folderName);
@@ -55,17 +55,17 @@ export async function setupMacroFolder() {
 /* ------------------------------------------ */
 
 async function _createT2KStatMacro(data, slot) {
-  const folder = game.folders.find(f => f.type === 'Macro' && f.name === T2K4E.systemMacroFolder);
-  const command = `game.t2k4e.macros.rollStat("${data.attribute}"`
+  const folder = game.folders.find(f => f.type === 'Macro' && f.name === DGYZE.systemMacroFolder);
+  const command = `game.dgyze.macros.rollStat("${data.attribute}"`
     + (data.skill ? `, "${data.skill}"` : '')
     + ');';
   const actor = await fromUuid(data.uuid);
   if (!actor) return;
 
-  const commandName = game.i18n.format('T2K4E.MACRO.RollStat', {
+  const commandName = game.i18n.format('DGYZE.MACRO.RollStat', {
     stat: game.i18n.localize(data.skill
-      ? `T2K4E.SkillNames.${data.skill}`
-      : `T2K4E.AttributeNames.${data.attribute}`,
+      ? `DGYZE.SkillNames.${data.skill}`
+      : `DGYZE.AttributeNames.${data.attribute}`,
     ),
   });
 
@@ -76,7 +76,7 @@ async function _createT2KStatMacro(data, slot) {
       type: 'script',
       img: 'icons/svg/dice-target.svg',
       command: command,
-      flags: { 't2k4e.statMacro': true },
+      flags: { 'dgyze.statMacro': true },
       folder: folder.id,
       'ownership.default': CONST.DOCUMENT_OWNERSHIP_LEVELS.OBSERVER,
     });
@@ -86,13 +86,13 @@ async function _createT2KStatMacro(data, slot) {
 
 // TODO
 // async function _createT2KActionMacro(data, slot) {
-//   const folder = game.folders.find(f => f.type === 'Macro' && f.name === T2K4E.systemMacroFolder);
-//   const command = `game.t2k4e.macros.rollAction("${data.action}");`;
+//   const folder = game.folders.find(f => f.type === 'Macro' && f.name === DGYZE.systemMacroFolder);
+//   const command = `game.dgyze.macros.rollAction("${data.action}");`;
 //   const actor = await fromUuid(data.uuid);
 //   if (!actor) return;
 
-//   const commandName = game.i18n.format('T2K4E.MACRO.RollAction', {
-//     action: game.i18n.localize(T2K4E.actionSkillMap[data.action].label),
+//   const commandName = game.i18n.format('DGYZE.MACRO.RollAction', {
+//     action: game.i18n.localize(DGYZE.actionSkillMap[data.action].label),
 //   });
 
 //   let macro = findMacro(commandName, command);
@@ -102,7 +102,7 @@ async function _createT2KStatMacro(data, slot) {
 //       type: 'script',
 //       img: 'icons/svg/dice-target.svg',
 //       command: command,
-//       flags: { 't2k4e.actionMacro': true },
+//       flags: { 'dgyze.actionMacro': true },
 //       folder: folder.id,
 //       'ownership.default': CONST.DOCUMENT_OWNERSHIP_LEVELS.OBSERVER,
 //     });
@@ -111,8 +111,8 @@ async function _createT2KStatMacro(data, slot) {
 // }
 
 async function _createT2KItemMacro(item, slot) {
-  const folder = game.folders.find(f => f.type === 'Macro' && f.name === T2K4E.systemMacroFolder);
-  const command = `game.t2k4e.macros.rollItem("${item.name}");`;
+  const folder = game.folders.find(f => f.type === 'Macro' && f.name === DGYZE.systemMacroFolder);
+  const command = `game.dgyze.macros.rollItem("${item.name}");`;
   let macro = findMacro(item.name, command);
   if (!macro) {
     macro = await Macro.create({
@@ -120,7 +120,7 @@ async function _createT2KItemMacro(item, slot) {
       type: 'script',
       img: item.img,
       command: command,
-      flags: { 't2k4e.itemMacro': true },
+      flags: { 'dgyze.itemMacro': true },
       folder: folder.id,
       'ownership.default': CONST.DOCUMENT_OWNERSHIP_LEVELS.OBSERVER,
     });
@@ -150,16 +150,16 @@ export async function rollStat(attributeKey, skillKey, options) {
  */
 export async function rollAction(actionKey) {
   // TODO
-  // const action = T2K4E.actionSkillsMap[actionKey];
+  // const action = DGYZE.actionSkillsMap[actionKey];
   // if (!action) return;
   // if (typeof action.callback === 'function') {
   //   return action.callback(await getActiveActor());
   // }
 
   // const skillKey = action.skill;
-  // const attributeKey = T2K4E.skillsMap[skillKey];
+  // const attributeKey = DGYZE.skillsMap[skillKey];
   // const title = game.i18n.localize(action.label)
-  //   + ` (${game.i18n.localize(`T2K4E.SkillNames.${skillKey}`)})`;
+  //   + ` (${game.i18n.localize(`DGYZE.SkillNames.${skillKey}`)})`;
 
   // return rollStat(attributeKey, skillKey, { title });
 }
@@ -176,13 +176,13 @@ export async function rollItem(itemName) {
   // Gets matching items.
   const items = actor ? actor.items.filter(i => i.name === itemName) : [];
   if (items.length > 1) {
-    ui.notifications.warn(game.i18n.format('T2K4E.MACRO.MultipleItems', {
+    ui.notifications.warn(game.i18n.format('DGYZE.MACRO.MultipleItems', {
       actor: actor.name,
       item: itemName,
     }));
   }
   else if (items.length === 0) {
-    return ui.notifications.warn(game.i18n.format('T2K4E.MACRO.NoItem', {
+    return ui.notifications.warn(game.i18n.format('DGYZE.MACRO.NoItem', {
       actor: actor.name,
       item: itemName,
     }));

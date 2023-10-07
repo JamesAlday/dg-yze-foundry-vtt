@@ -1,24 +1,30 @@
 {
-  "name": "t2k4e",
+  "name": "dgyze",
   "version": "11.0.1",
-  "description": "A Foundry VTT system for Twilight 2000 4E (Free League Publishing)",
+  "description": "A Foundry VTT system for Delta Green (Arc Dream Publishing) using the Year Zero Engine (Free League Publishing)",
   "type": "module",
-  "author": "Stefouch",
+  "author": "JamesAlday",
   "license": "GPL-3.0-or-later",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fvtt-fria-ligan/twilight2000-foundry-vtt.git"
+    "url": "git+https://github.com/JamesAlday/dg-yze-foundry-vtt.git"
   },
   "bugs": {
-    "url": "https://github.com/fvtt-fria-ligan/twilight2000-foundry-vtt/issues"
+    "url": "https://github.com/JamesAlday/dg-yze-foundry-vtt.git/issues"
   },
-  "homepage": "https://github.com/fvtt-fria-ligan/twilight2000-foundry-vtt#readme",
+  "homepage": "https://github.com/JamesAlday/dg-yze-foundry-vtt.git#readme",
   "keywords": [
     "Foundry",
     "VTT",
+    "DG",
+    "DGYZE",
+    "Delta Green",
+    "Delta Green: Year Zero",
+    "Delta Green: Year Zero Engine",
+    "Arc Dream",
+    "Arc Dream Publishing",
     "T2K",
     "T2K4",
-    "T2K4E",
     "Twilight 2000",
     "Free League",
     "Free League Publishing",
@@ -28,7 +34,7 @@
     "Roleplaying Game",
     "Tabletop Roleplaying Game"
   ],
-  "main": "src/t2k4e.js",
+  "main": "src/dgyze.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development gulp build",
     "dev:watch": "cross-env NODE_ENV=development gulp watch",

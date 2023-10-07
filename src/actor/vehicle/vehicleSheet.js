@@ -1,5 +1,5 @@
 import ActorSheetT2K from '../actorSheet.js';
-import { T2K4E } from '../../system/config.js';
+import { DGYZE } from '../../system/config.js';
 
 /**
  * Twilight 2000 Actor Sheet for Vehicles.
@@ -13,7 +13,7 @@ export default class ActorSheetT2KVehicle extends ActorSheetT2K {
   /** @override */
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ['t2k4e', 'sheet', 'actor', 'vehicle'],
+      classes: ['dgyze', 'sheet', 'actor', 'vehicle'],
       width: 650,
       height: 715,
       tabs: [{ navSelector: '.sheet-tabs', contentSelector: '.sheet-body', initial: 'crew' }],
@@ -54,8 +54,8 @@ export default class ActorSheetT2KVehicle extends ActorSheetT2K {
       return arr;
     }, []);
     sheetData.crew.sort((o1, o2) => {
-      const pos1 = T2K4E.vehicle.crewPositionFlags.indexOf(o1.position);
-      const pos2 = T2K4E.vehicle.crewPositionFlags.indexOf(o2.position);
+      const pos1 = DGYZE.vehicle.crewPositionFlags.indexOf(o1.position);
+      const pos2 = DGYZE.vehicle.crewPositionFlags.indexOf(o2.position);
       if (pos1 < pos2) return -1;
       if (pos1 > pos2) return 1;
       // If they are at the same position, sort by their actor's names.

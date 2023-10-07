@@ -2,7 +2,7 @@
   "i18n-ally.keystyle": "flat",
   "i18n-ally.localesPaths": ["src/lang"],
   "yaml.schemas": {
-    "https://json.schemastore.org/github-workflow.json": "file:///d%3A/GITHUB/t2k4e/.github/workflows/deploy.yml",
-    "https://json.schemastore.org/github-issue-config.json": "file:///d%3A/GITHUB/twilight2000-foundry-vtt/.github/ISSUE_TEMPLATE/config.yml"
+    "https://json.schemastore.org/github-workflow.json": "file:///d%3A/GITHUB/dgyze/.github/workflows/deploy.yml",
+    "https://json.schemastore.org/github-issue-config.json": "file:///d%3A/GITHUB/dg-yze-foundry-vtt/.github/ISSUE_TEMPLATE/config.yml"
   }
 }

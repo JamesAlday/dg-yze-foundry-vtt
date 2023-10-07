@@ -1,6 +1,6 @@
 import { YearZeroRoll } from 'yzur';
 import { getChatCardActor } from '../components/chat/chat.js';
-import { T2K4E } from '../system/config.js';
+import { DGYZE } from '../system/config.js';
 import { T2KRoller } from '../components/roll/dice.js';
 import T2KDialog from '../components/dialog/dialog.js';
 
@@ -18,7 +18,7 @@ export default class ItemT2K extends Item {
   }
 
   get isPhysical() {
-    return T2K4E.physicalItems.includes(this.type);
+    return DGYZE.physicalItems.includes(this.type);
   }
 
   get hasDamage() {
@@ -210,7 +210,7 @@ export default class ItemT2K extends Item {
             type = 'TravelTask';
             break;
         }
-        const str = game.i18n.localize(`T2K4E.${type}Names.${n}`) + ` ${m.value}`;
+        const str = game.i18n.localize(`DGYZE.${type}Names.${n}`) + ` ${m.value}`;
         out.push(str);
       }
     }
@@ -236,7 +236,7 @@ export default class ItemT2K extends Item {
             const roll = Roll.create(healTime);
             await roll.evaluate({ async: true });
             healTime = roll.terms.reduce((sum, t) => sum + t.values.reduce((tot, v) => tot + v, 0), 0);
-            healTime = `${healTime} ${game.i18n.localize(`T2K4E.InjurySheet.day${healTime > 1 ? 's' : ''}`)}`;
+            healTime = `${healTime} ${game.i18n.localize(`DGYZE.InjurySheet.day${healTime > 1 ? 's' : ''}`)}`;
             this.update({ 'system.healTime': healTime });
           }
           catch (e) {
@@ -266,7 +266,7 @@ export default class ItemT2K extends Item {
     else if (this.type === 'armor') {
       const mod = await T2KDialog.chooseValue({
         value: 0,
-        title: game.i18n.format('T2K4E.Dialog.ChooseValue.Armor', {
+        title: game.i18n.format('DGYZE.Dialog.ChooseValue.Armor', {
           name: this.name,
         }),
       });
@@ -275,14 +275,14 @@ export default class ItemT2K extends Item {
     else if (this.type === 'ammunition') {
       const mod = await T2KDialog.chooseValue({
         value: 0,
-        title: game.i18n.format('T2K4E.Dialog.ChooseValue.Ammo', { name: this.name }),
+        title: game.i18n.format('DGYZE.Dialog.ChooseValue.Ammo', { name: this.name }),
       });
       return this.updateAmmo(mod?.value ?? 0);
     }
     else if (this.isDisposable) {
       const mod = await T2KDialog.chooseValue({
         value: 0,
-        title: game.i18n.format('T2K4E.Dialog.ChooseValue.Qty', { name: this.name }),
+        title: game.i18n.format('DGYZE.Dialog.ChooseValue.Qty', { name: this.name }),
       });
       if (mod?.value) {
         return this.update({ 'sytem.qty': this.qty + mod.value });
@@ -308,12 +308,12 @@ export default class ItemT2K extends Item {
     }
     if (!this.actor) throw new Error('This weapon has no bearer.');
     if (this.hasReliability && this.system.reliability.value <= 0) {
-      return ui.notifications.warn(game.i18n.localize('T2K4E.Chat.Roll.NoReliabilityNotif'));
+      return ui.notifications.warn(game.i18n.localize('DGYZE.Chat.Roll.NoReliabilityNotif'));
     }
 
     // Prepares data.
     const itemData = this.system;
-    let title = game.i18n.format('T2K4E.Combat.Attack', { weapon: this.name });
+    let title = game.i18n.format('DGYZE.Combat.Attack', { weapon: this.name });
     let qty = itemData.qty;
     const attributeName = itemData.attribute;
     const skillName = itemData.skill;
@@ -328,9 +328,9 @@ export default class ItemT2K extends Item {
 
     // Gets the magazine.
     const track =
-      (this.actor.type === 'character' && game.settings.get('t2k4e', 'trackPcAmmo')) ||
-      (this.actor.type === 'npc' && game.settings.get('t2k4e', 'trackNpcAmmo')) ||
-      (this.actor.type === 'vehicle' && game.settings.get('t2k4e', 'trackVehicleAmmo'));
+      (this.actor.type === 'character' && game.settings.get('dgyze', 'trackPcAmmo')) ||
+      (this.actor.type === 'npc' && game.settings.get('dgyze', 'trackNpcAmmo')) ||
+      (this.actor.type === 'vehicle' && game.settings.get('dgyze', 'trackVehicleAmmo'));
 
     let ammo = null;
     if (track && this.hasAmmo) {
@@ -338,21 +338,21 @@ export default class ItemT2K extends Item {
       if (ammo?.system) {
         const ammoLeft = ammo.system.ammo.value ?? ammo.system.qty;
         if (ammoLeft <= 0) {
-          ui.notifications.warn(game.i18n.format('T2K4E.Combat.NoAmmoLeft', { weapon: this.name }));
+          ui.notifications.warn(game.i18n.format('DGYZE.Combat.NoAmmoLeft', { weapon: this.name }));
           return;
         }
         title += ` [${ammo.name}]`;
         rof = Math.min(rof, ammoLeft - 1);
       }
       else {
-        ui.notifications.warn(game.i18n.format('T2K4E.Combat.NoMag', { weapon: this.name }));
+        ui.notifications.warn(game.i18n.format('DGYZE.Combat.NoMag', { weapon: this.name }));
         return;
       }
     }
 
     // Checks unit quantity.
     if (track && isDisposable && qty <= 0) {
-      ui.notifications.warn(game.i18n.format('T2K4E.Combat.NoQuantityLeft', { weapon: this.name }));
+      ui.notifications.warn(game.i18n.format('DGYZE.Combat.NoQuantityLeft', { weapon: this.name }));
       return;
     }
 
@@ -404,7 +404,7 @@ export default class ItemT2K extends Item {
 
     // Updates message's flags.
     if (!foundry.utils.isEmpty(flagData)) {
-      await message.setFlag('t2k4e', 'data', flagData);
+      await message.setFlag('dgyze', 'data', flagData);
     }
 
     return message;
@@ -488,7 +488,7 @@ export default class ItemT2K extends Item {
       };
     }
     else {
-      throw new Error('t2k4e | ItemT2K#updateAmmo() | This is not an ammunition!');
+      throw new Error('dgyze | ItemT2K#updateAmmo() | This is not an ammunition!');
     }
     const ammoValue = ammoData.value || 0;
     const ammoMax = ammoData.max;
@@ -529,7 +529,7 @@ export default class ItemT2K extends Item {
       actorId: this.actor.id,
       tokenId: token ? `${token.parent.id}.${token.id}` : null,
       owner: game.user.id,
-      config: T2K4E,
+      config: DGYZE,
     };
 
     // Creates the ChatMessage data object.
@@ -594,7 +594,7 @@ export default class ItemT2K extends Item {
     // Gets the item.
     const item = actor.items.get(itemId);
     if (!item) {
-      return ui.notifications.error(game.i18n.localize('T2K4E.Chat.Roll.NoItemNotif'));
+      return ui.notifications.error(game.i18n.localize('DGYZE.Chat.Roll.NoItemNotif'));
     }
 
     // Handles different actions.
@@ -618,11 +618,11 @@ export default class ItemT2K extends Item {
  * @constant
  */
 ItemT2K.CHAT_TEMPLATE = {
-  weapon: 'systems/t2k4e/templates/components/chat/weapon-chat.hbs',
-  grenade: 'systems/t2k4e/templates/components/chat/weapon-chat.hbs',
-  armor: 'systems/t2k4e/templates/components/chat/armor-chat.hbs',
-  gear: 'systems/t2k4e/templates/components/chat/gear-chat.hbs',
-  ammunition: 'systems/t2k4e/templates/components/chat/gear-chat.hbs',
+  weapon: 'systems/dgyze/templates/components/chat/weapon-chat.hbs',
+  grenade: 'systems/dgyze/templates/components/chat/weapon-chat.hbs',
+  armor: 'systems/dgyze/templates/components/chat/armor-chat.hbs',
+  gear: 'systems/dgyze/templates/components/chat/gear-chat.hbs',
+  ammunition: 'systems/dgyze/templates/components/chat/gear-chat.hbs',
   // TODO injury template
   // TODO better templates
 };

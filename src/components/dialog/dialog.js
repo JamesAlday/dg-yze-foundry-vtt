@@ -62,10 +62,10 @@ export default class T2KDialog extends Dialog {
    * @async
    */
   static async askRollOptions(rollData, options) {
-    const template = 'systems/t2k4e/templates/components/dialog/roll-dialog.hbs';
+    const template = 'systems/dgyze/templates/components/dialog/roll-dialog.hbs';
     const content = await renderTemplate(template, {
       data: rollData,
-      config: CONFIG.T2K4E,
+      config: CONFIG.DGYZE,
     });
 
     return new Promise(resolve => {
@@ -75,11 +75,11 @@ export default class T2KDialog extends Dialog {
         content,
         buttons: {
           normal: {
-            label: game.i18n.localize('T2K4E.Dialog.Actions.Normal'),
+            label: game.i18n.localize('DGYZE.Dialog.Actions.Normal'),
             callback: html => resolve(T2KDialog._processRollOptions(html[0].querySelector('form'))),
           },
           cancel: {
-            label: game.i18n.localize('T2K4E.Dialog.Actions.Cancel'),
+            label: game.i18n.localize('DGYZE.Dialog.Actions.Cancel'),
             callback: () => resolve({ cancelled: true }),
           },
         },
@@ -116,10 +116,10 @@ export default class T2KDialog extends Dialog {
    * @async
    */
   static async askCuFOptions(rollData, options) {
-    const template = 'systems/t2k4e/templates/components/dialog/cuf-dialog.hbs';
+    const template = 'systems/dgyze/templates/components/dialog/cuf-dialog.hbs';
     const content = await renderTemplate(template, {
       data: rollData,
-      config: CONFIG.T2K4E,
+      config: CONFIG.DGYZE,
     });
 
     return new Promise(resolve => {
@@ -129,11 +129,11 @@ export default class T2KDialog extends Dialog {
         content,
         buttons: {
           normal: {
-            label: game.i18n.localize('T2K4E.Dialog.Actions.Normal'),
+            label: game.i18n.localize('DGYZE.Dialog.Actions.Normal'),
             callback: html => resolve(T2KDialog._processCuFOptions(html[0].querySelector('form'))),
           },
           cancel: {
-            label: game.i18n.localize('T2K4E.Dialog.Actions.Cancel'),
+            label: game.i18n.localize('DGYZE.Dialog.Actions.Cancel'),
             callback: () => resolve({ cancelled: true }),
           },
         },
@@ -167,24 +167,24 @@ export default class T2KDialog extends Dialog {
    * @async
    */
   static async chooseActor(actors, options) {
-    const template = 'systems/t2k4e/templates/components/dialog/actor-choice-dialog.hbs';
+    const template = 'systems/dgyze/templates/components/dialog/actor-choice-dialog.hbs';
     const content = await renderTemplate(template, {
       actors,
-      config: CONFIG.T2K4E,
+      config: CONFIG.DGYZE,
     });
 
     return new Promise(resolve => {
       // Sets the data of the dialog.
       const data = {
-        title: game.i18n.localize('T2K4E.Dialog.Actor.ChooseActor'),
+        title: game.i18n.localize('DGYZE.Dialog.Actor.ChooseActor'),
         content,
         buttons: {
           ok: {
-            label: game.i18n.localize('T2K4E.Dialog.Actions.Ok'),
+            label: game.i18n.localize('DGYZE.Dialog.Actions.Ok'),
             callback: html => resolve(T2KDialog._processActorChoice(html[0].querySelector('form'))),
           },
           cancel: {
-            label: game.i18n.localize('T2K4E.Dialog.Actions.Cancel'),
+            label: game.i18n.localize('DGYZE.Dialog.Actions.Cancel'),
             callback: () => resolve({ cancelled: true }),
           },
         },
@@ -215,24 +215,24 @@ export default class T2KDialog extends Dialog {
    * @async
    */
   static async chooseDamage(damageData, options) {
-    const template = 'systems/t2k4e/templates/components/dialog/damage-choice-dialog.hbs';
+    const template = 'systems/dgyze/templates/components/dialog/damage-choice-dialog.hbs';
     const content = await renderTemplate(template, {
       data: damageData,
-      config: CONFIG.T2K4E,
+      config: CONFIG.DGYZE,
     });
 
     return new Promise(resolve => {
       // Sets the data of the dialog.
       const data = {
-        title: game.i18n.localize('T2K4E.Dialog.Damage.ChooseDamage'),
+        title: game.i18n.localize('DGYZE.Dialog.Damage.ChooseDamage'),
         content,
         buttons: {
           ok: {
-            label: game.i18n.localize('T2K4E.Dialog.Actions.Ok'),
+            label: game.i18n.localize('DGYZE.Dialog.Actions.Ok'),
             callback: html => resolve(T2KDialog._processDamageChoice(html[0].querySelector('form'))),
           },
           cancel: {
-            label: game.i18n.localize('T2K4E.Dialog.Actions.Cancel'),
+            label: game.i18n.localize('DGYZE.Dialog.Actions.Cancel'),
             callback: () => resolve({ cancelled: true }),
           },
         },
@@ -265,10 +265,10 @@ export default class T2KDialog extends Dialog {
    * @async
    */
   static async chooseValue(valueData, options) {
-    const template = 'systems/t2k4e/templates/components/dialog/value-choice-dialog.hbs';
+    const template = 'systems/dgyze/templates/components/dialog/value-choice-dialog.hbs';
     const content = await renderTemplate(template, {
       data: valueData,
-      config: CONFIG.T2K4E,
+      config: CONFIG.DGYZE,
     });
 
     return new Promise(resolve => {
@@ -278,11 +278,11 @@ export default class T2KDialog extends Dialog {
         content,
         buttons: {
           ok: {
-            label: game.i18n.localize('T2K4E.Dialog.Actions.Ok'),
+            label: game.i18n.localize('DGYZE.Dialog.Actions.Ok'),
             callback: html => resolve(T2KDialog._processValueChoice(html[0].querySelector('form'))),
           },
           cancel: {
-            label: game.i18n.localize('T2K4E.Dialog.Actions.Cancel'),
+            label: game.i18n.localize('DGYZE.Dialog.Actions.Cancel'),
             callback: () => resolve({ cancelled: true }),
           },
         },

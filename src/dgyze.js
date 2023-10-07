@@ -1,10 +1,12 @@
 /* ============================================================================
- * TWILIGHT 2000 4E
- * Official website: https://frialigan.se/en/games/twilight-2000/
+ * DELTA GREEN
+ * Official website: http://delta-green.com/
  * ============================================================================
- * Contributing: https://github.com/fvtt-fria-ligan/twilight2000-foundry-vtt
+ * Contributing: https://github.com/JamesAlday/dg-yze-foundry-vtt
  * ============================================================================
- * Creator: Stefouch
+ * Homebrew: James Alday
+ * ==
+ * Original Creator: Stefouch
  * Patreon: https://www.patreon.com/Stefouch
  * ============================================================================
  * Source Code License: GPL-3.0-or-later
@@ -16,7 +18,7 @@
  */
 
 // Imports Modules.
-import { T2K4E } from './system/config.js';
+import { DGYZE } from './system/config.js';
 import { registerDsN, T2KRoller } from './components/roll/dice.js';
 import { registerSystemSettings } from './system/settings.js';
 import { registerStatusEffects } from './system/statusEffects.js';
@@ -46,22 +48,22 @@ import * as YZUR from 'yzur';
 /* -------------------------------------------- */
 
 Hooks.once('init', function () {
-  console.log(`t2k4e | Initializing the Twilight 2000 4E Game System\n${T2K4E.ASCII}`);
+  console.log(`dgyze | Initializing the Delta Green: YZE Game System\n${DGYZE.ASCII}`);
 
   // Registers dice.
   YZUR.YearZeroRollManager.register('t2k', {
-    'Roll.chatTemplate': 'systems/t2k4e/templates/components/roll/roll.hbs',
-    'Roll.tooltipTemplate': 'systems/t2k4e/templates/components/roll/tooltip.hbs',
-    'Roll.infosTemplate': 'systems/t2k4e/templates/components/roll/infos.hbs',
+    'Roll.chatTemplate': 'systems/dgyze/templates/components/roll/roll.hbs',
+    'Roll.tooltipTemplate': 'systems/dgyze/templates/components/roll/tooltip.hbs',
+    'Roll.infosTemplate': 'systems/dgyze/templates/components/roll/infos.hbs',
     'Chat.showInfos': true,
-    'Icons.t2k.ammo.6': '<img src="systems/t2k4e/assets/icons/bullet2.png"/>',
+    'Icons.t2k.ammo.6': '<img src="systems/dgyze/assets/icons/bullet2.png"/>',
   });
   // console.warn(CONFIG.Dice.terms);
   game.yzur = YZUR;
 
   // Creates a namespace within the game global.
   // Places our classes in their own namespace for later reference.
-  game.t2k4e = {
+  game.dgyze = {
     applications: {
       ActorSheetT2KCharacter,
       ActorSheetT2KVehicle,
@@ -69,7 +71,7 @@ Hooks.once('init', function () {
       ActorSheetT2KParty,
       ItemSheetT2K,
     },
-    config: T2K4E,
+    config: DGYZE,
     entities: {
       ActorT2K,
       ItemT2K,
@@ -81,7 +83,7 @@ Hooks.once('init', function () {
   };
 
   // Records configuration values.
-  CONFIG.T2K4E = T2K4E;
+  CONFIG.DGYZE = DGYZE;
   CONFIG.Actor.documentClass = ActorT2K;
   CONFIG.Item.documentClass = ItemT2K;
 
@@ -95,61 +97,61 @@ Hooks.once('init', function () {
   CONFIG.fontDefinitions['Nunito Sans'] = {
     editor: true,
     fonts: [
-      { urls: ['systems/t2k4e/fonts/NunitoSans-ExtraBold.woff'], weight: 800 },
+      { urls: ['systems/dgyze/fonts/NunitoSans-ExtraBold.woff'], weight: 800 },
     ],
   };
   CONFIG.fontDefinitions['Blue Highway'] = {
     editor: true,
     fonts: [
-      { urls: ['systems/t2k4e/fonts/BlueHighway-Bold.woff'], weight: 700 },
+      { urls: ['systems/dgyze/fonts/BlueHighway-Bold.woff'], weight: 700 },
     ],
   };
   CONFIG.fontDefinitions.Mukta = {
     editor: true,
     fonts: [
-      { urls: ['systems/t2k4e/fonts/Mukta-Medium.woff'], weight: 500 },
-      { urls: ['systems/t2k4e/fonts/Mukta-Bold.woff'], weight: 700 },
+      { urls: ['systems/dgyze/fonts/Mukta-Medium.woff'], weight: 500 },
+      { urls: ['systems/dgyze/fonts/Mukta-Bold.woff'], weight: 700 },
     ],
   };
   CONFIG.fontDefinitions.DaisyWheel = {
     editor: true,
     fonts: [
-      { urls: ['systems/t2k4e/fonts/daisywheel.otf'], weight: 400 },
+      { urls: ['systems/dgyze/fonts/daisywheel.otf'], weight: 400 },
     ],
   };
-  CONFIG.fontDefinitions['T2K4E Symbols'] = {
+  CONFIG.fontDefinitions['DGYZE Symbols'] = {
     editor: true,
     fonts: [
-      { urls: ['systems/t2k4e/fonts/T2K4-Symbols.ttf'] },
+      { urls: ['systems/dgyze/fonts/T2K4-Symbols.ttf'] },
     ],
   };
 
   // Registers sheet application classes.
   // This will stop using the core sheets and instead use our customized versions.
   Actors.unregisterSheet('core', ActorSheet);
-  Actors.registerSheet('t2k4e', ActorSheetT2KCharacter, {
+  Actors.registerSheet('dgyze', ActorSheetT2KCharacter, {
     types: ['character', 'npc'],
     makeDefault: true,
-    label: 'T2K4E.SheetClassCharacter',
+    label: 'DGYZE.SheetClassCharacter',
   });
-  Actors.registerSheet('t2k4e', ActorSheetT2KVehicle, {
+  Actors.registerSheet('dgyze', ActorSheetT2KVehicle, {
     types: ['vehicle'],
     makeDefault: true,
-    label: 'T2K4E.SheetClassVehicle',
+    label: 'DGYZE.SheetClassVehicle',
   });
-  Actors.registerSheet('t2k4e', ActorSheetT2KUnit, {
+  Actors.registerSheet('dgyze', ActorSheetT2KUnit, {
     types: ['unit'],
     makeDefault: true,
-    label: 'T2K4E.SheetClassUnit',
+    label: 'DGYZE.SheetClassUnit',
   });
-  Actors.registerSheet('t2k4e', ActorSheetT2KParty, {
+  Actors.registerSheet('dgyze', ActorSheetT2KParty, {
     types: ['party'],
     makeDefault: true,
-    label: 'T2K4E.SheetClassParty',
+    label: 'DGYZE.SheetClassParty',
   });
 
   Items.unregisterSheet('core', ItemSheet);
-  Items.registerSheet('t2k4e', ItemSheetT2K, { makeDefault: true });
+  Items.registerSheet('dgyze', ItemSheetT2K, { makeDefault: true });
 
   registerSystemSettings();
   enrichTextEditors();
@@ -171,8 +173,8 @@ Hooks.once('ready', function () {
   // Displays starting messages.
   displayMessages();
 
-  console.log('t2k4e | Ready!');
-  Hooks.callAll('t2k4eReady', game.t2k4e, CONFIG.T2K4E);
+  console.log('dgyze | Ready!');
+  Hooks.callAll('dgyze Ready', game.dgyze, CONFIG.DGYZE);
 });
 
 /* -------------------------------------------- */
@@ -196,7 +198,7 @@ Hooks.on('renderChatMessage', (app, html, _data) => {
   Chat.hideChatActionButtons(html);
 
   // Automatically closes dice results tooltips.
-  let delay = game.settings.get('t2k4e', 'closeRollTooltipDelay');
+  let delay = game.settings.get('dgyze', 'closeRollTooltipDelay');
   if (delay >= 0) {
     delay = Math.min(delay, 15 * 60);
     Chat.closeRollTooltip(app, html, delay * 1000);

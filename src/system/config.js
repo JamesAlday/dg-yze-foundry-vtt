@@ -1,10 +1,10 @@
 /**
- * The T2K4E Configuration.
+ * The DGYZE Configuration.
  * @constant
  */
-export const T2K4E = {};
+export const DGYZE = {};
 
-T2K4E.ASCII = `_________________________________________
+DGYZE.ASCII = `_________________________________________
                                          
 ████████╗██████╗ ██╗  ██╗██╗  ██╗███████╗
 ╚══██╔══╝╚════██╗██║ ██╔╝██║  ██║██╔════╝
@@ -14,32 +14,32 @@ T2K4E.ASCII = `_________________________________________
    ╚═╝   ╚══════╝╚═╝  ╚═╝     ╚═╝╚══════╝
 _________________________________________`;
 
-T2K4E.systemMacroFolder = 'Twilight 2000 Roll Macros';
+DGYZE.systemMacroFolder = 'Twilight 2000 Roll Macros';
 
-T2K4E.attributes = {
-  str: 'T2K4E.AttributeNames.str',
-  agl: 'T2K4E.AttributeNames.agl',
-  int: 'T2K4E.AttributeNames.int',
-  emp: 'T2K4E.AttributeNames.emp',
+DGYZE.attributes = {
+  str: 'DGYZE.AttributeNames.str',
+  agl: 'DGYZE.AttributeNames.agl',
+  int: 'DGYZE.AttributeNames.int',
+  emp: 'DGYZE.AttributeNames.emp',
 };
 
-T2K4E.skills = {
-  none: 'T2K4E.SkillNames.none',
-  heavyWeapons: 'T2K4E.SkillNames.heavyWeapons',
-  closeCombat: 'T2K4E.SkillNames.closeCombat',
-  stamina: 'T2K4E.SkillNames.stamina',
-  driving: 'T2K4E.SkillNames.driving',
-  mobility: 'T2K4E.SkillNames.mobility',
-  rangedCombat: 'T2K4E.SkillNames.rangedCombat',
-  recon: 'T2K4E.SkillNames.recon',
-  survival: 'T2K4E.SkillNames.survival',
-  tech: 'T2K4E.SkillNames.tech',
-  command: 'T2K4E.SkillNames.command',
-  persuasion: 'T2K4E.SkillNames.persuasion',
-  medicalAid: 'T2K4E.SkillNames.medicalAid',
+DGYZE.skills = {
+  none: 'DGYZE.SkillNames.none',
+  heavyWeapons: 'DGYZE.SkillNames.heavyWeapons',
+  closeCombat: 'DGYZE.SkillNames.closeCombat',
+  stamina: 'DGYZE.SkillNames.stamina',
+  driving: 'DGYZE.SkillNames.driving',
+  mobility: 'DGYZE.SkillNames.mobility',
+  rangedCombat: 'DGYZE.SkillNames.rangedCombat',
+  recon: 'DGYZE.SkillNames.recon',
+  survival: 'DGYZE.SkillNames.survival',
+  tech: 'DGYZE.SkillNames.tech',
+  command: 'DGYZE.SkillNames.command',
+  persuasion: 'DGYZE.SkillNames.persuasion',
+  medicalAid: 'DGYZE.SkillNames.medicalAid',
 };
 
-T2K4E.skillsMap = {
+DGYZE.skillsMap = {
   none: null,
   heavyWeapons: 'str',
   closeCombat: 'str',
@@ -55,11 +55,11 @@ T2K4E.skillsMap = {
   medicalAid: 'emp',
 };
 
-T2K4E.dieSizes = [-1, 12, 10, 8, 6, 0];
-T2K4E.dieScores = ['–', 'A', 'B', 'C', 'D', 'F'];
-T2K4E.dieSizesMap = new Map(T2K4E.dieScores.map((x, i) => [x, T2K4E.dieSizes[i]]));
+DGYZE.dieSizes = [-1, 12, 10, 8, 6, 0];
+DGYZE.dieScores = ['–', 'A', 'B', 'C', 'D', 'F'];
+DGYZE.dieSizesMap = new Map(DGYZE.dieScores.map((x, i) => [x, DGYZE.dieSizes[i]]));
 
-T2K4E.actionSkillsMap = {
+DGYZE.actionSkillsMap = {
   'travel-forced-march': 'stamina',
   'travel-march-in-darkness': 'survival',
   'travel-drive': 'driving',
@@ -75,30 +75,30 @@ T2K4E.actionSkillsMap = {
   'travel-cook-food': 'survival',
 };
 
-T2K4E.physicalItems = ['weapon', 'armor', 'grenade', 'ammunition', 'gear'];
+DGYZE.physicalItems = ['weapon', 'armor', 'grenade', 'ammunition', 'gear'];
 
-T2K4E.vehicle = {
+DGYZE.vehicle = {
   extraPassengerEncumbrance: 50,
   emptySeatEncumbrance: 25,
   crewPositionFlags: ['DRIVER', 'GUNNER', 'COMMANDER', 'PASSENGER'],
   crewPositionFlagsLocalized: {
-    DRIVER: 'T2K4E.VehicleSheet.CrewPositions.Driver',
-    GUNNER: 'T2K4E.VehicleSheet.CrewPositions.Gunner',
-    COMMANDER: 'T2K4E.VehicleSheet.CrewPositions.Commander',
-    PASSENGER: 'T2K4E.VehicleSheet.CrewPositions.Passenger',
+    DRIVER: 'DGYZE.VehicleSheet.CrewPositions.Driver',
+    GUNNER: 'DGYZE.VehicleSheet.CrewPositions.Gunner',
+    COMMANDER: 'DGYZE.VehicleSheet.CrewPositions.Commander',
+    PASSENGER: 'DGYZE.VehicleSheet.CrewPositions.Passenger',
   },
   movementTypes: {
-    W: 'T2K4E.VehicleSheet.Wheels',
-    T: 'T2K4E.VehicleSheet.Tracks',
-    H: 'T2K4E.VehicleSheet.Hovercraft',
-    A: 'T2K4E.VehicleSheet.Flying',
-    N: 'T2K4E.VehicleSheet.Naval',
+    W: 'DGYZE.VehicleSheet.Wheels',
+    T: 'DGYZE.VehicleSheet.Tracks',
+    H: 'DGYZE.VehicleSheet.Hovercraft',
+    A: 'DGYZE.VehicleSheet.Flying',
+    N: 'DGYZE.VehicleSheet.Naval',
   },
   fuelTypes: {
-    G: 'T2K4E.VehicleSheet.Gasoline',
-    D: 'T2K4E.VehicleSheet.Diesel',
-    A: 'T2K4E.VehicleSheet.Alcohol',
-    N: 'T2K4E.VehicleSheet.Nuclear',
+    G: 'DGYZE.VehicleSheet.Gasoline',
+    D: 'DGYZE.VehicleSheet.Diesel',
+    A: 'DGYZE.VehicleSheet.Alcohol',
+    N: 'DGYZE.VehicleSheet.Nuclear',
   },
   components: [
     'FUEL',
@@ -146,74 +146,74 @@ T2K4E.vehicle = {
   },
 };
 
-T2K4E.unit = {
+DGYZE.unit = {
   unitAffiliations: {
-    friendly: 'T2K4E.UnitAffiliationNames.friendly',
-    hostile: 'T2K4E.UnitAffiliationNames.hostile',
-    neutral: 'T2K4E.UnitAffiliationNames.neutral',
-    unknown: 'T2K4E.UnitAffiliationNames.unknown',
+    friendly: 'DGYZE.UnitAffiliationNames.friendly',
+    hostile: 'DGYZE.UnitAffiliationNames.hostile',
+    neutral: 'DGYZE.UnitAffiliationNames.neutral',
+    unknown: 'DGYZE.UnitAffiliationNames.unknown',
   },
   unitSizes: {
-    army: 'T2K4E.UnitSizeNames.army',
-    corps: 'T2K4E.UnitSizeNames.corps',
-    division: 'T2K4E.UnitSizeNames.division',
-    Brigade: 'T2K4E.UnitSizeNames.Brigade',
-    regiment: 'T2K4E.UnitSizeNames.regiment',
-    battalion: 'T2K4E.UnitSizeNames.battalion',
-    company: 'T2K4E.UnitSizeNames.company',
-    staffel: 'T2K4E.UnitSizeNames.staffel',
-    platoon: 'T2K4E.UnitSizeNames.platoon',
-    section: 'T2K4E.UnitSizeNames.section',
-    squad: 'T2K4E.UnitSizeNames.squad',
-    fireteam: 'T2K4E.UnitSizeNames.fireteam',
+    army: 'DGYZE.UnitSizeNames.army',
+    corps: 'DGYZE.UnitSizeNames.corps',
+    division: 'DGYZE.UnitSizeNames.division',
+    Brigade: 'DGYZE.UnitSizeNames.Brigade',
+    regiment: 'DGYZE.UnitSizeNames.regiment',
+    battalion: 'DGYZE.UnitSizeNames.battalion',
+    company: 'DGYZE.UnitSizeNames.company',
+    staffel: 'DGYZE.UnitSizeNames.staffel',
+    platoon: 'DGYZE.UnitSizeNames.platoon',
+    section: 'DGYZE.UnitSizeNames.section',
+    squad: 'DGYZE.UnitSizeNames.squad',
+    fireteam: 'DGYZE.UnitSizeNames.fireteam',
   },
   unitModifiers: {
-    airborne: 'T2K4E.UnitModifierNames.airborne',
-    parachute: 'T2K4E.UnitModifierNames.parachute',
-    airmobile: 'T2K4E.UnitModifierNames.airmobile',
-    airmobileOrganicLift: 'T2K4E.UnitModifierNames.airmobileOrganicLift',
-    amphibious: 'T2K4E.UnitModifierNames.amphibious',
-    motorized: 'T2K4E.UnitModifierNames.motorized',
-    moutain: 'T2K4E.UnitModifierNames.moutain',
-    cannon: 'T2K4E.UnitModifierNames.cannon',
-    wheeled: 'T2K4E.UnitModifierNameswheeled.',
+    airborne: 'DGYZE.UnitModifierNames.airborne',
+    parachute: 'DGYZE.UnitModifierNames.parachute',
+    airmobile: 'DGYZE.UnitModifierNames.airmobile',
+    airmobileOrganicLift: 'DGYZE.UnitModifierNames.airmobileOrganicLift',
+    amphibious: 'DGYZE.UnitModifierNames.amphibious',
+    motorized: 'DGYZE.UnitModifierNames.motorized',
+    moutain: 'DGYZE.UnitModifierNames.moutain',
+    cannon: 'DGYZE.UnitModifierNames.cannon',
+    wheeled: 'DGYZE.UnitModifierNameswheeled.',
   },
 };
 
-T2K4E.hitLocs = ['legs', 'torso', 'torso', 'torso', 'arms', 'head'];
+DGYZE.hitLocs = ['legs', 'torso', 'torso', 'torso', 'arms', 'head'];
 
-T2K4E.hitLocations = {
+DGYZE.hitLocations = {
   none: '',
-  head: 'T2K4E.ArmorLocationNames.head',
-  arms: 'T2K4E.ArmorLocationNames.arms',
-  torso: 'T2K4E.ArmorLocationNames.torso',
-  legs: 'T2K4E.ArmorLocationNames.legs',
+  head: 'DGYZE.ArmorLocationNames.head',
+  arms: 'DGYZE.ArmorLocationNames.arms',
+  torso: 'DGYZE.ArmorLocationNames.torso',
+  legs: 'DGYZE.ArmorLocationNames.legs',
 };
 
-T2K4E.injuryCategories = {
+DGYZE.injuryCategories = {
   none: '',
-  physical: 'T2K4E.InjuryCategoryNames.physical',
-  mental: 'T2K4E.InjuryCategoryNames.mental',
+  physical: 'DGYZE.InjuryCategoryNames.physical',
+  mental: 'DGYZE.InjuryCategoryNames.mental',
 };
 
-T2K4E.radiationVirulence = 4;
+DGYZE.radiationVirulence = 4;
 
-T2K4E.ranges = [
-  'T2K4E.Ranges.close',
-  'T2K4E.Ranges.short',
-  'T2K4E.Ranges.medium',
-  'T2K4E.Ranges.long',
-  'T2K4E.Ranges.extreme',
+DGYZE.ranges = [
+  'DGYZE.Ranges.close',
+  'DGYZE.Ranges.short',
+  'DGYZE.Ranges.medium',
+  'DGYZE.Ranges.long',
+  'DGYZE.Ranges.extreme',
 ];
 
-T2K4E.rollModes = {
+DGYZE.rollModes = {
   roll: 'CHAT.RollPublic',
   gmroll: 'CHAT.RollPrivate',
   blindroll: 'CHAT.RollBlind',
   selfroll: 'CHAT.RollSelf',
 };
 
-// T2K4E.unarmedData = {
+// DGYZE.unarmedData = {
 //   attribute: 'str',
 //   skill: 'closeCombat',
 //   damage: 1,
@@ -233,7 +233,7 @@ T2K4E.rollModes = {
 /*  Icons                                      */
 /* ------------------------------------------- */
 
-T2K4E.Icons = {
+DGYZE.Icons = {
   boxes: {
     empty: '<i class="far fa-square"></i>',
     full: '<i class="fas fa-square"></i>',

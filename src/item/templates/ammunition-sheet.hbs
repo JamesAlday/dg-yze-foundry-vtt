@@ -1,12 +1,12 @@
 <form class="{{cssClass}} flexcol" autocomplete="off">
 
   {{!-- Item Sheet Header --}}
-  {{> "systems/t2k4e/templates/item/parts/item-header.hbs"}}
+  {{> "systems/dgyze/templates/item/parts/item-header.hbs"}}
 
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs slanted-tabs flexrow flex-center" data-group="primary">
-    <a class="item" data-tab="features">{{localize "T2K4E.ItemSheet.FeaturesTab"}}</a>
-    <a class="item" data-tab="description">{{localize "T2K4E.ItemSheet.DescriptionTab"}}</a>
+    <a class="item" data-tab="features">{{localize "DGYZE.ItemSheet.FeaturesTab"}}</a>
+    <a class="item" data-tab="description">{{localize "DGYZE.ItemSheet.DescriptionTab"}}</a>
   </nav>
 
   {{!-- Sheet Body --}}
@@ -16,23 +16,23 @@
     <div class="tab tab-features" data-group="primary" data-tab="features">
       <div class="grid grid-3col item-features">
         {{!-- <div class="flexcol">
-          <label>{{localize "T2K4E.ItemSheet.Damage"}}</label>
+          <label>{{localize "DGYZE.ItemSheet.Damage"}}</label>
           <input type="text" name="system.damage" value="{{system.damage}}" data-dtype="Number"/>
         </div>
         <div class="flexcol">
-          <label>{{localize "T2K4E.ItemSheet.Crit"}}</label>
+          <label>{{localize "DGYZE.ItemSheet.Crit"}}</label>
           <input type="text" name="system.crit" value="{{system.crit}}" data-dtype="Number"/>
         </div>
         <div class="flexcol">
-          <label>{{localize "T2K4E.ItemSheet.Blast"}}</label>
+          <label>{{localize "DGYZE.ItemSheet.Blast"}}</label>
           {{> scoreSelector name="system.blast" selected=system.blast}}
         </div>
         <div class="flexcol">
-          <label>{{localize "T2K4E.ItemSheet.Range"}}</label>
+          <label>{{localize "DGYZE.ItemSheet.Range"}}</label>
           <input type="text" name="system.range" value="{{system.range}}" data-dtype="Number"/>
         </div> --}}
         <div class="flexcol">
-          <label>{{localize "T2K4E.ItemSheet.Ammo"}}</label>
+          <label>{{localize "DGYZE.ItemSheet.Ammo"}}</label>
           <div class="flexrow flex-center">
             <input type="text" name="system.ammo.value" value="{{system.ammo.value}}" data-dtype="Number"/>
             <span class="sep">/</span>
@@ -40,11 +40,11 @@
           </div>
         </div>
         <div class="flexcol">
-          <label>{{localize "T2K4E.ItemSheet.Weight"}}</label>
+          <label>{{localize "DGYZE.ItemSheet.Weight"}}</label>
           <input type="text" name="system.weight" value="{{numberFormat system.weight decimals=2}}" data-dtype="Number"/>
         </div>
         <div class="flexcol">
-          <label>{{localize "T2K4E.ItemSheet.Price"}}</label>
+          <label>{{localize "DGYZE.ItemSheet.Price"}}</label>
           <input type="text" name="system.price" value="{{system.price}}" data-dtype="Number"/>
         </div>
       </div>
@@ -54,7 +54,7 @@
 
         {{!-- Ammo Type --}}
         <div class="form-group">
-          <label>{{localize "T2K4E.ItemSheet.AmmoType"}}</label>
+          <label>{{localize "DGYZE.ItemSheet.AmmoType"}}</label>
           {{!-- <input type="text" name="system.itemType" value="{{system.itemType}}"/> --}}
           <input list="ammo-types" name="system.itemType" value="{{system.itemType}}"/>
           <datalist id="ammo-types">
@@ -68,29 +68,29 @@
         <div class="form-group-stacked">
           <label class="checkbox">
             <input type="checkbox" name="system.override" {{checked system.override}}/>
-            {{localize "T2K4E.ItemSheet.OverrideOption"}}
+            {{localize "DGYZE.ItemSheet.OverrideOption"}}
           </label>
         </div>
         {{#if system.override}}
         <div class="grid grid-5col item-features">
           <div class="flexcol">
-            <label>{{localize "T2K4E.ItemSheet.Damage"}}</label>
+            <label>{{localize "DGYZE.ItemSheet.Damage"}}</label>
             <input type="text" name="system.damage" value="{{system.damage}}" data-dtype="Number"/>
           </div>
           <div class="flexcol">
-            <label>{{localize "T2K4E.ItemSheet.Crit"}}</label>
+            <label>{{localize "DGYZE.ItemSheet.Crit"}}</label>
             <input type="text" name="system.crit" value="{{system.crit}}" data-dtype="Number"/>
           </div>
           <div class="flexcol">
-            <label>{{localize "T2K4E.ItemSheet.Blast"}}</label>
+            <label>{{localize "DGYZE.ItemSheet.Blast"}}</label>
             {{> scoreSelector name="system.blast" selected=system.blast}}
           </div>
           <div class="flexcol">
-            <label>{{localize "T2K4E.ItemSheet.Range"}}</label>
+            <label>{{localize "DGYZE.ItemSheet.Range"}}</label>
             <input type="text" name="system.range" value="{{system.range}}" data-dtype="Number"/>
           </div>
           <div class="flexcol">
-            <label>{{localize "T2K4E.ItemSheet.Armor"}}</label>
+            <label>{{localize "DGYZE.ItemSheet.Armor"}}</label>
             <input type="text" name="system.armorModifier" value="{{numberFormat system.armorModifier sign=true}}" data-dtype="Number"/>
           </div>
         </div>
@@ -101,7 +101,7 @@
           {{#each system.props as | prop name |}}
           <label class="checkbox">
             <input type="checkbox" name="system.props.{{name}}" {{checked prop}}/>
-            {{localize (concat "T2K4E.ItemPropNames." name)}}
+            {{localize (concat "DGYZE.ItemPropNames." name)}}
           </label>
           {{/each}}
         </div>
@@ -114,13 +114,13 @@
         <div class="form-group">
           <label class="checkbox">
             <input type="checkbox" name="system.equipped" {{checked system.equipped}}/>
-            {{localize "T2K4E.ItemSheet.Equipped"}}
+            {{localize "DGYZE.ItemSheet.Equipped"}}
           </label>
         </div>
         <div class="form-group">
           <label class="checkbox">
             <input type="checkbox" name="system.backpack" {{checked system.backpack}}/>
-            {{localize "T2K4E.ItemSheet.StoredInBackpack"}}
+            {{localize "DGYZE.ItemSheet.StoredInBackpack"}}
           </label>
         </div>
       </div>
@@ -130,7 +130,7 @@
 
     {{!-- Description Tab --}}
     <div class="tab tab-description" data-group="primary" data-tab="description">
-      {{> "systems/t2k4e/templates/item/parts/item-description.hbs"}}
+      {{> "systems/dgyze/templates/item/parts/item-description.hbs"}}
     </div>
 
   </section>

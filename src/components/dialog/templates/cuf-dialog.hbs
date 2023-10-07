@@ -1,10 +1,10 @@
-<form class='t2k4e dialog cuf-dialog'>
+<form class='dgyze dialog cuf-dialog'>
 
   {{! ================================================== }}
 
   {{! Unit Morale }}
   <div class='form-group'>
-    <label>{{localize 'T2K4E.Dialog.CuF.UnitMorale'}}</label>
+    <label>{{localize 'DGYZE.Dialog.CuF.UnitMorale'}}</label>
     <input type='checkbox' name='unitMorale' {{checked data.unitMorale}} />
   </div>
 
@@ -12,7 +12,7 @@
 
   {{! Modifier }}
   <div class='form-group'>
-    <label>{{localize 'T2K4E.Dialog.Roll.Modifier'}}</label>
+    <label>{{localize 'DGYZE.Dialog.Roll.Modifier'}}</label>
     <div class='flexrow'>
       <div class='flexrow flex1 modifier-buttons'>
         <a class='button modifier-change' data-target='modifier' data-change='plus'>{{{config.Icons.buttons.plus}}}</a>
@@ -29,7 +29,7 @@
         value='{{numberFormat data.modifier sign=true}}'
         data-dtype='Number'
       />
-      {{!-- <button class="btn choose-modifier">{{localize "T2K4E.Dialog.Roll.ModifierChoice"}}</button> --}}
+      {{!-- <button class="btn choose-modifier">{{localize "DGYZE.Dialog.Roll.ModifierChoice"}}</button> --}}
     </div>
   </div>
 
@@ -49,7 +49,7 @@
 
   {{! Max Pushes }}
   <div class='form-group'>
-    <label>{{localize 'T2K4E.Dialog.Roll.MaxPush'}}</label>
+    <label>{{localize 'DGYZE.Dialog.Roll.MaxPush'}}</label>
     <input type='number' name='maxPush' value='{{data.maxPush}}' min='0' data-dtype='Number' />
   </div>
 
@@ -59,7 +59,7 @@
 
   {{! Roll Mode }}
   <div class='form-group'>
-    <label>{{localize 'T2K4E.Dialog.Roll.RollMode'}}</label>
+    <label>{{localize 'DGYZE.Dialog.Roll.RollMode'}}</label>
     <select name='rollMode'>
       {{selectOptions config.rollModes selected=data.rollMode localize=true}}
     </select>

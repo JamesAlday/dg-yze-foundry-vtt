@@ -2,7 +2,7 @@
 
   {{!-- COMBAT --}}
   <div class="combat col-6">
-    <h2>{{localize "T2K4E.ActorSheet.Combat"}}</h2>
+    <h2>{{localize "DGYZE.ActorSheet.Combat"}}</h2>
 
     {{!-- CUF & Unit Morale --}}
     <div class="stat-block">
@@ -11,17 +11,17 @@
       <div class="stat-header flexrow">
         <div class="col-6"></div>
         <div class="col-3 header-rating">
-          <h5>{{localize "T2K4E.ActorSheet.Rating"}}</h5>
+          <h5>{{localize "DGYZE.ActorSheet.Rating"}}</h5>
         </div>
         <div class="col-3 header-die">
-          <h5>{{localize "T2K4E.ActorSheet.BaseDie"}}</h5>
+          <h5>{{localize "DGYZE.ActorSheet.BaseDie"}}</h5>
         </div>
       </div>
 
       {{!-- Coolness Under Fire --}}
       <div class="stat stat-cuf flexrow" data-type="cuf">
         <div class="col-6 stat-name">
-          <h4><a class="button cuf-roll">{{localize "T2K4E.ActorSheet.CuF"}}</a></h4>
+          <h4><a class="button cuf-roll">{{localize "DGYZE.ActorSheet.CuF"}}</a></h4>
         </div>
         <div class="col-3 stat-score">
           {{> scoreSelector name="system.cuf.score" selected=system.cuf.score}}
@@ -37,7 +37,7 @@
       {{!-- Unit Morale --}}
       <div class="stat stat-unit-morale flexrow" data-type="unit">
         <div class="col-6 stat-name">
-          <h4><a class="button unit-morale-roll">{{localize "T2K4E.ActorSheet.UnitMorale"}}</a></h4>
+          <h4><a class="button unit-morale-roll">{{localize "DGYZE.ActorSheet.UnitMorale"}}</a></h4>
         </div>
         <div class="col-3 stat-score">
           {{> scoreSelector name="system.unitMorale.score" selected=system.unitMorale.score}}
@@ -56,23 +56,23 @@
 
   {{!-- ACTIONS --}}
   <div class="action col-6">
-    <h2>{{localize "T2K4E.ActorSheet.Actions"}}</h2>
+    <h2>{{localize "DGYZE.ActorSheet.Actions"}}</h2>
 
     {{!-- Header line --}}
     <div class="stat-header flexrow">
       <div class="col-8"></div>
       <div class="col-2 header-rating">
-        <h5>{{localize "T2K4E.ActorSheet.Current"}}</h5>
+        <h5>{{localize "DGYZE.ActorSheet.Current"}}</h5>
       </div>
       <div class="col-2 header-die">
-        <h5>{{localize "T2K4E.ActorSheet.Max"}}</h5>
+        <h5>{{localize "DGYZE.ActorSheet.Max"}}</h5>
       </div>
     </div>
 
     {{!-- Slow & Fast --}}
     {{#each system.actions as | action name |}}
     <div class="flexrow">
-      <div class="action-name">{{localize (concat "T2K4E.ActionTypes." name)}}</div>
+      <div class="action-name">{{localize (concat "DGYZE.ActionTypes." name)}}</div>
       <div class="col-4 action-slider">
         <input type="range" name="system.actions.{{name}}.value" min="0" max="{{action.max}}" value="{{action.value}}"/>
       </div>
@@ -86,12 +86,12 @@
 
   {{!-- ARMOR --}}
   <div class="armor col-6">
-    <h2>{{localize "T2K4E.ItemTypes.armor"}}</h2>
+    <h2>{{localize "DGYZE.ItemTypes.armor"}}</h2>
     <div class="flexcol">
       {{#each system.armorRating as | value location |}}
       <div class="flexrow">
         <div class="col-3">
-          <h4>{{localize (concat "T2K4E.ArmorLocationNames." location)}}</h4>
+          <h4>{{localize (concat "DGYZE.ArmorLocationNames." location)}}</h4>
         </div>
         <div class="armor-names-list">
           {{!-- {{#each ../armors as | armor |}}
@@ -103,7 +103,7 @@
         <div class="col-1">{{value}}</div>
       </div>
       {{else}}
-      <p class="no-armor">{{localize "T2K4E.ActorSheet.NoArmor"}}</p>
+      <p class="no-armor">{{localize "DGYZE.ActorSheet.NoArmor"}}</p>
       {{/each}}
     </div>
   </div>
@@ -111,14 +111,14 @@
   {{!-- CONDITIONS --}}
   {{#if (eq actor.type 'character')}}
   <div class="conditions col-6">
-    <h2>{{localize "T2K4E.ActorSheet.Conditions"}}</h2>
+    <h2>{{localize "DGYZE.ActorSheet.Conditions"}}</h2>
     <div class="flexrow">
       {{#each system.conditions as | value condition |}}
       <div class="col-6">
         <label class="checkbox">
-          {{!-- <h4>{{localize (concat "T2K4E.ActorSheet.ConditionNames." condition)}}</h4> --}}
+          {{!-- <h4>{{localize (concat "DGYZE.ActorSheet.ConditionNames." condition)}}</h4> --}}
           <input type="checkbox" name="system.conditions.{{condition}}" {{checked value}}/>
-          {{localize (concat "T2K4E.ConditionNames." condition)}}
+          {{localize (concat "DGYZE.ConditionNames." condition)}}
         </label>
       </div>
       {{/each}}
@@ -131,9 +131,9 @@
 {{#if (eq actor.type 'character')}}
 <div class="flexcol">
 
-  <h3>{{localize "T2K4E.ActorSheet.CriticalInjuries"}}
+  <h3>{{localize "DGYZE.ActorSheet.CriticalInjuries"}}
     <span class="item-controls">&nbsp;
-      <a class="button item-create" data-type="injury" title="{{localize "T2K4E.ActorSheet.AddInjury"}}">
+      <a class="button item-create" data-type="injury" title="{{localize "DGYZE.ActorSheet.AddInjury"}}">
         {{{config.Icons.buttons.plus}}}
       </a>
     </span>
@@ -164,11 +164,11 @@
         <span class="injury-effect">&nbsp;{{description}}</span>
         {{/if}}
         {{#if healTime}}
-        <span class="injury-heal-time">&nbsp;[{{localize "T2K4E.ActorSheet.InjuryTimeLeft" time=healTime}}]</span>
+        <span class="injury-heal-time">&nbsp;[{{localize "DGYZE.ActorSheet.InjuryTimeLeft" time=healTime}}]</span>
         {{/if}}
         {{/with}}
       </a>
-      <a class="btn btn-small item-delete" title="{{localize "T2K4E.ActorSheet.Delete"}}">
+      <a class="btn btn-small item-delete" title="{{localize "DGYZE.ActorSheet.Delete"}}">
         {{{@root.config.Icons.buttons.delete}}}
       </a>
     </div>
@@ -177,7 +177,7 @@
     {{/each}}
   </div>
 
-  <h3>{{localize "T2K4E.ActorSheet.Diseases"}}</h3>
+  <h3>{{localize "DGYZE.ActorSheet.Diseases"}}</h3>
   <textarea name="system.diseases" rows="2">{{system.diseases}}</textarea>
 
 </div>
@@ -186,15 +186,15 @@
 {{!-- RADIATION --}}
 {{#if (eq actor.type 'character')}}
 <div class="radiation col-12">
-  <h2><a class="radiation-roll">{{localize "T2K4E.ActorSheet.Radiation"}}</a></h2>
+  <h2><a class="radiation-roll">{{localize "DGYZE.ActorSheet.Radiation"}}</a></h2>
   <div class="flexrow">
     <div>
-      <h3>{{localize "T2K4E.ActorSheet.TemporaryRadiation"}}</h3>
-      {{> "systems/t2k4e/templates/actor/parts/radiation-boxes.hbs" field="temporary" value=system.rads.temporary}}
+      <h3>{{localize "DGYZE.ActorSheet.TemporaryRadiation"}}</h3>
+      {{> "systems/dgyze/templates/actor/parts/radiation-boxes.hbs" field="temporary" value=system.rads.temporary}}
     </div>
     <div>
-      <h3>{{localize "T2K4E.ActorSheet.PermanentRadiation"}}</h3>
-      {{> "systems/t2k4e/templates/actor/parts/radiation-boxes.hbs" field="permanent" value=system.rads.permanent}}
+      <h3>{{localize "DGYZE.ActorSheet.PermanentRadiation"}}</h3>
+      {{> "systems/dgyze/templates/actor/parts/radiation-boxes.hbs" field="permanent" value=system.rads.permanent}}
     </div>
   </div>
 </div>

@@ -3,7 +3,7 @@
  * @see https://foundryvtt.wiki/en/development/guides/active-effects
  */
 export function registerStatusEffects() {
-  const path = 'systems/t2k4e/assets/icons/';
+  const path = 'systems/dgyze/assets/icons/';
   CONFIG.statusEffects = [
     {
       id: 'fullCover',

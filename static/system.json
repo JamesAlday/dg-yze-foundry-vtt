@@ -1,5 +1,5 @@
 {
-  "id": "t2k4e",
+  "id": "dgyze",
   "title": "Twilight: 2000 🪖 (4th Edition)",
   "description": "Twilight: 2000 is a roleplaying game about survival in mankind’s most desperate hour. Yet, in this bleak world, there is still hope. In the midst of utter destruction, you can start to build something new. Rally people to your ranks. Stake a claim and protect it. And maybe, if you live long enough, start turning the tide.",
   "version": "11.0.1",
@@ -23,10 +23,10 @@
   ],
   "scripts": [],
   "esmodules": [
-    "t2k4e.js"
+    "dgyze.js"
   ],
   "styles": [
-    "t2k4e.css"
+    "dgyze.css"
   ],
   "languages": [
     {
@@ -55,14 +55,14 @@
   "flags": {},
   "socket": false,
   "protected": false,
-  "background": "systems/t2k4e/assets/gear-intro_c.jpg",
+  "background": "systems/dgyze/assets/gear-intro_c.jpg",
   "gridDistance": 2,
   "gridUnits": "m",
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "sanity",
   "initiative": "1d10",
-  "url": "https://github.com/fvtt-fria-ligan/twilight2000-foundry-vtt",
-  "manifest": "https://github.com/fvtt-fria-ligan/twilight2000-foundry-vtt/releases/latest/download/system.json",
-  "download": "https://github.com/fvtt-fria-ligan/twilight2000-foundry-vtt/releases/download/10.2.1/t2k4e-fvtt_v10.2.1.zip",
+  "url": "https://github.com/JamesAlday/dg-yze-foundry-vtt",
+  "manifest": "https://github.com/JamesAlday/dg-yze-foundry-vtt/releases/latest/download/system.json",
+  "download": "https://github.com/JamesAlday/dg-yze-foundry-vtt/releases/download/10.2.1/dgyze-fvtt_v10.2.1.zip",
   "license": "GPL-3.0-or-later"
 }

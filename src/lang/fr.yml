@@ -1,373 +1,373 @@
-T2K4E.SheetClassCharacter: Fiche de personnage
-T2K4E.SheetClassVehicle: Fiche de véhicule
-T2K4E.SheetClassUnit: Fiche d'unité
-T2K4E.SheetClassParty: Fiche de groupe
-T2K4E.Attribute: Attribut
-T2K4E.Attributes: Attributs
-T2K4E.AttributeNames.str: Vigueur
-T2K4E.AttributeNames.agl: Agilité
-T2K4E.AttributeNames.int: Intellect
-T2K4E.AttributeNames.emp: Empathie
-T2K4E.Skill: Compétence
-T2K4E.Skills: Compétences
-T2K4E.SkillNames.none: –
-T2K4E.SkillNames.heavyWeapons: Artillerie lourde
-T2K4E.SkillNames.closeCombat: Combat rapproché
-T2K4E.SkillNames.stamina: Endurance
-T2K4E.SkillNames.driving: Conduite
-T2K4E.SkillNames.mobility: Mobilité
-T2K4E.SkillNames.rangedCombat: Combat à distance
-T2K4E.SkillNames.recon: Reconnaissance
-T2K4E.SkillNames.survival: Survie
-T2K4E.SkillNames.tech: Tech
-T2K4E.SkillNames.command: Commandement
-T2K4E.SkillNames.persuasion: Persuasion
-T2K4E.SkillNames.medicalAid: Aide médicale
-T2K4E.Action: Action
-T2K4E.Actions: Actions
-T2K4E.ActionNames.unarmedAttack: Attaque à mains nues
-T2K4E.ActionNames.meleeAttack: Attaque de mêlée
-T2K4E.ActionNames.grapple: Attraper
-T2K4E.ActionNames.breakFree: Se libérer
-T2K4E.ActionNames.shootFirearm: Tirer avec une arme à feu
-T2K4E.ActionNames.clearJam: Nettoyer le bourrage
-T2K4E.ActionNames.aimSniper: Viser (tireur d'élite)
-T2K4E.ActionNames.shootBow: Tirer à l'arc
-T2K4E.ActionNames.throwWeapon: Lancer une arme
-T2K4E.ActionNames.aimMortar: Viser avec le mortier ou l'obusier
-T2K4E.ActionNames.shootHeavyWeapon: Tirer avec une arme lourde
-T2K4E.ActionNames.firstAid: Premiers secours
-T2K4E.ActionNames.rally: Rallier
-T2K4E.ActionNames.directFire: Tir indirect direct
-T2K4E.ActionNames.seekCover: Se mettre à couvert
-T2K4E.ActionNames.run: Courir
-T2K4E.ActionNames.crawl: Ramper
-T2K4E.ActionNames.shove: Bousculer
-T2K4E.ActionNames.disarm: Désarmer
-T2K4E.ActionNames.retreat: Battre en retraite
-T2K4E.ActionNames.aim: Viser
-T2K4E.ActionNames.prepareBow: Préparer l'arc
-T2K4E.ActionNames.overwatch: Assumer la position de surveillance
-T2K4E.ActionNames.reload: Recharger
-T2K4E.ActionNames.drive: Conduire
-T2K4E.Constants: Constantes
-T2K4E.ConstantNames.encumbrance: Encombrement
-T2K4E.ConstantNames.awareness: Sensibilisation au combat
-T2K4E.ConstantNames.cuf: SF
-T2K4E.TravelTasks: Actions de voyage
-T2K4E.TravelTaskNames.marching: Marche
-T2K4E.TravelTaskNames.driving: Conduite
-T2K4E.TravelTaskNames.gathering: Cueillette
-T2K4E.TravelTaskNames.keepingWatch: Veille
-T2K4E.TravelTaskNames.scrounging: Fouiller
-T2K4E.TravelTaskNames.foraging: Recherche de nourriture
-T2K4E.TravelTaskNames.hunting: Chasse
-T2K4E.TravelTaskNames.fishing: Pêche
-T2K4E.TravelTaskNames.makingCamp: Établir le camp
-T2K4E.TravelTaskNames.cooking: Cuisine
-T2K4E.TravelTaskNames.resting: Repos
-T2K4E.TravelTaskNames.sleeping: Sommeil
-T2K4E.TravelTaskNames.exploring: Exploration
-T2K4E.ArmorLocationNames.head: Tête
-T2K4E.ArmorLocationNames.arms: Bras
-T2K4E.ArmorLocationNames.torso: Torse
-T2K4E.ArmorLocationNames.legs: Jambes
-T2K4E.ConditionNames.starving: Affamé
-T2K4E.ConditionNames.dehydrated: Déshydraté
-T2K4E.ConditionNames.sleepless: Privé de sommeil
-T2K4E.ConditionNames.hypothermic: Hypothermique
-T2K4E.InjuryCategoryNames.physical: Physique
-T2K4E.InjuryCategoryNames.mental: Mental
-T2K4E.ActionTypes.fast: Rapide
-T2K4E.ActionTypes.slow: Lente
-T2K4E.Ranges.close: En combat rapproché
-T2K4E.Ranges.short: Courte
-T2K4E.Ranges.medium: Medium
-T2K4E.Ranges.long: Longue
-T2K4E.Ranges.extreme: Extrême
-T2K4E.ItemTypes.ammunition: Munition
-T2K4E.ItemTypes.armor: Armure
-T2K4E.ItemTypes.gear: Équipement
-T2K4E.ItemTypes.grenade: Explosif
-T2K4E.ItemTypes.injury: Blessure
-T2K4E.ItemTypes.specialty: Spécialité
-T2K4E.ItemTypes.weapon: Arme
-T2K4E.ItemPropNames.twoHanded: 'Deux mains'
-T2K4E.ItemPropNames.mounted: Monté
-T2K4E.ItemPropNames.disposable: Jetable
-T2K4E.ItemPropNames.ammoBelt: Cartouchière
-T2K4E.ItemPropNames.magazine: Chargeur
-T2K4E.ItemPropNames.armored: Protégé
-T2K4E.ItemPropNames.bipod: Bipied
-T2K4E.ItemPropNames.tripod: Trépied
-T2K4E.ItemPropNames.scope: Lunette
-T2K4E.ItemPropNames.nightVision: 'Vision nocturne'
-T2K4E.ItemPropNames.bayonet: Baïonnette
-T2K4E.ItemPropNames.suppressor: Silencieux
-T2K4E.ActorTypes.character: Personnage joueur (PJ)
-T2K4E.ActorTypes.npc: Personnage non-joueur (PNJ)
-T2K4E.ActorTypes.vehicle: Véhicule
-T2K4E.ActorSheet.Name: Nom
-T2K4E.ActorSheet.MainTab: Stats
-T2K4E.ActorSheet.CombatTab: Combat
-T2K4E.ActorSheet.EquipmentTab: Équipement
-T2K4E.ActorSheet.BiographyTab: Bio
-T2K4E.ActorSheet.NoteTab: Notes
-T2K4E.ActorSheet.Nationality: Nationalité
-T2K4E.ActorSheet.Branch: Branche
-T2K4E.ActorSheet.MilitaryRank: Rang
-T2K4E.ActorSheet.HitCapacity: Capacité de vie
-T2K4E.ActorSheet.StressCapacity: Capacité de stress
-T2K4E.ActorSheet.CapacityModifier: 'Modificateur :'
-T2K4E.ActorSheet.Experience: Expérience
-T2K4E.ActorSheet.ExperienceCurrent: XP actuel
-T2K4E.ActorSheet.ExperienceTotal: XP total
-T2K4E.ActorSheet.Appearance: Apparence
-T2K4E.ActorSheet.MoralCode: Code moral
-T2K4E.ActorSheet.Buddy: Pote
-T2K4E.ActorSheet.BigDream: Votre grand rêve
-T2K4E.ActorSheet.GroupMeeting: 'Comment vous avez rencontré le groupe :'
-T2K4E.ActorSheet.AttributesAndSkills: Attributs & compétences
-T2K4E.ActorSheet.Rating: Score
-T2K4E.ActorSheet.BaseDie: Dé de base
-T2K4E.ActorSheet.Specialties: Spécialités
-T2K4E.ActorSheet.AddSpecialty: Ajouter une nouvelle spécialité
-T2K4E.ActorSheet.NoSpecialty: >-
+DGYZE.SheetClassCharacter: Fiche de personnage
+DGYZE.SheetClassVehicle: Fiche de véhicule
+DGYZE.SheetClassUnit: Fiche d'unité
+DGYZE.SheetClassParty: Fiche de groupe
+DGYZE.Attribute: Attribut
+DGYZE.Attributes: Attributs
+DGYZE.AttributeNames.str: Vigueur
+DGYZE.AttributeNames.agl: Agilité
+DGYZE.AttributeNames.int: Intellect
+DGYZE.AttributeNames.emp: Empathie
+DGYZE.Skill: Compétence
+DGYZE.Skills: Compétences
+DGYZE.SkillNames.none: –
+DGYZE.SkillNames.heavyWeapons: Artillerie lourde
+DGYZE.SkillNames.closeCombat: Combat rapproché
+DGYZE.SkillNames.stamina: Endurance
+DGYZE.SkillNames.driving: Conduite
+DGYZE.SkillNames.mobility: Mobilité
+DGYZE.SkillNames.rangedCombat: Combat à distance
+DGYZE.SkillNames.recon: Reconnaissance
+DGYZE.SkillNames.survival: Survie
+DGYZE.SkillNames.tech: Tech
+DGYZE.SkillNames.command: Commandement
+DGYZE.SkillNames.persuasion: Persuasion
+DGYZE.SkillNames.medicalAid: Aide médicale
+DGYZE.Action: Action
+DGYZE.Actions: Actions
+DGYZE.ActionNames.unarmedAttack: Attaque à mains nues
+DGYZE.ActionNames.meleeAttack: Attaque de mêlée
+DGYZE.ActionNames.grapple: Attraper
+DGYZE.ActionNames.breakFree: Se libérer
+DGYZE.ActionNames.shootFirearm: Tirer avec une arme à feu
+DGYZE.ActionNames.clearJam: Nettoyer le bourrage
+DGYZE.ActionNames.aimSniper: Viser (tireur d'élite)
+DGYZE.ActionNames.shootBow: Tirer à l'arc
+DGYZE.ActionNames.throwWeapon: Lancer une arme
+DGYZE.ActionNames.aimMortar: Viser avec le mortier ou l'obusier
+DGYZE.ActionNames.shootHeavyWeapon: Tirer avec une arme lourde
+DGYZE.ActionNames.firstAid: Premiers secours
+DGYZE.ActionNames.rally: Rallier
+DGYZE.ActionNames.directFire: Tir indirect direct
+DGYZE.ActionNames.seekCover: Se mettre à couvert
+DGYZE.ActionNames.run: Courir
+DGYZE.ActionNames.crawl: Ramper
+DGYZE.ActionNames.shove: Bousculer
+DGYZE.ActionNames.disarm: Désarmer
+DGYZE.ActionNames.retreat: Battre en retraite
+DGYZE.ActionNames.aim: Viser
+DGYZE.ActionNames.prepareBow: Préparer l'arc
+DGYZE.ActionNames.overwatch: Assumer la position de surveillance
+DGYZE.ActionNames.reload: Recharger
+DGYZE.ActionNames.drive: Conduire
+DGYZE.Constants: Constantes
+DGYZE.ConstantNames.encumbrance: Encombrement
+DGYZE.ConstantNames.awareness: Sensibilisation au combat
+DGYZE.ConstantNames.cuf: SF
+DGYZE.TravelTasks: Actions de voyage
+DGYZE.TravelTaskNames.marching: Marche
+DGYZE.TravelTaskNames.driving: Conduite
+DGYZE.TravelTaskNames.gathering: Cueillette
+DGYZE.TravelTaskNames.keepingWatch: Veille
+DGYZE.TravelTaskNames.scrounging: Fouiller
+DGYZE.TravelTaskNames.foraging: Recherche de nourriture
+DGYZE.TravelTaskNames.hunting: Chasse
+DGYZE.TravelTaskNames.fishing: Pêche
+DGYZE.TravelTaskNames.makingCamp: Établir le camp
+DGYZE.TravelTaskNames.cooking: Cuisine
+DGYZE.TravelTaskNames.resting: Repos
+DGYZE.TravelTaskNames.sleeping: Sommeil
+DGYZE.TravelTaskNames.exploring: Exploration
+DGYZE.ArmorLocationNames.head: Tête
+DGYZE.ArmorLocationNames.arms: Bras
+DGYZE.ArmorLocationNames.torso: Torse
+DGYZE.ArmorLocationNames.legs: Jambes
+DGYZE.ConditionNames.starving: Affamé
+DGYZE.ConditionNames.dehydrated: Déshydraté
+DGYZE.ConditionNames.sleepless: Privé de sommeil
+DGYZE.ConditionNames.hypothermic: Hypothermique
+DGYZE.InjuryCategoryNames.physical: Physique
+DGYZE.InjuryCategoryNames.mental: Mental
+DGYZE.ActionTypes.fast: Rapide
+DGYZE.ActionTypes.slow: Lente
+DGYZE.Ranges.close: En combat rapproché
+DGYZE.Ranges.short: Courte
+DGYZE.Ranges.medium: Medium
+DGYZE.Ranges.long: Longue
+DGYZE.Ranges.extreme: Extrême
+DGYZE.ItemTypes.ammunition: Munition
+DGYZE.ItemTypes.armor: Armure
+DGYZE.ItemTypes.gear: Équipement
+DGYZE.ItemTypes.grenade: Explosif
+DGYZE.ItemTypes.injury: Blessure
+DGYZE.ItemTypes.specialty: Spécialité
+DGYZE.ItemTypes.weapon: Arme
+DGYZE.ItemPropNames.twoHanded: 'Deux mains'
+DGYZE.ItemPropNames.mounted: Monté
+DGYZE.ItemPropNames.disposable: Jetable
+DGYZE.ItemPropNames.ammoBelt: Cartouchière
+DGYZE.ItemPropNames.magazine: Chargeur
+DGYZE.ItemPropNames.armored: Protégé
+DGYZE.ItemPropNames.bipod: Bipied
+DGYZE.ItemPropNames.tripod: Trépied
+DGYZE.ItemPropNames.scope: Lunette
+DGYZE.ItemPropNames.nightVision: 'Vision nocturne'
+DGYZE.ItemPropNames.bayonet: Baïonnette
+DGYZE.ItemPropNames.suppressor: Silencieux
+DGYZE.ActorTypes.character: Personnage joueur (PJ)
+DGYZE.ActorTypes.npc: Personnage non-joueur (PNJ)
+DGYZE.ActorTypes.vehicle: Véhicule
+DGYZE.ActorSheet.Name: Nom
+DGYZE.ActorSheet.MainTab: Stats
+DGYZE.ActorSheet.CombatTab: Combat
+DGYZE.ActorSheet.EquipmentTab: Équipement
+DGYZE.ActorSheet.BiographyTab: Bio
+DGYZE.ActorSheet.NoteTab: Notes
+DGYZE.ActorSheet.Nationality: Nationalité
+DGYZE.ActorSheet.Branch: Branche
+DGYZE.ActorSheet.MilitaryRank: Rang
+DGYZE.ActorSheet.HitCapacity: Capacité de vie
+DGYZE.ActorSheet.StressCapacity: Capacité de stress
+DGYZE.ActorSheet.CapacityModifier: 'Modificateur :'
+DGYZE.ActorSheet.Experience: Expérience
+DGYZE.ActorSheet.ExperienceCurrent: XP actuel
+DGYZE.ActorSheet.ExperienceTotal: XP total
+DGYZE.ActorSheet.Appearance: Apparence
+DGYZE.ActorSheet.MoralCode: Code moral
+DGYZE.ActorSheet.Buddy: Pote
+DGYZE.ActorSheet.BigDream: Votre grand rêve
+DGYZE.ActorSheet.GroupMeeting: 'Comment vous avez rencontré le groupe :'
+DGYZE.ActorSheet.AttributesAndSkills: Attributs & compétences
+DGYZE.ActorSheet.Rating: Score
+DGYZE.ActorSheet.BaseDie: Dé de base
+DGYZE.ActorSheet.Specialties: Spécialités
+DGYZE.ActorSheet.AddSpecialty: Ajouter une nouvelle spécialité
+DGYZE.ActorSheet.NoSpecialty: >-
   Ce personnage n'a pas de spécialité. Cliquez sur l'icône "+" pour ajouter une
   nouvelle spécialité.
-T2K4E.ActorSheet.Combat: Combat
-T2K4E.ActorSheet.Actions: Actions
-T2K4E.ActorSheet.Current: Actuel
-T2K4E.ActorSheet.Max: Max
-T2K4E.ActorSheet.CuF: Sang-froid
-T2K4E.ActorSheet.UnitMorale: Moral de l'unité
-T2K4E.ActorSheet.NoArmor: Ce personnage n'a pas d'armure équipée.
-T2K4E.ActorSheet.Conditions: Conditions
-T2K4E.ActorSheet.CriticalInjuries: Blessures critiques
-T2K4E.ActorSheet.AddInjury: Ajouter une nouvelle blessure
-T2K4E.ActorSheet.InjuryTimeLeft: '{time} restant'
-T2K4E.ActorSheet.Diseases: Maladies
-T2K4E.ActorSheet.Radiation: Irradiation
-T2K4E.ActorSheet.RadiationRoll: Attaque Rad
-T2K4E.ActorSheet.TemporaryRadiation: Temporaire
-T2K4E.ActorSheet.PermanentRadiation: Permanent
-T2K4E.ActorSheet.EncumbranceFull: PLEIN
-T2K4E.ActorSheet.EncumbranceTooHeavy: TROP LOURD
-T2K4E.ActorSheet.Weapons: Armes
-T2K4E.ActorSheet.AddWeapon: Ajouter une nouvelle arme
-T2K4E.ActorSheet.Unarmed: Sans armes
-T2K4E.ActorSheet.Cover: Protections
-T2K4E.ActorSheet.Add: Ajouter
-T2K4E.ActorSheet.AddArmor: Ajouter une nouvelle armure
-T2K4E.ActorSheet.AddGear: Ajouter un nouvel équipement
-T2K4E.ActorSheet.AddAmmo: Ajouter une nouvelle munition
-T2K4E.ActorSheet.Encumbrance: Encombrement
-T2K4E.ActorSheet.CombatGearEncumbrance: Équipement de combat (encombrement)
-T2K4E.ActorSheet.BackpackEncumbrance: Sac à dos (encombrement)
-T2K4E.ActorSheet.Equip: Équiper
-T2K4E.ActorSheet.Store: Ranger dans le sac à dos
-T2K4E.ActorSheet.Edit: Éditer
-T2K4E.ActorSheet.Delete: Supprimer
-T2K4E.ActorSheet.NewItem.weapon: Nouvelle arme
-T2K4E.ActorSheet.NewItem.armor: Nouvelle armure
-T2K4E.ActorSheet.NewItem.gear: Nouvel équipement
-T2K4E.ActorSheet.NewItem.ammunition: Nouvelle munition
-T2K4E.ActorSheet.NewItem.specialty: Nouvelle spécialité
-T2K4E.ActorSheet.NewItem.injury: Nouvelle blessure
-T2K4E.ActorSheet.NotifWrongItemType: Les objets de type "{type}" ne peuvent pas être ajouté à {actor}!
-T2K4E.VehicleSheet.CrewTab: Équipage
-T2K4E.VehicleSheet.ComponentsTab: Composants
-T2K4E.VehicleSheet.CombatTab: Combat
-T2K4E.VehicleSheet.CargoTab: Cargaison
-T2K4E.VehicleSheet.VehicleType: Type de véhicule
-T2K4E.VehicleSheet.Reliability: Fiabilité
-T2K4E.VehicleSheet.Movement: Mouvement
-T2K4E.VehicleSheet.CombatSpeed: Vitesse de combat
-T2K4E.VehicleSheet.TravelSpeed: Vitesse de voyage
-T2K4E.VehicleSheet.Wheels: Roues
-T2K4E.VehicleSheet.Tracks: Chenilles
-T2K4E.VehicleSheet.Hovercraft: Aéroglisseur
-T2K4E.VehicleSheet.Flying: Vol
-T2K4E.VehicleSheet.Naval: Naval
-T2K4E.VehicleSheet.Fuel: Carburant
-T2K4E.VehicleSheet.FuelCapacity: Réservoir
-T2K4E.VehicleSheet.FuelConsumption: Consommation de carburant
-T2K4E.VehicleSheet.Gasoline: Essence
-T2K4E.VehicleSheet.Diesel: Diesel
-T2K4E.VehicleSheet.Alcohol: Alcool
-T2K4E.VehicleSheet.Nuclear: Nucléaire
-T2K4E.VehicleSheet.CrewQty: 'Équipage :'
-T2K4E.VehicleSheet.PassengerQty: 'Passagers :'
-T2K4E.VehicleSheet.EmptyCrew: Glissez-déposez un acteur pour l'ajouter à l'équipage.
-T2K4E.VehicleSheet.Armor: Armure
-T2K4E.VehicleSheet.FrontArmor: Avant
-T2K4E.VehicleSheet.SideLeftArmor: Gauche
-T2K4E.VehicleSheet.SideRightArmor: Droite
-T2K4E.VehicleSheet.RearArmor: Arrière
-T2K4E.VehicleSheet.Damage: Dégats
-T2K4E.VehicleSheet.MountedWeapons1: Armes principales
-T2K4E.VehicleSheet.MountedWeapons2: Armes secondaires
-T2K4E.VehicleSheet.MountedWeaponType: Type
-T2K4E.VehicleSheet.CargoCapacity: 'Capacité de chargement :'
-T2K4E.VehicleSheet.CrewCargo: "Poids de l'équipage :"
-T2K4E.VehicleSheet.VehicleEncumbrance: Encombrement (véhicule)
-T2K4E.VehicleSheet.Mount: Monter l'arme
-T2K4E.VehicleSheet.Unmount: Démonter l'arme
-T2K4E.VehicleSheet.MoveMount: Basculer le montage de l'arme
-T2K4E.VehicleSheet.Price: Prix
-T2K4E.VehicleSheet.CrewPositions.Driver: CONDUCTEUR
-T2K4E.VehicleSheet.CrewPositions.Gunner: CANONNIER
-T2K4E.VehicleSheet.CrewPositions.Commander: COMMANDANT
-T2K4E.VehicleSheet.CrewPositions.Passenger: PASSAGER
-T2K4E.VehicleSheet.ExposedPassenger: Exposé
-T2K4E.VehicleSheet.InnerComponents: Composants internes
-T2K4E.VehicleSheet.OuterComponents: Composants extérieurs
-T2K4E.VehicleSheet.ComponentDamage: Quantité de dégâts infligés à ce composant
-T2K4E.VehicleSheet.FcsType: Type
-T2K4E.VehicleSheet.Components.fuel: Carburant
-T2K4E.VehicleSheet.Components.engine: Moteur
-T2K4E.VehicleSheet.Components.suspension: Suspension
-T2K4E.VehicleSheet.Components.ammunition: Munitions
-T2K4E.VehicleSheet.Components.radio: Radio
-T2K4E.VehicleSheet.Components.trackWheel: Chenilles / Roues
-T2K4E.VehicleSheet.Components.fcs: Système de conduite de tir
-T2K4E.VehicleSheet.Components.antenna: Antenne
-T2K4E.VehicleSheet.HasTrailer: Remorque
-T2K4E.VehicleSheet.HasSmokeDischarger: Déchargeur de fumée
-T2K4E.UnitSheet.Name: Nom complet
-T2K4E.UnitSheet.Info: Informations additionnelles
-T2K4E.UnitSheet.Faction: Faction
-T2K4E.UnitSheet.UnitAffiliation: Affiliation
-T2K4E.UnitSheet.UnitSize: Taille
-T2K4E.UnitSheet.UnitType: Type
-T2K4E.UnitSheet.UnitModifiers: Modificateurs
-T2K4E.UnitSheet.Personnel: Personnel
-T2K4E.UnitSheet.Vehicles: Véhicules de combat
-T2K4E.UnitSheet.HQ: Quartier général (QG)
-T2K4E.UnitAffiliationNames.friendly: Amical
-T2K4E.UnitAffiliationNames.hostile: Hostile
-T2K4E.UnitAffiliationNames.neutral: Neutre
-T2K4E.UnitAffiliationNames.unknown: Inconnue
-T2K4E.UnitModifierNames.airborne: Aéroporté
-T2K4E.UnitModifierNames.parachute: Parachute
-T2K4E.UnitModifierNames.airmobile: Aéromobile
-T2K4E.UnitModifierNames.airmobileOrganicLift: Héli-aérom.
-T2K4E.UnitModifierNames.amphibious: Amphibie
-T2K4E.UnitModifierNames.motorized: Motorisé
-T2K4E.UnitModifierNames.moutain: Montagne
-T2K4E.UnitModifierNames.cannon: Canon
-T2K4E.UnitModifierNames.wheeled: À roues
-T2K4E.UnitSizeNames.army: Armée XXXX
-T2K4E.UnitSizeNames.corps: Corps XXX
-T2K4E.UnitSizeNames.division: Division XX
-T2K4E.UnitSizeNames.Brigade: Brigade X
-T2K4E.UnitSizeNames.regiment: Régiment | | |
-T2K4E.UnitSizeNames.battalion: Bataillon | |
-T2K4E.UnitSizeNames.company: Compagnie |
-T2K4E.UnitSizeNames.staffel: Staffel ••••
-T2K4E.UnitSizeNames.platoon: Peloton •••
-T2K4E.UnitSizeNames.section: Section ••
-T2K4E.UnitSizeNames.squad: Escouade •
-T2K4E.UnitSizeNames.fireteam: Équipe
-T2K4E.ItemSheet.Name: Nom
-T2K4E.ItemSheet.FeaturesTab: Caractéristiques
-T2K4E.ItemSheet.ModifiersTab: Modificateurs
-T2K4E.ItemSheet.RollModifiers: Modificateurs de lancer
-T2K4E.ItemSheet.AddNewRollModifier: Ajouter un nouveau modificateur de lancer à cet objet
-T2K4E.ItemSheet.DeleteRollModifier: Supprimer ce modificateur de lancer
-T2K4E.ItemSheet.NoRollModifier: >-
+DGYZE.ActorSheet.Combat: Combat
+DGYZE.ActorSheet.Actions: Actions
+DGYZE.ActorSheet.Current: Actuel
+DGYZE.ActorSheet.Max: Max
+DGYZE.ActorSheet.CuF: Sang-froid
+DGYZE.ActorSheet.UnitMorale: Moral de l'unité
+DGYZE.ActorSheet.NoArmor: Ce personnage n'a pas d'armure équipée.
+DGYZE.ActorSheet.Conditions: Conditions
+DGYZE.ActorSheet.CriticalInjuries: Blessures critiques
+DGYZE.ActorSheet.AddInjury: Ajouter une nouvelle blessure
+DGYZE.ActorSheet.InjuryTimeLeft: '{time} restant'
+DGYZE.ActorSheet.Diseases: Maladies
+DGYZE.ActorSheet.Radiation: Irradiation
+DGYZE.ActorSheet.RadiationRoll: Attaque Rad
+DGYZE.ActorSheet.TemporaryRadiation: Temporaire
+DGYZE.ActorSheet.PermanentRadiation: Permanent
+DGYZE.ActorSheet.EncumbranceFull: PLEIN
+DGYZE.ActorSheet.EncumbranceTooHeavy: TROP LOURD
+DGYZE.ActorSheet.Weapons: Armes
+DGYZE.ActorSheet.AddWeapon: Ajouter une nouvelle arme
+DGYZE.ActorSheet.Unarmed: Sans armes
+DGYZE.ActorSheet.Cover: Protections
+DGYZE.ActorSheet.Add: Ajouter
+DGYZE.ActorSheet.AddArmor: Ajouter une nouvelle armure
+DGYZE.ActorSheet.AddGear: Ajouter un nouvel équipement
+DGYZE.ActorSheet.AddAmmo: Ajouter une nouvelle munition
+DGYZE.ActorSheet.Encumbrance: Encombrement
+DGYZE.ActorSheet.CombatGearEncumbrance: Équipement de combat (encombrement)
+DGYZE.ActorSheet.BackpackEncumbrance: Sac à dos (encombrement)
+DGYZE.ActorSheet.Equip: Équiper
+DGYZE.ActorSheet.Store: Ranger dans le sac à dos
+DGYZE.ActorSheet.Edit: Éditer
+DGYZE.ActorSheet.Delete: Supprimer
+DGYZE.ActorSheet.NewItem.weapon: Nouvelle arme
+DGYZE.ActorSheet.NewItem.armor: Nouvelle armure
+DGYZE.ActorSheet.NewItem.gear: Nouvel équipement
+DGYZE.ActorSheet.NewItem.ammunition: Nouvelle munition
+DGYZE.ActorSheet.NewItem.specialty: Nouvelle spécialité
+DGYZE.ActorSheet.NewItem.injury: Nouvelle blessure
+DGYZE.ActorSheet.NotifWrongItemType: Les objets de type "{type}" ne peuvent pas être ajouté à {actor}!
+DGYZE.VehicleSheet.CrewTab: Équipage
+DGYZE.VehicleSheet.ComponentsTab: Composants
+DGYZE.VehicleSheet.CombatTab: Combat
+DGYZE.VehicleSheet.CargoTab: Cargaison
+DGYZE.VehicleSheet.VehicleType: Type de véhicule
+DGYZE.VehicleSheet.Reliability: Fiabilité
+DGYZE.VehicleSheet.Movement: Mouvement
+DGYZE.VehicleSheet.CombatSpeed: Vitesse de combat
+DGYZE.VehicleSheet.TravelSpeed: Vitesse de voyage
+DGYZE.VehicleSheet.Wheels: Roues
+DGYZE.VehicleSheet.Tracks: Chenilles
+DGYZE.VehicleSheet.Hovercraft: Aéroglisseur
+DGYZE.VehicleSheet.Flying: Vol
+DGYZE.VehicleSheet.Naval: Naval
+DGYZE.VehicleSheet.Fuel: Carburant
+DGYZE.VehicleSheet.FuelCapacity: Réservoir
+DGYZE.VehicleSheet.FuelConsumption: Consommation de carburant
+DGYZE.VehicleSheet.Gasoline: Essence
+DGYZE.VehicleSheet.Diesel: Diesel
+DGYZE.VehicleSheet.Alcohol: Alcool
+DGYZE.VehicleSheet.Nuclear: Nucléaire
+DGYZE.VehicleSheet.CrewQty: 'Équipage :'
+DGYZE.VehicleSheet.PassengerQty: 'Passagers :'
+DGYZE.VehicleSheet.EmptyCrew: Glissez-déposez un acteur pour l'ajouter à l'équipage.
+DGYZE.VehicleSheet.Armor: Armure
+DGYZE.VehicleSheet.FrontArmor: Avant
+DGYZE.VehicleSheet.SideLeftArmor: Gauche
+DGYZE.VehicleSheet.SideRightArmor: Droite
+DGYZE.VehicleSheet.RearArmor: Arrière
+DGYZE.VehicleSheet.Damage: Dégats
+DGYZE.VehicleSheet.MountedWeapons1: Armes principales
+DGYZE.VehicleSheet.MountedWeapons2: Armes secondaires
+DGYZE.VehicleSheet.MountedWeaponType: Type
+DGYZE.VehicleSheet.CargoCapacity: 'Capacité de chargement :'
+DGYZE.VehicleSheet.CrewCargo: "Poids de l'équipage :"
+DGYZE.VehicleSheet.VehicleEncumbrance: Encombrement (véhicule)
+DGYZE.VehicleSheet.Mount: Monter l'arme
+DGYZE.VehicleSheet.Unmount: Démonter l'arme
+DGYZE.VehicleSheet.MoveMount: Basculer le montage de l'arme
+DGYZE.VehicleSheet.Price: Prix
+DGYZE.VehicleSheet.CrewPositions.Driver: CONDUCTEUR
+DGYZE.VehicleSheet.CrewPositions.Gunner: CANONNIER
+DGYZE.VehicleSheet.CrewPositions.Commander: COMMANDANT
+DGYZE.VehicleSheet.CrewPositions.Passenger: PASSAGER
+DGYZE.VehicleSheet.ExposedPassenger: Exposé
+DGYZE.VehicleSheet.InnerComponents: Composants internes
+DGYZE.VehicleSheet.OuterComponents: Composants extérieurs
+DGYZE.VehicleSheet.ComponentDamage: Quantité de dégâts infligés à ce composant
+DGYZE.VehicleSheet.FcsType: Type
+DGYZE.VehicleSheet.Components.fuel: Carburant
+DGYZE.VehicleSheet.Components.engine: Moteur
+DGYZE.VehicleSheet.Components.suspension: Suspension
+DGYZE.VehicleSheet.Components.ammunition: Munitions
+DGYZE.VehicleSheet.Components.radio: Radio
+DGYZE.VehicleSheet.Components.trackWheel: Chenilles / Roues
+DGYZE.VehicleSheet.Components.fcs: Système de conduite de tir
+DGYZE.VehicleSheet.Components.antenna: Antenne
+DGYZE.VehicleSheet.HasTrailer: Remorque
+DGYZE.VehicleSheet.HasSmokeDischarger: Déchargeur de fumée
+DGYZE.UnitSheet.Name: Nom complet
+DGYZE.UnitSheet.Info: Informations additionnelles
+DGYZE.UnitSheet.Faction: Faction
+DGYZE.UnitSheet.UnitAffiliation: Affiliation
+DGYZE.UnitSheet.UnitSize: Taille
+DGYZE.UnitSheet.UnitType: Type
+DGYZE.UnitSheet.UnitModifiers: Modificateurs
+DGYZE.UnitSheet.Personnel: Personnel
+DGYZE.UnitSheet.Vehicles: Véhicules de combat
+DGYZE.UnitSheet.HQ: Quartier général (QG)
+DGYZE.UnitAffiliationNames.friendly: Amical
+DGYZE.UnitAffiliationNames.hostile: Hostile
+DGYZE.UnitAffiliationNames.neutral: Neutre
+DGYZE.UnitAffiliationNames.unknown: Inconnue
+DGYZE.UnitModifierNames.airborne: Aéroporté
+DGYZE.UnitModifierNames.parachute: Parachute
+DGYZE.UnitModifierNames.airmobile: Aéromobile
+DGYZE.UnitModifierNames.airmobileOrganicLift: Héli-aérom.
+DGYZE.UnitModifierNames.amphibious: Amphibie
+DGYZE.UnitModifierNames.motorized: Motorisé
+DGYZE.UnitModifierNames.moutain: Montagne
+DGYZE.UnitModifierNames.cannon: Canon
+DGYZE.UnitModifierNames.wheeled: À roues
+DGYZE.UnitSizeNames.army: Armée XXXX
+DGYZE.UnitSizeNames.corps: Corps XXX
+DGYZE.UnitSizeNames.division: Division XX
+DGYZE.UnitSizeNames.Brigade: Brigade X
+DGYZE.UnitSizeNames.regiment: Régiment | | |
+DGYZE.UnitSizeNames.battalion: Bataillon | |
+DGYZE.UnitSizeNames.company: Compagnie |
+DGYZE.UnitSizeNames.staffel: Staffel ••••
+DGYZE.UnitSizeNames.platoon: Peloton •••
+DGYZE.UnitSizeNames.section: Section ••
+DGYZE.UnitSizeNames.squad: Escouade •
+DGYZE.UnitSizeNames.fireteam: Équipe
+DGYZE.ItemSheet.Name: Nom
+DGYZE.ItemSheet.FeaturesTab: Caractéristiques
+DGYZE.ItemSheet.ModifiersTab: Modificateurs
+DGYZE.ItemSheet.RollModifiers: Modificateurs de lancer
+DGYZE.ItemSheet.AddNewRollModifier: Ajouter un nouveau modificateur de lancer à cet objet
+DGYZE.ItemSheet.DeleteRollModifier: Supprimer ce modificateur de lancer
+DGYZE.ItemSheet.NoRollModifier: >-
   Cet article n'a pas de modificateur. Pour en ajouter un, cliquez sur l'icône
   "+".
-T2K4E.ItemSheet.SelectRollModifier: Choisissez un nom
-T2K4E.ItemSheet.DescriptionTab: Notes
-T2K4E.ItemSheet.AttributeUsed: Attribut utilisé
-T2K4E.ItemSheet.SkillUsed: Compétence utilisée
-T2K4E.ItemSheet.WeaponMagazine: Chargeur
-T2K4E.ItemSheet.Quantity: Quantité
-T2K4E.ItemSheet.ItemType: Type
-T2K4E.ItemSheet.Ammo: Munitions
-T2K4E.ItemSheet.AmmoType: Identificateur de munitions
-T2K4E.ItemSheet.OverrideOption: Remplacer les fonctionnalités de l'arme
-T2K4E.ItemSheet.Reliability: Fiab
-T2K4E.ItemSheet.RoF: CdT
-T2K4E.ItemSheet.Damage: Dégats
-T2K4E.ItemSheet.Crit: Crit
-T2K4E.ItemSheet.Blast: Souffle
-T2K4E.ItemSheet.Range: Portée
-T2K4E.ItemSheet.Mag: Mag
-T2K4E.ItemSheet.Armor: Armure
-T2K4E.ItemSheet.Weight: Poids
-T2K4E.ItemSheet.Price: Prix
-T2K4E.ItemSheet.ArmorLocation: Partie protégée
-T2K4E.ItemSheet.Equipped: Équipé
-T2K4E.ItemSheet.StoredInBackpack: Stocké dans le sac à dos
-T2K4E.ItemSheet.CreateAmmo: Générer des munitions
-T2K4E.ItemSheet.CreateAmmoNotif: Généré 1x <b>{ammo}</b> pour l'arme <b>{weapon}</b>
-T2K4E.ItemSheet.FeaturesForVehicle: Caractéristiques du véhicule
-T2K4E.InjurySheet.Category: Catégorie
-T2K4E.InjurySheet.Location: Partie du corps
-T2K4E.InjurySheet.TimeLimit: Limite de temps
-T2K4E.InjurySheet.HealTime: Temps de rétablissement
-T2K4E.InjurySheet.Effect: Effet
-T2K4E.InjurySheet.Lethal: Létale
-T2K4E.InjurySheet.day: jour
-T2K4E.InjurySheet.days: jours
-T2K4E.Chat.Actions.Attack: Attaquer
-T2K4E.Chat.Actions.Reload: Recharger
-T2K4E.Chat.Actions.Roll: Lancer
-T2K4E.Chat.Actions.Push: Pousser
-T2K4E.Chat.Actions.ApplyDamage: Appliquer les dégâts
-T2K4E.Chat.Roll.Success: Succès
-T2K4E.Chat.Roll.Successes: Succès
-T2K4E.Chat.Roll.Pushed: — Poussé
-T2K4E.Chat.Roll.Suppression: Suppression
-T2K4E.Chat.Roll.ExtraHit: Touché supplémentaire
-T2K4E.Chat.Roll.ExtraHits: Touchés supplémentaires
-T2K4E.Chat.Roll.Mishap: Malchance
-T2K4E.Chat.Roll.AmmoSpent: Munitions dépensées
-T2K4E.Chat.Roll.NoItemNotif: Cet objet n'existe plus.
-T2K4E.Chat.Roll.NoReliabilityNotif: La valeur de fiabilité actuelle de cet objet ne permet pas de l'utiliser.
-T2K4E.Chat.Damage.Incapacited: IMMOBILISÉ
-T2K4E.Chat.Damage.DamagedArmor: Endommagé
-T2K4E.Chat.Damage.DamageDealt: <b>{name}</b> a reçu <b>{amount}</b> dégats.
-T2K4E.Chat.Damage.NoDamageDealt: Aucun dégats n'a été infligé à <b>{name}</b>.
-T2K4E.Chat.Damage.InitialAmount: >-
+DGYZE.ItemSheet.SelectRollModifier: Choisissez un nom
+DGYZE.ItemSheet.DescriptionTab: Notes
+DGYZE.ItemSheet.AttributeUsed: Attribut utilisé
+DGYZE.ItemSheet.SkillUsed: Compétence utilisée
+DGYZE.ItemSheet.WeaponMagazine: Chargeur
+DGYZE.ItemSheet.Quantity: Quantité
+DGYZE.ItemSheet.ItemType: Type
+DGYZE.ItemSheet.Ammo: Munitions
+DGYZE.ItemSheet.AmmoType: Identificateur de munitions
+DGYZE.ItemSheet.OverrideOption: Remplacer les fonctionnalités de l'arme
+DGYZE.ItemSheet.Reliability: Fiab
+DGYZE.ItemSheet.RoF: CdT
+DGYZE.ItemSheet.Damage: Dégats
+DGYZE.ItemSheet.Crit: Crit
+DGYZE.ItemSheet.Blast: Souffle
+DGYZE.ItemSheet.Range: Portée
+DGYZE.ItemSheet.Mag: Mag
+DGYZE.ItemSheet.Armor: Armure
+DGYZE.ItemSheet.Weight: Poids
+DGYZE.ItemSheet.Price: Prix
+DGYZE.ItemSheet.ArmorLocation: Partie protégée
+DGYZE.ItemSheet.Equipped: Équipé
+DGYZE.ItemSheet.StoredInBackpack: Stocké dans le sac à dos
+DGYZE.ItemSheet.CreateAmmo: Générer des munitions
+DGYZE.ItemSheet.CreateAmmoNotif: Généré 1x <b>{ammo}</b> pour l'arme <b>{weapon}</b>
+DGYZE.ItemSheet.FeaturesForVehicle: Caractéristiques du véhicule
+DGYZE.InjurySheet.Category: Catégorie
+DGYZE.InjurySheet.Location: Partie du corps
+DGYZE.InjurySheet.TimeLimit: Limite de temps
+DGYZE.InjurySheet.HealTime: Temps de rétablissement
+DGYZE.InjurySheet.Effect: Effet
+DGYZE.InjurySheet.Lethal: Létale
+DGYZE.InjurySheet.day: jour
+DGYZE.InjurySheet.days: jours
+DGYZE.Chat.Actions.Attack: Attaquer
+DGYZE.Chat.Actions.Reload: Recharger
+DGYZE.Chat.Actions.Roll: Lancer
+DGYZE.Chat.Actions.Push: Pousser
+DGYZE.Chat.Actions.ApplyDamage: Appliquer les dégâts
+DGYZE.Chat.Roll.Success: Succès
+DGYZE.Chat.Roll.Successes: Succès
+DGYZE.Chat.Roll.Pushed: — Poussé
+DGYZE.Chat.Roll.Suppression: Suppression
+DGYZE.Chat.Roll.ExtraHit: Touché supplémentaire
+DGYZE.Chat.Roll.ExtraHits: Touchés supplémentaires
+DGYZE.Chat.Roll.Mishap: Malchance
+DGYZE.Chat.Roll.AmmoSpent: Munitions dépensées
+DGYZE.Chat.Roll.NoItemNotif: Cet objet n'existe plus.
+DGYZE.Chat.Roll.NoReliabilityNotif: La valeur de fiabilité actuelle de cet objet ne permet pas de l'utiliser.
+DGYZE.Chat.Damage.Incapacited: IMMOBILISÉ
+DGYZE.Chat.Damage.DamagedArmor: Endommagé
+DGYZE.Chat.Damage.DamageDealt: <b>{name}</b> a reçu <b>{amount}</b> dégats.
+DGYZE.Chat.Damage.NoDamageDealt: Aucun dégats n'a été infligé à <b>{name}</b>.
+DGYZE.Chat.Damage.InitialAmount: >-
   L'attaque avait un montant initial de <b>{damage}</b> dégâts, avec un
   modificateur d'armure de {mod}.
-T2K4E.Chat.Damage.DeflectedDamage: dévié {damage} dégâts
-T2K4E.Chat.Damage.DeflectedAllDamage: dévié tous les dégâts
-T2K4E.Chat.Damage.NoEffect: aucun effet
-T2K4E.Combat.Attack: '{weapon} — Attaque'
-T2K4E.Combat.Barrier: Couverture
-T2K4E.Combat.BodyArmor: Protection du corps
-T2K4E.Combat.NoQuantityLeft: Il ne reste plus d'unité pour l'arme {arme}.
-T2K4E.Combat.NoAmmoLeft: Il ne reste plus de munitions dans le chargeur de l'arme {weapon}.
-T2K4E.Combat.NoMag: Veuillez insérer un chargeur pour l'arme {arme}.
-T2K4E.Dialog.Actions.Normal: Lancer
-T2K4E.Dialog.Actions.Reload: Recharger
-T2K4E.Dialog.Actions.Ok: OK
-T2K4E.Dialog.Actions.Cancel: Annuler
-T2K4E.Dialog.Roll.Attribute: Attribut
-T2K4E.Dialog.Roll.Skill: Compétence
-T2K4E.Dialog.Roll.Formula: Formule
-T2K4E.Dialog.Roll.RoF: Cadence de tir
-T2K4E.Dialog.Roll.Modifier: Modificateur
-T2K4E.Dialog.Roll.Locate: Ajouter un dé de toucher ?
-T2K4E.Dialog.Roll.MaxPush: Poussées max
-T2K4E.Dialog.Roll.RollMode: Mode de lancer
-T2K4E.Dialog.CuF.CoolnessUnderFire: Sang-froid (SF)
-T2K4E.Dialog.CuF.UnitMorale: Ajouter le moral de la compagnie ?
-T2K4E.Dialog.Actor.ChooseActor: Choisissez un Acteur
-T2K4E.Dialog.Damage.ChooseDamage: Quantité de dégats
-T2K4E.Dialog.Damage.Description: Choisissez la quantité de dégâts à infliger à <b>{cible}</b>.
-T2K4E.Dialog.Damage.DamageQuantity: Quantité de base
-T2K4E.Dialog.Damage.ExtraHits: Touchés supplémentaires
-T2K4E.Dialog.Damage.BarrierArmors: Niveaux d'armure de l'obstacle
-T2K4E.Dialog.Damage.BarrierArmorsHint: Les obstacles multiples sont séparés par des virgules.
-T2K4E.Macro.MultipleItems: >-
+DGYZE.Chat.Damage.DeflectedDamage: dévié {damage} dégâts
+DGYZE.Chat.Damage.DeflectedAllDamage: dévié tous les dégâts
+DGYZE.Chat.Damage.NoEffect: aucun effet
+DGYZE.Combat.Attack: '{weapon} — Attaque'
+DGYZE.Combat.Barrier: Couverture
+DGYZE.Combat.BodyArmor: Protection du corps
+DGYZE.Combat.NoQuantityLeft: Il ne reste plus d'unité pour l'arme {arme}.
+DGYZE.Combat.NoAmmoLeft: Il ne reste plus de munitions dans le chargeur de l'arme {weapon}.
+DGYZE.Combat.NoMag: Veuillez insérer un chargeur pour l'arme {arme}.
+DGYZE.Dialog.Actions.Normal: Lancer
+DGYZE.Dialog.Actions.Reload: Recharger
+DGYZE.Dialog.Actions.Ok: OK
+DGYZE.Dialog.Actions.Cancel: Annuler
+DGYZE.Dialog.Roll.Attribute: Attribut
+DGYZE.Dialog.Roll.Skill: Compétence
+DGYZE.Dialog.Roll.Formula: Formule
+DGYZE.Dialog.Roll.RoF: Cadence de tir
+DGYZE.Dialog.Roll.Modifier: Modificateur
+DGYZE.Dialog.Roll.Locate: Ajouter un dé de toucher ?
+DGYZE.Dialog.Roll.MaxPush: Poussées max
+DGYZE.Dialog.Roll.RollMode: Mode de lancer
+DGYZE.Dialog.CuF.CoolnessUnderFire: Sang-froid (SF)
+DGYZE.Dialog.CuF.UnitMorale: Ajouter le moral de la compagnie ?
+DGYZE.Dialog.Actor.ChooseActor: Choisissez un Acteur
+DGYZE.Dialog.Damage.ChooseDamage: Quantité de dégats
+DGYZE.Dialog.Damage.Description: Choisissez la quantité de dégâts à infliger à <b>{cible}</b>.
+DGYZE.Dialog.Damage.DamageQuantity: Quantité de base
+DGYZE.Dialog.Damage.ExtraHits: Touchés supplémentaires
+DGYZE.Dialog.Damage.BarrierArmors: Niveaux d'armure de l'obstacle
+DGYZE.Dialog.Damage.BarrierArmorsHint: Les obstacles multiples sont séparés par des virgules.
+DGYZE.Macro.MultipleItems: >-
   L'acteur {actor} que vous contrôlez a plus d'un Item avec le nom {item}. Le
   premier objet correspondant sera choisi.
-T2K4E.Macro.NoItem: L'acteur {actor} que vous contrôlez n'a pas d'objet nommé {item}.
+DGYZE.Macro.NoItem: L'acteur {actor} que vous contrôlez n'a pas d'objet nommé {item}.
 FLPS.TAB.MAIN: Composition
 FLPS.TAB.TRAVEL: Actions
 FLPS.TAB.NOTE: Notes
@@ -473,21 +473,21 @@ EFFECT.StatusSmoke: Fumée
 EFFECT.StatusFire: Feu
 EFFECT.StatusSlowAction: Action lente dépensée
 EFFECT.StatusFastAction: Action rapide dépensée
-T2K4E.ActorSheet.ToChat: Envoyer l'objet dans le chat
+DGYZE.ActorSheet.ToChat: Envoyer l'objet dans le chat
 YZUR.CHAT.ROLL.Accept: Accepter
 SETTINGS.hideCapacitiesButtons.name: Cacher les modificateurs de capacités
 SETTINGS.hideCapacitiesButtons.label: Cacher aux joueurs les boutons de modification des capacités de toucher et de Stress dans la feuille de personnage.
-T2K4E.ActorSheet.Age: Age
+DGYZE.ActorSheet.Age: Age
 SETTINGS.hideWeaponProps.name: Cacher les propriétés des armes
 SETTINGS.hideWeaponProps.label: Cacher aux joueurs les case à cocher des propriétés dans la fiche d'arme.
-T2K4E.Dialog.ChooseValue.Ammo: Modifier la quantité de munitions pour {name}
-T2K4E.Dialog.ChooseValue.Qty: Modifier la quantité pour {name}
-T2K4E.Dialog.ChooseValue.Value: Modificateur
-T2K4E.Dialog.ChooseValue.Armor: Modifier l'armure de {name}
-T2K4E.MACRO.GetActorTitle: Choisir un acteur
-T2K4E.MACRO.GetActorHint: Vous avez sélectionné plusieurs jetons. Veuillez en choisir un.
-T2K4E.MACRO.NoItem: L'acteur {actor} que vous contrôlez n'a pas d'objet nommé {item}.
-T2K4E.MACRO.MultipleItems: L'acteur {actor} que vous contrôlez a plus d'un Item avec le nom {item}. Le premier objet correspondant sera choisi.
-T2K4E.MACRO.NoActor: Votre acteur contrôlé {actor} n'a pas été trouvé.
-T2K4E.MACRO.RollAction: Action {action}
-T2K4E.MACRO.RollStat: Lancer {stat}
+DGYZE.Dialog.ChooseValue.Ammo: Modifier la quantité de munitions pour {name}
+DGYZE.Dialog.ChooseValue.Qty: Modifier la quantité pour {name}
+DGYZE.Dialog.ChooseValue.Value: Modificateur
+DGYZE.Dialog.ChooseValue.Armor: Modifier l'armure de {name}
+DGYZE.MACRO.GetActorTitle: Choisir un acteur
+DGYZE.MACRO.GetActorHint: Vous avez sélectionné plusieurs jetons. Veuillez en choisir un.
+DGYZE.MACRO.NoItem: L'acteur {actor} que vous contrôlez n'a pas d'objet nommé {item}.
+DGYZE.MACRO.MultipleItems: L'acteur {actor} que vous contrôlez a plus d'un Item avec le nom {item}. Le premier objet correspondant sera choisi.
+DGYZE.MACRO.NoActor: Votre acteur contrôlé {actor} n'a pas été trouvé.
+DGYZE.MACRO.RollAction: Action {action}
+DGYZE.MACRO.RollStat: Lancer {stat}

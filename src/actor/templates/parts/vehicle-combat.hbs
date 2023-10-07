@@ -2,10 +2,10 @@
 
   {{!-- ARMOR --}}
   <div class="armor">
-    <h3>{{localize "T2K4E.VehicleSheet.Armor"}}</h3>
+    <h3>{{localize "DGYZE.VehicleSheet.Armor"}}</h3>
     <div class="grid grid-3col">
       {{!-- Front --}}
-      <label class="armor-location">{{localize "T2K4E.VehicleSheet.FrontArmor"}}</label>
+      <label class="armor-location">{{localize "DGYZE.VehicleSheet.FrontArmor"}}</label>
       <div class="armor-values flexrow">
         <input type="number" class="boxed-value" name="system.armor.front.value" value="{{system.armor.front.value}}" data-dtype="Number"/>
         <span class="sep">/</span>
@@ -13,7 +13,7 @@
       </div>
       <progress class="armor-gauge" value="{{system.armor.front.value}}" max="{{system.armor.front.max}}"></progress>
       {{!-- Side --}}
-      {{!-- <label class="armor-location">{{localize "T2K4E.VehicleSheet.SideArmor"}}</label>
+      {{!-- <label class="armor-location">{{localize "DGYZE.VehicleSheet.SideArmor"}}</label>
       <div class="armor-values flexrow">
         <input type="number" class="boxed-value" name="system.armor.side.value" value="{{system.armor.side.value}}" data-dtype="Number"/>
         <span class="sep">/</span>
@@ -21,7 +21,7 @@
       </div>
       <progress class="armor-gauge" value="{{system.armor.side.value}}" max="{{system.armor.side.max}}"></progress> --}}
       {{!-- Left --}}
-      <label class="armor-location">{{localize "T2K4E.VehicleSheet.SideLeftArmor"}}</label>
+      <label class="armor-location">{{localize "DGYZE.VehicleSheet.SideLeftArmor"}}</label>
       <div class="armor-values flexrow">
         <input type="number" class="boxed-value" name="system.armor.left.value" value="{{system.armor.left.value}}" data-dtype="Number"/>
         <span class="sep">/</span>
@@ -29,7 +29,7 @@
       </div>
       <progress class="armor-gauge" value="{{system.armor.left.value}}" max="{{system.armor.left.max}}"></progress>
       {{!-- Right --}}
-      <label class="armor-location">{{localize "T2K4E.VehicleSheet.SideRightArmor"}}</label>
+      <label class="armor-location">{{localize "DGYZE.VehicleSheet.SideRightArmor"}}</label>
       <div class="armor-values flexrow">
         <input type="number" class="boxed-value" name="system.armor.right.value" value="{{system.armor.right.value}}" data-dtype="Number"/>
         <span class="sep">/</span>
@@ -37,7 +37,7 @@
       </div>
       <progress class="armor-gauge" value="{{system.armor.right.value}}" max="{{system.armor.right.max}}"></progress>
       {{!-- Rear --}}
-      <label class="armor-location">{{localize "T2K4E.VehicleSheet.RearArmor"}}</label>
+      <label class="armor-location">{{localize "DGYZE.VehicleSheet.RearArmor"}}</label>
       <div class="armor-values flexrow">
         <input type="number" class="boxed-value" name="system.armor.rear.value" value="{{system.armor.rear.value}}" data-dtype="Number"/>
         <span class="sep">/</span>
@@ -49,7 +49,7 @@
 
   {{!-- DAMAGE --}}
   <div class="damage">
-    <h3>{{localize "T2K4E.VehicleSheet.Damage"}}</h3>
+    <h3>{{localize "DGYZE.VehicleSheet.Damage"}}</h3>
     <textarea name="system.tempDamage" rows="4">{{system.tempDamage}}</textarea>
   </div>
 
@@ -61,40 +61,40 @@
   <div class="inventory-weapons">
     <div class="items-header flexrow">
       <div class="item-name">
-        <h2>{{localize "T2K4E.VehicleSheet.MountedWeapons1"}}</h2>
+        <h2>{{localize "DGYZE.VehicleSheet.MountedWeapons1"}}</h2>
       </div>
       <div class="item-detail item-type">
-        <h5>{{localize "T2K4E.VehicleSheet.MountedWeaponType"}}</h5>
+        <h5>{{localize "DGYZE.VehicleSheet.MountedWeaponType"}}</h5>
       </div>
       <div class="item-detail item-rof">
-        <h5>{{localize "T2K4E.ItemSheet.RoF"}}</h5>
+        <h5>{{localize "DGYZE.ItemSheet.RoF"}}</h5>
       </div>
       <div class="item-detail item-damage">
-        <h5>{{localize "T2K4E.ItemSheet.Damage"}}</h5>
+        <h5>{{localize "DGYZE.ItemSheet.Damage"}}</h5>
       </div>
       <div class="item-detail item-crit">
-        <h5>{{localize "T2K4E.ItemSheet.Crit"}}</h5>
+        <h5>{{localize "DGYZE.ItemSheet.Crit"}}</h5>
       </div>
       <div class="item-detail item-armor">
-        <h5>{{localize "T2K4E.ItemSheet.Armor"}}</h5>
+        <h5>{{localize "DGYZE.ItemSheet.Armor"}}</h5>
       </div>
       <div class="item-detail item-range">
-        <h5>{{localize "T2K4E.ItemSheet.Range"}}</h5>
+        <h5>{{localize "DGYZE.ItemSheet.Range"}}</h5>
       </div>
       <div class="item-detail item-mag">
-        <h5>{{localize "T2K4E.ItemSheet.Mag"}}</h5>
+        <h5>{{localize "DGYZE.ItemSheet.Mag"}}</h5>
       </div>
       <div class="item-detail item-reliability">
-        <h5>{{localize "T2K4E.ItemSheet.Reliability"}}</h5>
+        <h5>{{localize "DGYZE.ItemSheet.Reliability"}}</h5>
       </div>
       <div class="item-detail item-blast">
-        <h5>{{localize "T2K4E.ItemSheet.Blast"}}</h5>
+        <h5>{{localize "DGYZE.ItemSheet.Blast"}}</h5>
       </div>
       <div class="item-controls"></div>
     </div>
     <div class="item-list">
       {{#each mountedWeapons.primary}}
-      {{> "systems/t2k4e/templates/actor/parts/slots/vehicle-weapon-slot.hbs" this}}
+      {{> "systems/dgyze/templates/actor/parts/slots/vehicle-weapon-slot.hbs" this}}
       {{else}}
       <div class="item">–</div>
       {{/each}}
@@ -105,40 +105,40 @@
   <div class="inventory-weapons">
     <div class="items-header flexrow">
       <div class="item-name">
-        <h2>{{localize "T2K4E.VehicleSheet.MountedWeapons2"}}</h2>
+        <h2>{{localize "DGYZE.VehicleSheet.MountedWeapons2"}}</h2>
       </div>
       <div class="item-detail item-type">
-        <h5>{{localize "T2K4E.VehicleSheet.MountedWeaponType"}}</h5>
+        <h5>{{localize "DGYZE.VehicleSheet.MountedWeaponType"}}</h5>
       </div>
       <div class="item-detail item-rof">
-        <h5>{{localize "T2K4E.ItemSheet.RoF"}}</h5>
+        <h5>{{localize "DGYZE.ItemSheet.RoF"}}</h5>
       </div>
       <div class="item-detail item-damage">
-        <h5>{{localize "T2K4E.ItemSheet.Damage"}}</h5>
+        <h5>{{localize "DGYZE.ItemSheet.Damage"}}</h5>
       </div>
       <div class="item-detail item-crit">
-        <h5>{{localize "T2K4E.ItemSheet.Crit"}}</h5>
+        <h5>{{localize "DGYZE.ItemSheet.Crit"}}</h5>
       </div>
       <div class="item-detail item-armor">
-        <h5>{{localize "T2K4E.ItemSheet.Armor"}}</h5>
+        <h5>{{localize "DGYZE.ItemSheet.Armor"}}</h5>
       </div>
       <div class="item-detail item-range">
-        <h5>{{localize "T2K4E.ItemSheet.Range"}}</h5>
+        <h5>{{localize "DGYZE.ItemSheet.Range"}}</h5>
       </div>
       <div class="item-detail item-mag">
-        <h5>{{localize "T2K4E.ItemSheet.Mag"}}</h5>
+        <h5>{{localize "DGYZE.ItemSheet.Mag"}}</h5>
       </div>
       <div class="item-detail item-reliability">
-        <h5>{{localize "T2K4E.ItemSheet.Reliability"}}</h5>
+        <h5>{{localize "DGYZE.ItemSheet.Reliability"}}</h5>
       </div>
       <div class="item-detail item-blast">
-        <h5>{{localize "T2K4E.ItemSheet.Blast"}}</h5>
+        <h5>{{localize "DGYZE.ItemSheet.Blast"}}</h5>
       </div>
       <div class="item-controls"></div>
     </div>
     <div class="item-list">
       {{#each mountedWeapons.secondary}}
-      {{> "systems/t2k4e/templates/actor/parts/slots/vehicle-weapon-slot.hbs" this}}
+      {{> "systems/dgyze/templates/actor/parts/slots/vehicle-weapon-slot.hbs" this}}
       {{else}}
       <div class="item">–</div>
       {{/each}}

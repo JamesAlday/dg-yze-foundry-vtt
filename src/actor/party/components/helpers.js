@@ -7,7 +7,7 @@ export class Helpers {
 
     let charSheetClass = function () {};
     for (const chName in CONFIG.Actor.sheetClasses.character) {
-      if (chName === 't2k4e.ActorSheetT2KCharacter') {
+      if (chName === 'dgyze.ActorSheetT2KCharacter') {
         charSheetClass = CONFIG.Actor.sheetClasses.character[chName].cls;
         break;
       }

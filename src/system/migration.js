@@ -8,11 +8,11 @@ const COMPATIBLE_MIGRATION_VERSION = '0.7.3';
 export function checkMigration() {
   if (!game.user.isGM) return;
 
-  const currentVersion = game.settings.get('t2k4e', 'systemMigrationVersion');
+  const currentVersion = game.settings.get('dgyze', 'systemMigrationVersion');
   const totalDocuments = game.actors.size + game.scenes.size + game.items.size;
 
   if (!currentVersion && totalDocuments === 0) {
-    return game.settings.set('t2k4e', 'systemMigrationVersion', game.system.version);
+    return game.settings.set('dgyze', 'systemMigrationVersion', game.system.version);
   }
 
   const needsMigration = !currentVersion || foundry.utils.isNewerVersion(NEEDS_MIGRATION_VERSION, currentVersion);
@@ -35,7 +35,7 @@ export function checkMigration() {
  */
 export async function migrateWorld() {
   // const migrateDialog = new Dialog({
-  //   title: 'T2K4E | System Migration',
+  //   title: 'DGYZE | System Migration',
   //   content: 'Migration in progress, please wait...',
   //   buttons: {},
   // }).render(true);
@@ -51,7 +51,7 @@ export async function migrateWorld() {
     try {
       const updateData = migrateActorData(a);
       if (!foundry.utils.isEmpty(updateData)) {
-        console.log(`t2k4e | Migrating Actor entity ${a.name}`);
+        console.log(`dgyze | Migrating Actor entity ${a.name}`);
         await a.update(updateData, { enforceTypes: false });
       }
     }
@@ -66,7 +66,7 @@ export async function migrateWorld() {
     try {
       const updateData = migrateItemData(i.toObject());
       if (!foundry.utils.isEmpty(updateData)) {
-        console.log(`t2k4e | Migrating Item entity ${i.name}`);
+        console.log(`dgyze | Migrating Item entity ${i.name}`);
         await i.update(updateData, { enforceTypes: false });
       }
     }
@@ -81,7 +81,7 @@ export async function migrateWorld() {
     try {
       const updateData = migrateSceneData(s);
       if (!foundry.utils.isEmpty(updateData)) {
-        console.log(`t2k4e | Migrating Scene entity ${s.name}`);
+        console.log(`dgyze | Migrating Scene entity ${s.name}`);
         await s.update(updateData, { enforceTypes: false });
         // If we do not do this, then synthetic token actors remain in cache
         // with the un-updated actorData.
@@ -104,7 +104,7 @@ export async function migrateWorld() {
 
 
   // Sets the migration as complete.
-  game.settings.set('t2k4e', 'systemMigrationVersion', game.system.version);
+  game.settings.set('dgyze', 'systemMigrationVersion', game.system.version);
   ui.notifications.info(`T2K System Migration to version ${game.system.version} completed!`, { permanent: true });
   // migrateDialog.close();
 }

@@ -7,42 +7,42 @@ export async function preloadHandlebarsTemplates() {
   // /* Esbuild defines the paths for us at build time. */
   // // eslint-disable-next-line no-undef
   // const paths = PATHS;
-  // console.log('T2K4E | Loading Handlebars templates:', paths);
+  // console.log('DGYZE | Loading Handlebars templates:', paths);
   // return loadTemplates(paths);
   return loadTemplates([
     // Shared Partials
     // 'templates/dice/roll.html',
 
     // Actor Sheet Partials
-    'systems/t2k4e/templates/actor/parts/actor-stats.hbs',
-    'systems/t2k4e/templates/actor/parts/actor-combat.hbs',
-    'systems/t2k4e/templates/actor/parts/actor-equipment.hbs',
-    'systems/t2k4e/templates/actor/parts/actor-description.hbs',
-    'systems/t2k4e/templates/actor/parts/capacity-boxes.hbs',
-    'systems/t2k4e/templates/actor/parts/radiation-boxes.hbs',
-    'systems/t2k4e/templates/actor/parts/slots/slot-buttons.hbs',
-    'systems/t2k4e/templates/actor/parts/slots/weapon-slot.hbs',
-    'systems/t2k4e/templates/actor/parts/slots/armor-slot.hbs',
-    'systems/t2k4e/templates/actor/parts/slots/gear-slot.hbs',
-    'systems/t2k4e/templates/actor/parts/slots/ammo-slot.hbs',
+    'systems/dgyze/templates/actor/parts/actor-stats.hbs',
+    'systems/dgyze/templates/actor/parts/actor-combat.hbs',
+    'systems/dgyze/templates/actor/parts/actor-equipment.hbs',
+    'systems/dgyze/templates/actor/parts/actor-description.hbs',
+    'systems/dgyze/templates/actor/parts/capacity-boxes.hbs',
+    'systems/dgyze/templates/actor/parts/radiation-boxes.hbs',
+    'systems/dgyze/templates/actor/parts/slots/slot-buttons.hbs',
+    'systems/dgyze/templates/actor/parts/slots/weapon-slot.hbs',
+    'systems/dgyze/templates/actor/parts/slots/armor-slot.hbs',
+    'systems/dgyze/templates/actor/parts/slots/gear-slot.hbs',
+    'systems/dgyze/templates/actor/parts/slots/ammo-slot.hbs',
 
     // Vehicle Sheet Partials
-    'systems/t2k4e/templates/actor/parts/vehicle-crew.hbs',
-    'systems/t2k4e/templates/actor/parts/vehicle-combat.hbs',
-    'systems/t2k4e/templates/actor/parts/vehicle-cargo.hbs',
-    'systems/t2k4e/templates/actor/parts/vehicle-components.hbs',
-    'systems/t2k4e/templates/actor/parts/slots/vehicle-weapon-slot.hbs',
+    'systems/dgyze/templates/actor/parts/vehicle-crew.hbs',
+    'systems/dgyze/templates/actor/parts/vehicle-combat.hbs',
+    'systems/dgyze/templates/actor/parts/vehicle-cargo.hbs',
+    'systems/dgyze/templates/actor/parts/vehicle-components.hbs',
+    'systems/dgyze/templates/actor/parts/slots/vehicle-weapon-slot.hbs',
 
     // Party Sheet Partials
-    'systems/t2k4e/templates/actor/party/sheet-tabs/main-tab.hbs',
-    'systems/t2k4e/templates/actor/party/sheet-tabs/travel-tab.hbs',
-    'systems/t2k4e/templates/actor/party/components/action-component.hbs',
-    'systems/t2k4e/templates/actor/party/components/member-component.hbs',
+    'systems/dgyze/templates/actor/party/sheet-tabs/main-tab.hbs',
+    'systems/dgyze/templates/actor/party/sheet-tabs/travel-tab.hbs',
+    'systems/dgyze/templates/actor/party/components/action-component.hbs',
+    'systems/dgyze/templates/actor/party/components/member-component.hbs',
 
     // Item Sheet Partials
-    'systems/t2k4e/templates/item/parts/item-header.hbs',
-    'systems/t2k4e/templates/item/parts/item-modifiers.hbs',
-    'systems/t2k4e/templates/item/parts/item-description.hbs',
+    'systems/dgyze/templates/item/parts/item-header.hbs',
+    'systems/dgyze/templates/item/parts/item-modifiers.hbs',
+    'systems/dgyze/templates/item/parts/item-description.hbs',
 
     // Chat Partials
   ]);

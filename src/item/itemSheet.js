@@ -12,7 +12,7 @@ export default class ItemSheetT2K extends ItemSheet {
   /** @override */
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ['t2k4e', 'sheet', 'item'],
+      classes: ['dgyze', 'sheet', 'item'],
       width: 400,
       height: 550,
       tabs: [{ navSelector: '.sheet-tabs', contentSelector: '.sheet-body', initial: 'features' }],
@@ -21,7 +21,7 @@ export default class ItemSheetT2K extends ItemSheet {
 
   /** @override */
   get template() {
-    return `systems/t2k4e/templates/item/${this.item.type}-sheet.hbs`;
+    return `systems/dgyze/templates/item/${this.item.type}-sheet.hbs`;
   }
 
   /* ------------------------------------------- */
@@ -36,8 +36,8 @@ export default class ItemSheetT2K extends ItemSheet {
       editable: this.isEditable,
       item: foundry.utils.deepClone(this.item),
       system: foundry.utils.deepClone(this.item.system),
-      config: CONFIG.T2K4E,
-      hideWeaponProps: !game.user.isGM && game.settings.get('t2k4e', 'hideWeaponProps'),
+      config: CONFIG.DGYZE,
+      hideWeaponProps: !game.user.isGM && game.settings.get('dgyze', 'hideWeaponProps'),
       // QoL getters
       inActor: !!this.item.actor,
       inVehicle: this.item.actor?.type === 'vehicle',
@@ -204,7 +204,7 @@ export default class ItemSheetT2K extends ItemSheet {
     };
 
     const [ammunition] = await this.item.actor.createEmbeddedDocuments('Item', [itemData]);
-    const msg = game.i18n.format('T2K4E.ItemSheet.CreateAmmoNotif', {
+    const msg = game.i18n.format('DGYZE.ItemSheet.CreateAmmoNotif', {
       ammo: ammunition.name,
       weapon: this.item.name,
     });

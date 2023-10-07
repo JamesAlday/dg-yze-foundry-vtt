@@ -21,7 +21,7 @@ const templateExt = 'hbs';
 const staticFiles = ['system.json', 'template.json', 'assets', 'fonts'];
 const rootFiles = ['LICENSE', 'README.md'];
 const getDownloadURL = version =>
-  `https://github.com/fvtt-fria-ligan/twilight2000-foundry-vtt/releases/download/${version}/t2k4e-fvtt_v${version}.zip`;
+  `https://github.com/JamesAlday/dg-yze-foundry-vtt/releases/download/${version}/dgyze-fvtt_v${version}.zip`;
 const packageJson = JSON.parse(fs.readFileSync('package.json'));
 
 const stdio = 'inherit';
@@ -63,7 +63,7 @@ async function pipeTemplates() {
  */
 async function pipeStyles() {
   gulp
-    .src('src/less/t2k4e.less')
+    .src('src/less/dgyze.less')
     .pipe(less().on('error', err => {
       console.error(chalk.red(err.toString()));
       this.emit('end');

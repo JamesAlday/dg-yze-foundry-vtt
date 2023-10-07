@@ -10,14 +10,14 @@
     <div class="header-details flexcol">
         <div class="item-subtitle flexrow">
           {{#if system.hq}}
-          <h4 class="item-type">{{localize "T2K4E.UnitSheet.HQ"}}</h4>
+          <h4 class="item-type">{{localize "DGYZE.UnitSheet.HQ"}}</h4>
           {{else}}
           <h4 class="item-type">{{localize "TYPES.Actor.unit"}}</h4>
           {{/if}}
         </div>
         <h4>
-          <input type="text" name="name" value="{{actor.name}}" placeholder="{{localize 'T2K4E.UnitSheet.Name'}}"/>
-          <input type="text" name="system.info" value="{{system.info}}" placeholder="{{localize 'T2K4E.UnitSheet.Info'}}"/>
+          <input type="text" name="name" value="{{actor.name}}" placeholder="{{localize 'DGYZE.UnitSheet.Name'}}"/>
+          <input type="text" name="system.info" value="{{system.info}}" placeholder="{{localize 'DGYZE.UnitSheet.Info'}}"/>
         </h4>
     </div>
   </header>
@@ -27,8 +27,8 @@
   {{!-- ================================================== --}}
 
   <nav class="sheet-tabs slanted-tabs flexrow" data-group="primary">
-    <a class="item" data-tab="features">{{localize "T2K4E.ItemSheet.FeaturesTab"}}</a>
-    <a class="item" data-tab="description">{{localize "T2K4E.ItemSheet.DescriptionTab"}}</a>
+    <a class="item" data-tab="features">{{localize "DGYZE.ItemSheet.FeaturesTab"}}</a>
+    <a class="item" data-tab="description">{{localize "DGYZE.ItemSheet.DescriptionTab"}}</a>
   </nav>
 
   {{!-- ================================================== --}}
@@ -43,12 +43,12 @@
 
         {{!-- Faction --}}
         <div class="flexcol">
-          <label>{{localize "T2K4E.UnitSheet.Faction"}}</label>
+          <label>{{localize "DGYZE.UnitSheet.Faction"}}</label>
           <input type="text" name="system.faction" value="{{system.faction}}"/>
         </div>
         {{!-- Affiliation --}}
         <div class="flexcol">
-          <label>{{localize "T2K4E.UnitSheet.UnitAffiliation"}}</label>
+          <label>{{localize "DGYZE.UnitSheet.UnitAffiliation"}}</label>
           <select name="system.unitAffiliation">
             <option value=""></option>
             {{selectOptions config.unit.unitAffiliations selected=system.unitAffiliation localize=true}}
@@ -56,12 +56,12 @@
         </div>
         {{!-- Type --}}
         <div class="flexcol">
-          <label>{{localize "T2K4E.UnitSheet.UnitType"}}</label>
+          <label>{{localize "DGYZE.UnitSheet.UnitType"}}</label>
           <input type="text" name="system.unitType" value="{{system.unitType}}"/>
         </div>
         {{!-- Size --}}
         <div class="flexcol">
-          <label>{{localize "T2K4E.UnitSheet.UnitSize"}}</label>
+          <label>{{localize "DGYZE.UnitSheet.UnitSize"}}</label>
           <select name="system.unitSize">
             <option value=""></option>
             {{selectOptions config.unit.unitSizes selected=system.unitSize localize=true}}
@@ -69,7 +69,7 @@
         </div>
         {{!-- Counts --}}
         <div class="flexcol">
-          <label>{{localize "T2K4E.UnitSheet.Personnel"}}</label>
+          <label>{{localize "DGYZE.UnitSheet.Personnel"}}</label>
           <div class="flexrow flex-center">
             <input type="number" name="system.personnel.value" value="{{system.personnel.value}}" data-dtype="Number"/>
             <span class="sep">/</span>
@@ -77,7 +77,7 @@
           </div>
         </div>
         <div class="flexcol">
-          <label>{{localize "T2K4E.UnitSheet.Vehicles"}}</label>
+          <label>{{localize "DGYZE.UnitSheet.Vehicles"}}</label>
           <div class="flexrow flex-center">
             <input type="number" name="system.vehicles.value" value="{{system.vehicles.value}}" data-dtype="Number"/>
             <span class="sep">/</span>
@@ -92,7 +92,7 @@
         {{#each system.unitModifiers as | mod name |}}
         <label class="checkbox">
           <input type="checkbox" name="system.unitModifiers.{{name}}" {{checked mod}}/>
-          {{localize (concat "T2K4E.UnitModifierNames." name)}}
+          {{localize (concat "DGYZE.UnitModifierNames." name)}}
         </label>
         {{/each}}
       </div>
@@ -101,7 +101,7 @@
       <div class="form-group-stacked">
         <label class="checkbox">
           <input type="checkbox" name="system.hq" {{checked system.hq}}/>
-          {{localize "T2K4E.UnitSheet.HQ"}}
+          {{localize "DGYZE.UnitSheet.HQ"}}
         </label>
       </div>
 
@@ -109,7 +109,7 @@
 
     {{!-- Description Tab --}}
     <div class="tab tab-description" data-group="primary" data-tab="description">
-      {{> "systems/t2k4e/templates/actor/parts/actor-description.hbs"}}
+      {{> "systems/dgyze/templates/actor/parts/actor-description.hbs"}}
     </div>
 
   </section>

@@ -2,7 +2,7 @@ import ActorT2K from '../../actor/actor.js';
 import ItemT2K from '../../item/item.js';
 import T2KDialog from '../dialog/dialog.js';
 import { getRollingActor, rollPush } from '../roll/dice.js';
-import { T2K4E } from '../../system/config.js';
+import { DGYZE } from '../../system/config.js';
 
 /**
  * Adds Event Listeners to the Chat log.
@@ -108,8 +108,8 @@ export function addChatMessageContextOptions(html, options) {
   // & the message contains some damage.
   const canDefend = li => game.user.targets.size && li.find('.dice-roll').length;
   options.push({
-    name: game.i18n.localize('T2K4E.Chat.Actions.ApplyDamage'),
-    icon: T2K4E.Icons.buttons.attack,
+    name: game.i18n.localize('DGYZE.Chat.Actions.ApplyDamage'),
+    icon: DGYZE.Icons.buttons.attack,
     condition: canDefend,
     callback: li => _applyDamage(li[0]),
   });
@@ -141,7 +141,7 @@ async function _applyDamage(messageElem) {
     }
   }
   const loc = roll.bestHitLocation;
-  if (loc > 0) attackData.location = T2K4E.hitLocs[loc - 1];
+  if (loc > 0) attackData.location = DGYZE.hitLocs[loc - 1];
 
   // Gets the selected tokens.
   const defenders = game.user.targets;
@@ -149,7 +149,7 @@ async function _applyDamage(messageElem) {
     const s = roll.baseSuccessQty;
     let damage = s > 0 ? attackData.damage + 1 * (s - 1) : 0;
     const isGM = game.user.isGM;
-    let hitCount = message.getFlag('t2k4e', 'hitCountLeft') ?? roll.hitCount;
+    let hitCount = message.getFlag('dgyze', 'hitCountLeft') ?? roll.hitCount;
     attackData.cover = defender.actor.cover;
     let barrier = 0;
     if (attackData.cover === 'fullCover') barrier = 2;
@@ -170,7 +170,7 @@ async function _applyDamage(messageElem) {
         damage = opts.damage + opts.hitCount;
         if (opts.hitCount) {
           hitCount = Math.max(0, hitCount - opts.hitCount);
-          await message.setFlag('t2k4e', 'hitCountLeft', hitCount);
+          await message.setFlag('dgyze', 'hitCountLeft', hitCount);
         }
       }
       attackData.barriers = opts.barriers ? opts.barriers.split(',') : [];
@@ -212,7 +212,7 @@ export function closeRollTooltip(message, html, delay = 60000) {
  * @param {HTMLElement} html DOM
  */
 export function hideChatActionButtons(html) {
-  const chatCard = html.find('.t2k4e.chat-card');
+  const chatCard = html.find('.dgyze.chat-card');
 
   // Exits early if no chatCard were found.
   if (chatCard.length <= 0) return;

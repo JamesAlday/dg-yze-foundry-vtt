@@ -14,7 +14,7 @@ export default class ActorSheetT2KCharacter extends ActorSheetT2K {
   /** @override */
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ['t2k4e', 'sheet', 'actor', 'character'],
+      classes: ['dgyze', 'sheet', 'actor', 'character'],
       width: 570,
       height: 715,
     });
@@ -68,7 +68,7 @@ export default class ActorSheetT2KCharacter extends ActorSheetT2K {
     event.preventDefault();
     const attributeName = event.currentTarget.dataset.attribute;
     const attribute = this.actor.system.attributes[attributeName].value;
-    const title = game.i18n.localize(CONFIG.T2K4E.attributes[attributeName]);
+    const title = game.i18n.localize(CONFIG.DGYZE.attributes[attributeName]);
     return T2KRoller.taskCheck({
       title,
       attributeName,

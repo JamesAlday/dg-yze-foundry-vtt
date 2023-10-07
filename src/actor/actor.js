@@ -1,5 +1,5 @@
 import { getDieSize, T2KRoller } from '../components/roll/dice.js';
-import { T2K4E } from '../system/config.js';
+import { DGYZE } from '../system/config.js';
 import Modifier from '../components/modifier.js';
 import { YearZeroRoll } from 'yzur';
 import Armor from '../components/armor.js';
@@ -58,7 +58,7 @@ export default class ActorT2K extends Actor {
         this._preparePartyData(actorData);
         break;
       default:
-        throw new TypeError(`t2k4e | Unknown Actor Type: "${actorData.type}"`);
+        throw new TypeError(`dgyze | Unknown Actor Type: "${actorData.type}"`);
     }
   }
 
@@ -333,9 +333,9 @@ export default class ActorT2K extends Actor {
     const maxCrewQty = system.crew.qty + system.crew.passengerQty;
     const crewCount = system.crew.occupants.length;
     const emptySeatCount = Math.max(0, maxCrewQty - crewCount);
-    const emptySeatWeight = emptySeatCount * T2K4E.vehicle.emptySeatEncumbrance;
+    const emptySeatWeight = emptySeatCount * DGYZE.vehicle.emptySeatEncumbrance;
     const extraPassengerCount = -Math.min(0, maxCrewQty - crewCount);
-    const extraPassengerWeight = extraPassengerCount * T2K4E.vehicle.extraPassengerEncumbrance;
+    const extraPassengerWeight = extraPassengerCount * DGYZE.vehicle.extraPassengerEncumbrance;
 
     const max = system.cargo + emptySeatWeight + (system.trailer ? system.cargo : 0);
     val += extraPassengerWeight;
@@ -425,13 +425,13 @@ export default class ActorT2K extends Actor {
     }
     // Adds default character token size.
     if (['character', 'npc'].includes(this.type)) {
-      const size = game.settings.get('t2k4e', 'defaultCharTokenSize');
+      const size = game.settings.get('dgyze', 'defaultCharTokenSize');
       if (size >= 0.3 && size <= 2) {
         updateData.height = size;
         updateData.width = size;
       }
       else {
-        console.warn('t2k4e | defaultCharTokenSize settings not between acceptable range.', size);
+        console.warn('dgyze | defaultCharTokenSize settings not between acceptable range.', size);
       }
     }
     // Performs the update.
@@ -451,8 +451,8 @@ export default class ActorT2K extends Actor {
    */
   addVehicleOccupant(crewId, position = 'PASSENGER', isExposed = false) {
     if (this.type !== 'vehicle') return;
-    if (!T2K4E.vehicle.crewPositionFlags.includes(position)) {
-      throw new TypeError(`t2k4e | addVehicleOccupant | Wrong position flag: ${position}`);
+    if (!DGYZE.vehicle.crewPositionFlags.includes(position)) {
+      throw new TypeError(`dgyze | addVehicleOccupant | Wrong position flag: ${position}`);
     }
     const system = this.system;
     const occupant = {
@@ -529,10 +529,10 @@ export default class ActorT2K extends Actor {
 
     const rollConfig = foundry.utils.mergeObject(
       {
-        title: game.i18n.localize('T2K4E.ActorSheet.RadiationRoll'),
+        title: game.i18n.localize('DGYZE.ActorSheet.RadiationRoll'),
         attribute: system.attributes.str.value,
         skill: system.skills.stamina.value,
-        modifier: T2K4E.radiationVirulence - sievert,
+        modifier: DGYZE.radiationVirulence - sievert,
       },
       options,
     );
@@ -572,7 +572,7 @@ export default class ActorT2K extends Actor {
       const locRoll = new YearZeroRoll('1dl');
       await locRoll.roll({ async: true });
       const loc = locRoll.bestHitLocation;
-      attackData.location = T2K4E.hitLocs[loc - 1];
+      attackData.location = DGYZE.hitLocs[loc - 1];
     }
 
     // 2 — Barrier(s)
@@ -580,7 +580,7 @@ export default class ActorT2K extends Actor {
     for (let i = 0; i < attackData.barriers.length; i++) {
       const barrierRating = +attackData.barriers[i];
       if (!barrierRating) continue;
-      const barrierName = `${game.i18n.localize('T2K4E.Combat.Barrier')} #${i + 1}`;
+      const barrierName = `${game.i18n.localize('DGYZE.Combat.Barrier')} #${i + 1}`;
       const barrier = new Armor(barrierRating, barrierName);
       amount = await barrier.penetration(amount, baseDamage, armorModifier);
       // TODO barrier ablation
@@ -589,7 +589,7 @@ export default class ActorT2K extends Actor {
 
     // 3 — Body Armor
     const armorRating = this.system.armorRating[attackData.location] || 0;
-    const bodyArmor = new Armor(armorRating, game.i18n.localize('T2K4E.Combat.BodyArmor'));
+    const bodyArmor = new Armor(armorRating, game.i18n.localize('DGYZE.Combat.BodyArmor'));
     amount = await bodyArmor.penetration(amount, baseDamage, armorModifier);
 
     // 3.1 — Body Armor Ablation
@@ -619,7 +619,7 @@ export default class ActorT2K extends Actor {
     if (!sendMessage) return diff;
 
     // Prepares the chat message.
-    const template = 'systems/t2k4e/templates/components/chat/character-damage-chat.hbs';
+    const template = 'systems/dgyze/templates/components/chat/character-damage-chat.hbs';
     const templateData = {
       name: this.name,
       initialAmount,
@@ -628,7 +628,7 @@ export default class ActorT2K extends Actor {
       armors,
       signedArmorModifier: (attackData.armorModifier >= 0 ? '+' : '−') + Math.abs(attackData.armorModifier),
       data: attackData,
-      config: T2K4E,
+      config: DGYZE,
     };
     const chatData = {
       user: game.user.id,

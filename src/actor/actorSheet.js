@@ -1,4 +1,4 @@
-import { T2K4E } from '../system/config.js';
+import { DGYZE } from '../system/config.js';
 import T2KDialog from '../components/dialog/dialog.js';
 import { getAttributeAndSkill, T2KRoller } from '../components/roll/dice.js';
 import { enrichTextFields } from '@utils/utils.js';
@@ -22,9 +22,9 @@ export default class ActorSheetT2K extends ActorSheet {
   /** @override */
   get template() {
     if (this.actor.type === 'npc') {
-      return 'systems/t2k4e/templates/actor/character/character-sheet.hbs';
+      return 'systems/dgyze/templates/actor/character/character-sheet.hbs';
     }
-    return `systems/t2k4e/templates/actor/${this.actor.type}/${this.actor.type}-sheet.hbs`;
+    return `systems/dgyze/templates/actor/${this.actor.type}/${this.actor.type}-sheet.hbs`;
   }
 
   /* ------------------------------------------- */
@@ -39,8 +39,8 @@ export default class ActorSheetT2K extends ActorSheet {
       editable: this.isEditable,
       actor: foundry.utils.deepClone(this.actor),
       system: foundry.utils.deepClone(this.actor.system),
-      config: T2K4E,
-      hideCapacitiesButtons: !game.user.isGM && game.settings.get('t2k4e', 'hideCapacitiesButtons'),
+      config: DGYZE,
+      hideCapacitiesButtons: !game.user.isGM && game.settings.get('dgyze', 'hideCapacitiesButtons'),
     };
     await enrichTextFields(sheetData, ['system.description']);
     return sheetData;
@@ -53,7 +53,7 @@ export default class ActorSheetT2K extends ActorSheet {
   /** @override */
   async _onDropItemCreate(itemData) {
     const type = itemData.type;
-    const alwaysAllowedItems = T2K4E.physicalItems;
+    const alwaysAllowedItems = DGYZE.physicalItems;
     const allowedItems = {
       character: ['specialty', 'injury'],
       npc: ['specialty'],
@@ -74,11 +74,11 @@ export default class ActorSheetT2K extends ActorSheet {
     }
 
     if (!allowed) {
-      const msg = game.i18n.format('T2K4E.ActorSheet.NotifWrongItemType', {
-        type: game.i18n.localize(`T2K4E.ItemTypes.${type}`),
-        actor: game.i18n.localize(`T2K4E.ActorTypes.${this.actor.type}`),
+      const msg = game.i18n.format('DGYZE.ActorSheet.NotifWrongItemType', {
+        type: game.i18n.localize(`DGYZE.ItemTypes.${type}`),
+        actor: game.i18n.localize(`DGYZE.ActorTypes.${this.actor.type}`),
       });
-      console.warn(`t2k4e | ${msg}`);
+      console.warn(`dgyze | ${msg}`);
       ui.notifications.warn(msg);
       return false;
     }
@@ -90,7 +90,7 @@ export default class ActorSheetT2K extends ActorSheet {
   /* -------------------------------------------- */
 
   rollAction(actionName, _itemId) {
-    const skillName = T2K4E.actionSkillsMap[actionName];
+    const skillName = DGYZE.actionSkillsMap[actionName];
     const statData = getAttributeAndSkill(skillName, this.actor.system);
     statData.title += ` (${this.actor.name})`;
     const isRangedSkill = skillName === 'rangedCombat' || skillName === 'heavyWeapons';
@@ -149,7 +149,7 @@ export default class ActorSheetT2K extends ActorSheet {
       const actors = this.actor.system.crew.occupants.reduce((data, o) => {
         const a = game.actors.get(o.id);
         if (!a) return data;
-        const nm = `${a.name} (${game.i18n.localize(T2K4E.vehicle.crewPositionFlagsLocalized[o.position])})`;
+        const nm = `${a.name} (${game.i18n.localize(DGYZE.vehicle.crewPositionFlagsLocalized[o.position])})`;
         data[o.id] = nm;
         return data;
       }, {});
@@ -178,7 +178,7 @@ export default class ActorSheetT2K extends ActorSheet {
     const elem = event.currentTarget;
     const type = elem.dataset.type;
     const itemData = {
-      name: game.i18n.localize(`T2K4E.ActorSheet.NewItem.${type}`),
+      name: game.i18n.localize(`DGYZE.ActorSheet.NewItem.${type}`),
       type,
     };
     return (

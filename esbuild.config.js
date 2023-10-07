@@ -4,7 +4,7 @@ import { build } from 'esbuild';
 export default ({ watch = false, production = false } = {}) =>
   build({
     bundle: true,
-    entryPoints: ['./src/t2k4e.js'],
+    entryPoints: ['./src/dgyze.js'],
     outdir: 'dist',
     format: 'esm',
     logLevel: 'info',

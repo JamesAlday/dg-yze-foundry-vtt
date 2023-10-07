@@ -6,8 +6,8 @@ export default class ActorSheetT2KParty extends ActorSheetT2K {
     const dragDrop = [...super.defaultOptions.dragDrop];
     dragDrop.push({ dragSelector: '.party-member', dropSelector: '.party-member-list' });
     return mergeObject(super.defaultOptions, {
-      classes: ['t2k4e', 'sheet', 'actor', 'character', 'party'],
-      template: 'systems/t2k4e/templates/actor/party/party-sheet.hbs',
+      classes: ['dgyze', 'sheet', 'actor', 'character', 'party'],
+      template: 'systems/dgyze/templates/actor/party/party-sheet.hbs',
       width: window.innerWidth * 0.05 + 650,
       height: 830,
       resizable: true,

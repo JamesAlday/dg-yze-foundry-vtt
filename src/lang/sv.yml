@@ -1,378 +1,378 @@
 ---
-T2K4E.SheetClassCharacter: Karaktärsblad
-T2K4E.SheetClassVehicle: Fordonsblad
-T2K4E.SheetClassUnit: Enhetsblad
-T2K4E.SheetClassParty: Gruppblad
-T2K4E.Attribute: Grundegenskap
-T2K4E.Attributes: Grundegenskaper
-T2K4E.AttributeNames.str: Styrka
-T2K4E.AttributeNames.agl: Smidighet
-T2K4E.AttributeNames.int: Intelligens
-T2K4E.AttributeNames.emp: Empati
-T2K4E.Skill: Färdighet
-T2K4E.Skills: Färdigheter
-T2K4E.SkillNames.none: '–'
-T2K4E.SkillNames.heavyWeapons: Tunga vapen
-T2K4E.SkillNames.closeCombat: Närstrid
-T2K4E.SkillNames.stamina: Tålighet
-T2K4E.SkillNames.driving: Fordon
-T2K4E.SkillNames.mobility: Rörlighet
-T2K4E.SkillNames.rangedCombat: Skytte
-T2K4E.SkillNames.recon: Spaning
-T2K4E.SkillNames.survival: Överlevnad
-T2K4E.SkillNames.tech: Teknik
-T2K4E.SkillNames.command: Befälskap
-T2K4E.SkillNames.persuasion: Övertalning
-T2K4E.SkillNames.medicalAid: Vård
-T2K4E.Action: Handling
-T2K4E.Actions: Handlingar
-T2K4E.ActionNames.unarmedAttack: Oväpnad attack
-T2K4E.ActionNames.meleeAttack: Attack med närstridsvapen
-T2K4E.ActionNames.grapple: Fasthållning
-T2K4E.ActionNames.breakFree: Bryt dig loss
-T2K4E.ActionNames.shootFirearm: Avfyra vapen
-T2K4E.ActionNames.clearJam: Rensa vapenstopp
-T2K4E.ActionNames.aimSniper: Prickskyttssiktande
-T2K4E.ActionNames.shootBow: Avfyra båge
-T2K4E.ActionNames.throwWeapon: Kasta vapnet
-T2K4E.ActionNames.aimMortar: Sikta mortel eller haubits
-T2K4E.ActionNames.shootHeavyWeapon: Avfyra tungt vapen
-T2K4E.ActionNames.firstAid: Första hjälpen
-T2K4E.ActionNames.rally: Återhämtning
-T2K4E.ActionNames.directFire: Indirekt eldgivning
-T2K4E.ActionNames.seekCover: Sök skydd
-T2K4E.ActionNames.run: Spring
-T2K4E.ActionNames.crawl: Kräla
-T2K4E.ActionNames.shove: Fäll
-T2K4E.ActionNames.disarm: Avväpna
-T2K4E.ActionNames.retreat: Reträtt
-T2K4E.ActionNames.aim: Sikta
-T2K4E.ActionNames.prepareBow: Förbered båge
-T2K4E.ActionNames.overwatch: Anta Övervakningsläge
-T2K4E.ActionNames.reload: Ladda om
-T2K4E.ActionNames.drive: Kör
-T2K4E.Constants: Konstanter
-T2K4E.ConstantNames.encumbrance: Belastning
-T2K4E.ConstantNames.awareness: Stridsmedvetenhet
-T2K4E.ConstantNames.cuf: Stridsvana
-T2K4E.TravelTasks: Reseuppdrag
-T2K4E.TravelTaskNames.marching: Marcherar
-T2K4E.TravelTaskNames.driving: Kör
-T2K4E.TravelTaskNames.gathering: Samlar
-T2K4E.TravelTaskNames.keepingWatch: Vaktar
-T2K4E.TravelTaskNames.scrounging: Plundrar
-T2K4E.TravelTaskNames.foraging: Söker föda
-T2K4E.TravelTaskNames.hunting: Jagar
-T2K4E.TravelTaskNames.fishing: Fiskar
-T2K4E.TravelTaskNames.makingCamp: Slår upp läger
-T2K4E.TravelTaskNames.cooking: Lagar mat
-T2K4E.TravelTaskNames.resting: Vilar
-T2K4E.TravelTaskNames.sleeping: Sover
-T2K4E.TravelTaskNames.exploring: Utforskar
-T2K4E.ArmorLocationNames.head: Huvud
-T2K4E.ArmorLocationNames.arms: Armar
-T2K4E.ArmorLocationNames.torso: Bål
-T2K4E.ArmorLocationNames.legs: Ben
-T2K4E.ConditionNames.starving: Utsvulten
-T2K4E.ConditionNames.dehydrated: Uttorkad
-T2K4E.ConditionNames.sleepless: Sömnlös
-T2K4E.ConditionNames.hypothermic: Nedkyld
-T2K4E.InjuryCategoryNames.physical: Fysisk
-T2K4E.InjuryCategoryNames.mental: Mental
-T2K4E.ActionTypes.fast: Snabb
-T2K4E.ActionTypes.slow: Långsam
-T2K4E.Ranges.close: I närstrid
-T2K4E.Ranges.short: Kort
-T2K4E.Ranges.medium: Medel
-T2K4E.Ranges.long: Lång
-T2K4E.Ranges.extreme: Extrem
-T2K4E.ItemTypes.ammunition: Ammunition
-T2K4E.ItemTypes.armor: Kroppsskydd
-T2K4E.ItemTypes.gear: Utrustning
-T2K4E.ItemTypes.grenade: Sprängämne
-T2K4E.ItemTypes.injury: Skada
-T2K4E.ItemTypes.specialty: Specialitet
-T2K4E.ItemTypes.weapon: Vapen
-T2K4E.ItemPropNames.twoHanded: Tvåhandad
-T2K4E.ItemPropNames.mounted: Monterad
-T2K4E.ItemPropNames.disposable: Engångs
-T2K4E.ItemPropNames.ammoBelt: Ammobälte
-T2K4E.ItemPropNames.magazine: Är Magasin
-T2K4E.ItemPropNames.armored: Bepansrad
-T2K4E.ItemPropNames.bipod: Tvåbensstativ
-T2K4E.ItemPropNames.tripod: Trebensstativ
-T2K4E.ItemPropNames.scope: Kikarsikte
-T2K4E.ItemPropNames.nightVision: Mörkerkikare
-T2K4E.ItemPropNames.bayonet: Bajonett
-T2K4E.ItemPropNames.suppressor: Ljuddämpare
-T2K4E.ActorTypes.character: Rollperson (RP)
-T2K4E.ActorTypes.npc: Spelarledarperson (SLP)
-T2K4E.ActorTypes.vehicle: Fordon
-T2K4E.ActorSheet.Name: Namn
-T2K4E.ActorSheet.MainTab: Grund
-T2K4E.ActorSheet.CombatTab: Strid
-T2K4E.ActorSheet.EquipmentTab: Prylar
-T2K4E.ActorSheet.BiographyTab: Biografi
-T2K4E.ActorSheet.NoteTab: Övrigt
-T2K4E.ActorSheet.Nationality: Nationalitet
-T2K4E.ActorSheet.Branch: Bransch
-T2K4E.ActorSheet.MilitaryRank: Militär grad
-T2K4E.ActorSheet.HitCapacity: Skada
-T2K4E.ActorSheet.StressCapacity: Stress
-T2K4E.ActorSheet.CapacityModifier: 'Modifierare:'
-T2K4E.ActorSheet.Experience: Erfarenhet
-T2K4E.ActorSheet.ExperienceCurrent: Aktuell EP
-T2K4E.ActorSheet.ExperienceTotal: Total EP
-T2K4E.ActorSheet.Appearance: Utseende
-T2K4E.ActorSheet.MoralCode: Personlig moral
-T2K4E.ActorSheet.Buddy: Kamrat
-T2K4E.ActorSheet.BigDream: Min stora dröm
-T2K4E.ActorSheet.GroupMeeting: 'Hur jag mötte gruppen:'
-T2K4E.ActorSheet.AttributesAndSkills: Grundegenskaper & Färdigheter
-T2K4E.ActorSheet.Rating: Värde
-T2K4E.ActorSheet.BaseDie: Tärning
-T2K4E.ActorSheet.Specialties: Specialiteter
-T2K4E.ActorSheet.AddSpecialty: Lägg till en ny specialitet
-T2K4E.ActorSheet.NoSpecialty:
+DGYZE.SheetClassCharacter: Karaktärsblad
+DGYZE.SheetClassVehicle: Fordonsblad
+DGYZE.SheetClassUnit: Enhetsblad
+DGYZE.SheetClassParty: Gruppblad
+DGYZE.Attribute: Grundegenskap
+DGYZE.Attributes: Grundegenskaper
+DGYZE.AttributeNames.str: Styrka
+DGYZE.AttributeNames.agl: Smidighet
+DGYZE.AttributeNames.int: Intelligens
+DGYZE.AttributeNames.emp: Empati
+DGYZE.Skill: Färdighet
+DGYZE.Skills: Färdigheter
+DGYZE.SkillNames.none: '–'
+DGYZE.SkillNames.heavyWeapons: Tunga vapen
+DGYZE.SkillNames.closeCombat: Närstrid
+DGYZE.SkillNames.stamina: Tålighet
+DGYZE.SkillNames.driving: Fordon
+DGYZE.SkillNames.mobility: Rörlighet
+DGYZE.SkillNames.rangedCombat: Skytte
+DGYZE.SkillNames.recon: Spaning
+DGYZE.SkillNames.survival: Överlevnad
+DGYZE.SkillNames.tech: Teknik
+DGYZE.SkillNames.command: Befälskap
+DGYZE.SkillNames.persuasion: Övertalning
+DGYZE.SkillNames.medicalAid: Vård
+DGYZE.Action: Handling
+DGYZE.Actions: Handlingar
+DGYZE.ActionNames.unarmedAttack: Oväpnad attack
+DGYZE.ActionNames.meleeAttack: Attack med närstridsvapen
+DGYZE.ActionNames.grapple: Fasthållning
+DGYZE.ActionNames.breakFree: Bryt dig loss
+DGYZE.ActionNames.shootFirearm: Avfyra vapen
+DGYZE.ActionNames.clearJam: Rensa vapenstopp
+DGYZE.ActionNames.aimSniper: Prickskyttssiktande
+DGYZE.ActionNames.shootBow: Avfyra båge
+DGYZE.ActionNames.throwWeapon: Kasta vapnet
+DGYZE.ActionNames.aimMortar: Sikta mortel eller haubits
+DGYZE.ActionNames.shootHeavyWeapon: Avfyra tungt vapen
+DGYZE.ActionNames.firstAid: Första hjälpen
+DGYZE.ActionNames.rally: Återhämtning
+DGYZE.ActionNames.directFire: Indirekt eldgivning
+DGYZE.ActionNames.seekCover: Sök skydd
+DGYZE.ActionNames.run: Spring
+DGYZE.ActionNames.crawl: Kräla
+DGYZE.ActionNames.shove: Fäll
+DGYZE.ActionNames.disarm: Avväpna
+DGYZE.ActionNames.retreat: Reträtt
+DGYZE.ActionNames.aim: Sikta
+DGYZE.ActionNames.prepareBow: Förbered båge
+DGYZE.ActionNames.overwatch: Anta Övervakningsläge
+DGYZE.ActionNames.reload: Ladda om
+DGYZE.ActionNames.drive: Kör
+DGYZE.Constants: Konstanter
+DGYZE.ConstantNames.encumbrance: Belastning
+DGYZE.ConstantNames.awareness: Stridsmedvetenhet
+DGYZE.ConstantNames.cuf: Stridsvana
+DGYZE.TravelTasks: Reseuppdrag
+DGYZE.TravelTaskNames.marching: Marcherar
+DGYZE.TravelTaskNames.driving: Kör
+DGYZE.TravelTaskNames.gathering: Samlar
+DGYZE.TravelTaskNames.keepingWatch: Vaktar
+DGYZE.TravelTaskNames.scrounging: Plundrar
+DGYZE.TravelTaskNames.foraging: Söker föda
+DGYZE.TravelTaskNames.hunting: Jagar
+DGYZE.TravelTaskNames.fishing: Fiskar
+DGYZE.TravelTaskNames.makingCamp: Slår upp läger
+DGYZE.TravelTaskNames.cooking: Lagar mat
+DGYZE.TravelTaskNames.resting: Vilar
+DGYZE.TravelTaskNames.sleeping: Sover
+DGYZE.TravelTaskNames.exploring: Utforskar
+DGYZE.ArmorLocationNames.head: Huvud
+DGYZE.ArmorLocationNames.arms: Armar
+DGYZE.ArmorLocationNames.torso: Bål
+DGYZE.ArmorLocationNames.legs: Ben
+DGYZE.ConditionNames.starving: Utsvulten
+DGYZE.ConditionNames.dehydrated: Uttorkad
+DGYZE.ConditionNames.sleepless: Sömnlös
+DGYZE.ConditionNames.hypothermic: Nedkyld
+DGYZE.InjuryCategoryNames.physical: Fysisk
+DGYZE.InjuryCategoryNames.mental: Mental
+DGYZE.ActionTypes.fast: Snabb
+DGYZE.ActionTypes.slow: Långsam
+DGYZE.Ranges.close: I närstrid
+DGYZE.Ranges.short: Kort
+DGYZE.Ranges.medium: Medel
+DGYZE.Ranges.long: Lång
+DGYZE.Ranges.extreme: Extrem
+DGYZE.ItemTypes.ammunition: Ammunition
+DGYZE.ItemTypes.armor: Kroppsskydd
+DGYZE.ItemTypes.gear: Utrustning
+DGYZE.ItemTypes.grenade: Sprängämne
+DGYZE.ItemTypes.injury: Skada
+DGYZE.ItemTypes.specialty: Specialitet
+DGYZE.ItemTypes.weapon: Vapen
+DGYZE.ItemPropNames.twoHanded: Tvåhandad
+DGYZE.ItemPropNames.mounted: Monterad
+DGYZE.ItemPropNames.disposable: Engångs
+DGYZE.ItemPropNames.ammoBelt: Ammobälte
+DGYZE.ItemPropNames.magazine: Är Magasin
+DGYZE.ItemPropNames.armored: Bepansrad
+DGYZE.ItemPropNames.bipod: Tvåbensstativ
+DGYZE.ItemPropNames.tripod: Trebensstativ
+DGYZE.ItemPropNames.scope: Kikarsikte
+DGYZE.ItemPropNames.nightVision: Mörkerkikare
+DGYZE.ItemPropNames.bayonet: Bajonett
+DGYZE.ItemPropNames.suppressor: Ljuddämpare
+DGYZE.ActorTypes.character: Rollperson (RP)
+DGYZE.ActorTypes.npc: Spelarledarperson (SLP)
+DGYZE.ActorTypes.vehicle: Fordon
+DGYZE.ActorSheet.Name: Namn
+DGYZE.ActorSheet.MainTab: Grund
+DGYZE.ActorSheet.CombatTab: Strid
+DGYZE.ActorSheet.EquipmentTab: Prylar
+DGYZE.ActorSheet.BiographyTab: Biografi
+DGYZE.ActorSheet.NoteTab: Övrigt
+DGYZE.ActorSheet.Nationality: Nationalitet
+DGYZE.ActorSheet.Branch: Bransch
+DGYZE.ActorSheet.MilitaryRank: Militär grad
+DGYZE.ActorSheet.HitCapacity: Skada
+DGYZE.ActorSheet.StressCapacity: Stress
+DGYZE.ActorSheet.CapacityModifier: 'Modifierare:'
+DGYZE.ActorSheet.Experience: Erfarenhet
+DGYZE.ActorSheet.ExperienceCurrent: Aktuell EP
+DGYZE.ActorSheet.ExperienceTotal: Total EP
+DGYZE.ActorSheet.Appearance: Utseende
+DGYZE.ActorSheet.MoralCode: Personlig moral
+DGYZE.ActorSheet.Buddy: Kamrat
+DGYZE.ActorSheet.BigDream: Min stora dröm
+DGYZE.ActorSheet.GroupMeeting: 'Hur jag mötte gruppen:'
+DGYZE.ActorSheet.AttributesAndSkills: Grundegenskaper & Färdigheter
+DGYZE.ActorSheet.Rating: Värde
+DGYZE.ActorSheet.BaseDie: Tärning
+DGYZE.ActorSheet.Specialties: Specialiteter
+DGYZE.ActorSheet.AddSpecialty: Lägg till en ny specialitet
+DGYZE.ActorSheet.NoSpecialty:
   Denna karaktär har ingen specialitet. Klicka på "+"
   för att lägga till en specialitet.
-T2K4E.ActorSheet.Combat: Strid
-T2K4E.ActorSheet.Actions: Handlingar
-T2K4E.ActorSheet.Current: Nu
-T2K4E.ActorSheet.Max: Max
-T2K4E.ActorSheet.CuF: Stridsvana
-T2K4E.ActorSheet.UnitMorale: Stridsmoral
-T2K4E.ActorSheet.NoArmor: Den här karaktären har inget utrustat kropssskydd.
-T2K4E.ActorSheet.Conditions: Tillstånd
-T2K4E.ActorSheet.CriticalInjuries: Kritisk skada
-T2K4E.ActorSheet.AddInjury: Lägg till ny sjukdom
-T2K4E.ActorSheet.InjuryTimeLeft: '{time} kvar'
-T2K4E.ActorSheet.Diseases: Sjukdomar
-T2K4E.ActorSheet.Radiation: Strålning
-T2K4E.ActorSheet.RadiationRoll: Strålningsslag
-T2K4E.ActorSheet.TemporaryRadiation: Tillfällig
-T2K4E.ActorSheet.PermanentRadiation: Permanent
-T2K4E.ActorSheet.EncumbranceFull: FULL
-T2K4E.ActorSheet.EncumbranceTooHeavy: FÖR TUNG
-T2K4E.ActorSheet.Weapons: Vapen
-T2K4E.ActorSheet.AddWeapon: Lägg till nytt vapen
-T2K4E.ActorSheet.Unarmed: Obeväpnad
-T2K4E.ActorSheet.Cover: Skydd
-T2K4E.ActorSheet.Add: Lägg till
-T2K4E.ActorSheet.AddArmor: Lägg till nytt kroppsskydd
-T2K4E.ActorSheet.AddGear: Lägg till ny utrustning
-T2K4E.ActorSheet.AddAmmo: Lägg till ny ammunition
-T2K4E.ActorSheet.Encumbrance: Belastning
-T2K4E.ActorSheet.CombatGearEncumbrance: Stridsutrustning (Belastning)
-T2K4E.ActorSheet.BackpackEncumbrance: Ryggsäck (Belastning)
-T2K4E.ActorSheet.Equip: Utrusta
-T2K4E.ActorSheet.Store: Lagra i ryggsäck
-T2K4E.ActorSheet.Edit: Ändra
-T2K4E.ActorSheet.Delete: Radera
-T2K4E.ActorSheet.NewItem.weapon: Nytt vapen
-T2K4E.ActorSheet.NewItem.armor: Nytt kroppsskydd
-T2K4E.ActorSheet.NewItem.gear: Ny utrustning
-T2K4E.ActorSheet.NewItem.ammunition: Ny ammunition
-T2K4E.ActorSheet.NewItem.specialty: Ny specialitet
-T2K4E.ActorSheet.NewItem.injury: Ny skada
-T2K4E.ActorSheet.NotifWrongItemType: '"{type}" föremål kan inte läggas till en {actor}!'
-T2K4E.VehicleSheet.CrewTab: Besättning
-T2K4E.VehicleSheet.ComponentsTab: Komponenter
-T2K4E.VehicleSheet.CombatTab: Stridande
-T2K4E.VehicleSheet.CargoTab: Last
-T2K4E.VehicleSheet.VehicleType: Fordonstyp
-T2K4E.VehicleSheet.Reliability: Pålitlighet
-T2K4E.VehicleSheet.Movement: Förflyttning
-T2K4E.VehicleSheet.CombatSpeed: Stridshastighet
-T2K4E.VehicleSheet.TravelSpeed: Reshastighet
-T2K4E.VehicleSheet.Wheels: Hjul
-T2K4E.VehicleSheet.Tracks: Band
-T2K4E.VehicleSheet.Hovercraft: Svävare
-T2K4E.VehicleSheet.Flying: Flygande
-T2K4E.VehicleSheet.Naval: Marin
-T2K4E.VehicleSheet.Fuel: Bränsle
-T2K4E.VehicleSheet.FuelCapacity: Bränsletank
-T2K4E.VehicleSheet.FuelConsumption: Bränsleförbrukning
-T2K4E.VehicleSheet.Gasoline: Bensin
-T2K4E.VehicleSheet.Diesel: Diesel
-T2K4E.VehicleSheet.Alcohol: Alkohol
-T2K4E.VehicleSheet.Nuclear: Kärnreaktor
-T2K4E.VehicleSheet.CrewQty: 'Besättning:'
-T2K4E.VehicleSheet.PassengerQty: 'Passagerare:'
-T2K4E.VehicleSheet.EmptyCrew: Dra och släpp en aktör för att göra dem till besättning.
-T2K4E.VehicleSheet.Armor: Pansar
-T2K4E.VehicleSheet.FrontArmor: Front
-T2K4E.VehicleSheet.SideLeftArmor: Vänster
-T2K4E.VehicleSheet.SideRightArmor: Höger
-T2K4E.VehicleSheet.RearArmor: Bak
-T2K4E.VehicleSheet.Damage: Skada
-T2K4E.VehicleSheet.MountedWeapons1: Primära vapen
-T2K4E.VehicleSheet.MountedWeapons2: Sekundära vapen
-T2K4E.VehicleSheet.MountedWeaponType: Typ
-T2K4E.VehicleSheet.CargoCapacity: 'Lastvikt:'
-T2K4E.VehicleSheet.CrewCargo: 'Besättningsvikt:'
-T2K4E.VehicleSheet.VehicleEncumbrance: Belastning (fordon)
-T2K4E.VehicleSheet.Mount: Montera vapen
-T2K4E.VehicleSheet.Unmount: Avmontera vapen
-T2K4E.VehicleSheet.MoveMount: Växla vapenfäste
-T2K4E.VehicleSheet.Price: Pris
-T2K4E.VehicleSheet.CrewPositions.Driver: FÖRARE
-T2K4E.VehicleSheet.CrewPositions.Gunner: SKYTT
-T2K4E.VehicleSheet.CrewPositions.Commander: BEFÄLHAVARE
-T2K4E.VehicleSheet.CrewPositions.Passenger: PASSAGERARE
-T2K4E.VehicleSheet.ExposedPassenger: Oskyddad
-T2K4E.VehicleSheet.InnerComponents: Inre komponent
-T2K4E.VehicleSheet.OuterComponents: Yttre komponent
-T2K4E.VehicleSheet.ComponentDamage: Antal skada orsakad till denna komponent
-T2K4E.VehicleSheet.FcsType: Typ
-T2K4E.VehicleSheet.Components.fuel: Bränsle
-T2K4E.VehicleSheet.Components.engine: Motor
-T2K4E.VehicleSheet.Components.suspension: Fjädring
-T2K4E.VehicleSheet.Components.ammunition: Ammunition
-T2K4E.VehicleSheet.Components.radio: Radio
-T2K4E.VehicleSheet.Components.trackWheel: Band / Hjul
-T2K4E.VehicleSheet.Components.fcs: Fire Control System
-T2K4E.VehicleSheet.Components.antenna: Antenn
-T2K4E.VehicleSheet.HasTrailer: Har ett släp
-T2K4E.VehicleSheet.HasSmokeDischarger: Rökkastare
-T2K4E.UnitSheet.Name: Fullständigt namn
-T2K4E.UnitSheet.Info: Ytterligare information
-T2K4E.UnitSheet.Faction: Fraktion
-T2K4E.UnitSheet.UnitAffiliation: Tillhörighet
-T2K4E.UnitSheet.UnitSize: Enhetsstorlek
-T2K4E.UnitSheet.UnitType: Enhetstyp
-T2K4E.UnitSheet.UnitModifiers: Enhetsmodifierare
-T2K4E.UnitSheet.Personnel: Personal
-T2K4E.UnitSheet.Vehicles: Stridsfordon
-T2K4E.UnitSheet.HQ: Högvarter (HQ)
-T2K4E.UnitAffiliationNames.friendly: Vänlig
-T2K4E.UnitAffiliationNames.hostile: Fientlig
-T2K4E.UnitAffiliationNames.neutral: Neutral
-T2K4E.UnitAffiliationNames.unknown: Okänd
-T2K4E.UnitModifierNames.airborne: Luftburen
-T2K4E.UnitModifierNames.parachute: Fallskärm
-T2K4E.UnitModifierNames.airmobile: Luftmobil
-T2K4E.UnitModifierNames.airmobileOrganicLift: Airm. O. L.
-T2K4E.UnitModifierNames.amphibious: Ampfibisk
-T2K4E.UnitModifierNames.motorized: Motoriserad
-T2K4E.UnitModifierNames.moutain: Berg
-T2K4E.UnitModifierNames.cannon: Kanon
-T2K4E.UnitModifierNames.wheeled: På hjul
-T2K4E.UnitSizeNames.army: Armé XXXX
-T2K4E.UnitSizeNames.corps: Corps XXX
-T2K4E.UnitSizeNames.division: Division XX
-T2K4E.UnitSizeNames.Brigade: Brigad X
-T2K4E.UnitSizeNames.regiment: Regimente | | |
-T2K4E.UnitSizeNames.battalion: Bataljon | |
-T2K4E.UnitSizeNames.company: Kompani |
-T2K4E.UnitSizeNames.staffel: Staffel ••••
-T2K4E.UnitSizeNames.platoon: Pluton •••
-T2K4E.UnitSizeNames.section: Sektion ••
-T2K4E.UnitSizeNames.squad: Tropp •
-T2K4E.UnitSizeNames.fireteam: Grupp
-T2K4E.ItemSheet.Name: Namn
-T2K4E.ItemSheet.FeaturesTab: Funktioner
-T2K4E.ItemSheet.ModifiersTab: Modifierare
-T2K4E.ItemSheet.RollModifiers: Slå modifierare
-T2K4E.ItemSheet.AddNewRollModifier:
+DGYZE.ActorSheet.Combat: Strid
+DGYZE.ActorSheet.Actions: Handlingar
+DGYZE.ActorSheet.Current: Nu
+DGYZE.ActorSheet.Max: Max
+DGYZE.ActorSheet.CuF: Stridsvana
+DGYZE.ActorSheet.UnitMorale: Stridsmoral
+DGYZE.ActorSheet.NoArmor: Den här karaktären har inget utrustat kropssskydd.
+DGYZE.ActorSheet.Conditions: Tillstånd
+DGYZE.ActorSheet.CriticalInjuries: Kritisk skada
+DGYZE.ActorSheet.AddInjury: Lägg till ny sjukdom
+DGYZE.ActorSheet.InjuryTimeLeft: '{time} kvar'
+DGYZE.ActorSheet.Diseases: Sjukdomar
+DGYZE.ActorSheet.Radiation: Strålning
+DGYZE.ActorSheet.RadiationRoll: Strålningsslag
+DGYZE.ActorSheet.TemporaryRadiation: Tillfällig
+DGYZE.ActorSheet.PermanentRadiation: Permanent
+DGYZE.ActorSheet.EncumbranceFull: FULL
+DGYZE.ActorSheet.EncumbranceTooHeavy: FÖR TUNG
+DGYZE.ActorSheet.Weapons: Vapen
+DGYZE.ActorSheet.AddWeapon: Lägg till nytt vapen
+DGYZE.ActorSheet.Unarmed: Obeväpnad
+DGYZE.ActorSheet.Cover: Skydd
+DGYZE.ActorSheet.Add: Lägg till
+DGYZE.ActorSheet.AddArmor: Lägg till nytt kroppsskydd
+DGYZE.ActorSheet.AddGear: Lägg till ny utrustning
+DGYZE.ActorSheet.AddAmmo: Lägg till ny ammunition
+DGYZE.ActorSheet.Encumbrance: Belastning
+DGYZE.ActorSheet.CombatGearEncumbrance: Stridsutrustning (Belastning)
+DGYZE.ActorSheet.BackpackEncumbrance: Ryggsäck (Belastning)
+DGYZE.ActorSheet.Equip: Utrusta
+DGYZE.ActorSheet.Store: Lagra i ryggsäck
+DGYZE.ActorSheet.Edit: Ändra
+DGYZE.ActorSheet.Delete: Radera
+DGYZE.ActorSheet.NewItem.weapon: Nytt vapen
+DGYZE.ActorSheet.NewItem.armor: Nytt kroppsskydd
+DGYZE.ActorSheet.NewItem.gear: Ny utrustning
+DGYZE.ActorSheet.NewItem.ammunition: Ny ammunition
+DGYZE.ActorSheet.NewItem.specialty: Ny specialitet
+DGYZE.ActorSheet.NewItem.injury: Ny skada
+DGYZE.ActorSheet.NotifWrongItemType: '"{type}" föremål kan inte läggas till en {actor}!'
+DGYZE.VehicleSheet.CrewTab: Besättning
+DGYZE.VehicleSheet.ComponentsTab: Komponenter
+DGYZE.VehicleSheet.CombatTab: Stridande
+DGYZE.VehicleSheet.CargoTab: Last
+DGYZE.VehicleSheet.VehicleType: Fordonstyp
+DGYZE.VehicleSheet.Reliability: Pålitlighet
+DGYZE.VehicleSheet.Movement: Förflyttning
+DGYZE.VehicleSheet.CombatSpeed: Stridshastighet
+DGYZE.VehicleSheet.TravelSpeed: Reshastighet
+DGYZE.VehicleSheet.Wheels: Hjul
+DGYZE.VehicleSheet.Tracks: Band
+DGYZE.VehicleSheet.Hovercraft: Svävare
+DGYZE.VehicleSheet.Flying: Flygande
+DGYZE.VehicleSheet.Naval: Marin
+DGYZE.VehicleSheet.Fuel: Bränsle
+DGYZE.VehicleSheet.FuelCapacity: Bränsletank
+DGYZE.VehicleSheet.FuelConsumption: Bränsleförbrukning
+DGYZE.VehicleSheet.Gasoline: Bensin
+DGYZE.VehicleSheet.Diesel: Diesel
+DGYZE.VehicleSheet.Alcohol: Alkohol
+DGYZE.VehicleSheet.Nuclear: Kärnreaktor
+DGYZE.VehicleSheet.CrewQty: 'Besättning:'
+DGYZE.VehicleSheet.PassengerQty: 'Passagerare:'
+DGYZE.VehicleSheet.EmptyCrew: Dra och släpp en aktör för att göra dem till besättning.
+DGYZE.VehicleSheet.Armor: Pansar
+DGYZE.VehicleSheet.FrontArmor: Front
+DGYZE.VehicleSheet.SideLeftArmor: Vänster
+DGYZE.VehicleSheet.SideRightArmor: Höger
+DGYZE.VehicleSheet.RearArmor: Bak
+DGYZE.VehicleSheet.Damage: Skada
+DGYZE.VehicleSheet.MountedWeapons1: Primära vapen
+DGYZE.VehicleSheet.MountedWeapons2: Sekundära vapen
+DGYZE.VehicleSheet.MountedWeaponType: Typ
+DGYZE.VehicleSheet.CargoCapacity: 'Lastvikt:'
+DGYZE.VehicleSheet.CrewCargo: 'Besättningsvikt:'
+DGYZE.VehicleSheet.VehicleEncumbrance: Belastning (fordon)
+DGYZE.VehicleSheet.Mount: Montera vapen
+DGYZE.VehicleSheet.Unmount: Avmontera vapen
+DGYZE.VehicleSheet.MoveMount: Växla vapenfäste
+DGYZE.VehicleSheet.Price: Pris
+DGYZE.VehicleSheet.CrewPositions.Driver: FÖRARE
+DGYZE.VehicleSheet.CrewPositions.Gunner: SKYTT
+DGYZE.VehicleSheet.CrewPositions.Commander: BEFÄLHAVARE
+DGYZE.VehicleSheet.CrewPositions.Passenger: PASSAGERARE
+DGYZE.VehicleSheet.ExposedPassenger: Oskyddad
+DGYZE.VehicleSheet.InnerComponents: Inre komponent
+DGYZE.VehicleSheet.OuterComponents: Yttre komponent
+DGYZE.VehicleSheet.ComponentDamage: Antal skada orsakad till denna komponent
+DGYZE.VehicleSheet.FcsType: Typ
+DGYZE.VehicleSheet.Components.fuel: Bränsle
+DGYZE.VehicleSheet.Components.engine: Motor
+DGYZE.VehicleSheet.Components.suspension: Fjädring
+DGYZE.VehicleSheet.Components.ammunition: Ammunition
+DGYZE.VehicleSheet.Components.radio: Radio
+DGYZE.VehicleSheet.Components.trackWheel: Band / Hjul
+DGYZE.VehicleSheet.Components.fcs: Fire Control System
+DGYZE.VehicleSheet.Components.antenna: Antenn
+DGYZE.VehicleSheet.HasTrailer: Har ett släp
+DGYZE.VehicleSheet.HasSmokeDischarger: Rökkastare
+DGYZE.UnitSheet.Name: Fullständigt namn
+DGYZE.UnitSheet.Info: Ytterligare information
+DGYZE.UnitSheet.Faction: Fraktion
+DGYZE.UnitSheet.UnitAffiliation: Tillhörighet
+DGYZE.UnitSheet.UnitSize: Enhetsstorlek
+DGYZE.UnitSheet.UnitType: Enhetstyp
+DGYZE.UnitSheet.UnitModifiers: Enhetsmodifierare
+DGYZE.UnitSheet.Personnel: Personal
+DGYZE.UnitSheet.Vehicles: Stridsfordon
+DGYZE.UnitSheet.HQ: Högvarter (HQ)
+DGYZE.UnitAffiliationNames.friendly: Vänlig
+DGYZE.UnitAffiliationNames.hostile: Fientlig
+DGYZE.UnitAffiliationNames.neutral: Neutral
+DGYZE.UnitAffiliationNames.unknown: Okänd
+DGYZE.UnitModifierNames.airborne: Luftburen
+DGYZE.UnitModifierNames.parachute: Fallskärm
+DGYZE.UnitModifierNames.airmobile: Luftmobil
+DGYZE.UnitModifierNames.airmobileOrganicLift: Airm. O. L.
+DGYZE.UnitModifierNames.amphibious: Ampfibisk
+DGYZE.UnitModifierNames.motorized: Motoriserad
+DGYZE.UnitModifierNames.moutain: Berg
+DGYZE.UnitModifierNames.cannon: Kanon
+DGYZE.UnitModifierNames.wheeled: På hjul
+DGYZE.UnitSizeNames.army: Armé XXXX
+DGYZE.UnitSizeNames.corps: Corps XXX
+DGYZE.UnitSizeNames.division: Division XX
+DGYZE.UnitSizeNames.Brigade: Brigad X
+DGYZE.UnitSizeNames.regiment: Regimente | | |
+DGYZE.UnitSizeNames.battalion: Bataljon | |
+DGYZE.UnitSizeNames.company: Kompani |
+DGYZE.UnitSizeNames.staffel: Staffel ••••
+DGYZE.UnitSizeNames.platoon: Pluton •••
+DGYZE.UnitSizeNames.section: Sektion ••
+DGYZE.UnitSizeNames.squad: Tropp •
+DGYZE.UnitSizeNames.fireteam: Grupp
+DGYZE.ItemSheet.Name: Namn
+DGYZE.ItemSheet.FeaturesTab: Funktioner
+DGYZE.ItemSheet.ModifiersTab: Modifierare
+DGYZE.ItemSheet.RollModifiers: Slå modifierare
+DGYZE.ItemSheet.AddNewRollModifier:
   Lägg till en ny tärningsmodifierare till detta
   föremål
-T2K4E.ItemSheet.DeleteRollModifier: Ta bort denna tärningsmodifierare
-T2K4E.ItemSheet.NoRollModifier:
+DGYZE.ItemSheet.DeleteRollModifier: Ta bort denna tärningsmodifierare
+DGYZE.ItemSheet.NoRollModifier:
   Detta föremål har ingen tärningsmodifierare. För att
   lägga till en, klicka på "+" ikonen.
-T2K4E.ItemSheet.SelectRollModifier: Ange namn
-T2K4E.ItemSheet.DescriptionTab: Anteckningar
-T2K4E.ItemSheet.AttributeUsed: Grundegenskap använd
-T2K4E.ItemSheet.SkillUsed: Färdighet använd
-T2K4E.ItemSheet.WeaponMagazine: Magasin
-T2K4E.ItemSheet.Quantity: Antal
-T2K4E.ItemSheet.ItemType: Typ
-T2K4E.ItemSheet.Ammo: Ammunition
-T2K4E.ItemSheet.AmmoType: Ammunitionsidentifierare
-T2K4E.ItemSheet.OverrideOption: Åsidosätt vapnets funktioner
-T2K4E.ItemSheet.Reliability: Pål.
-T2K4E.ItemSheet.RoF: Eldh.
-T2K4E.ItemSheet.Damage: Skada
-T2K4E.ItemSheet.Crit: Krit.
-T2K4E.ItemSheet.Blast: Spräng.
-T2K4E.ItemSheet.Range: Räckv.
-T2K4E.ItemSheet.Mag: Mag.
-T2K4E.ItemSheet.Armor: Skydd
-T2K4E.ItemSheet.Weight: Vikt
-T2K4E.ItemSheet.Price: Pris
-T2K4E.ItemSheet.ArmorLocation: Skyddat område
-T2K4E.ItemSheet.Equipped: Utrustad
-T2K4E.ItemSheet.StoredInBackpack: Förvarad i ryggsäck
-T2K4E.ItemSheet.CreateAmmo: Generera ammunition
-T2K4E.ItemSheet.CreateAmmoNotif: Genererade 1x <b>{ammo}</b> för vapnet <b>{weapon}</b>
-T2K4E.ItemSheet.FeaturesForVehicle: Fordonsegenskaper
-T2K4E.InjurySheet.Category: Kategori
-T2K4E.InjurySheet.Location: Plats
-T2K4E.InjurySheet.TimeLimit: Tidsbegränsning
-T2K4E.InjurySheet.HealTime: Heal Time
-T2K4E.InjurySheet.Effect: Effekt
-T2K4E.InjurySheet.Lethal: Dödlig
-T2K4E.InjurySheet.day: dag
-T2K4E.InjurySheet.days: dagar
-T2K4E.Chat.Actions.Attack: Attackera
-T2K4E.Chat.Actions.Reload: Ladda om
-T2K4E.Chat.Actions.Roll: Slå
-T2K4E.Chat.Actions.Push: Pressa
-T2K4E.Chat.Actions.ApplyDamage: Applicera skada
-T2K4E.Chat.Roll.Success: Lyckat
-T2K4E.Chat.Roll.Successes: Lyckade
-T2K4E.Chat.Roll.Pushed: '— Pressat'
-T2K4E.Chat.Roll.Suppression: Nedhållen
-T2K4E.Chat.Roll.ExtraHit: Extra träff
-T2K4E.Chat.Roll.ExtraHits: Extra träffar
-T2K4E.Chat.Roll.Mishap: Missöde
-T2K4E.Chat.Roll.AmmoSpent: Använd ammunition
-T2K4E.Chat.Roll.NoItemNotif: Detta föremål existerar inte längre.
-T2K4E.Chat.Roll.NoReliabilityNotif:
+DGYZE.ItemSheet.SelectRollModifier: Ange namn
+DGYZE.ItemSheet.DescriptionTab: Anteckningar
+DGYZE.ItemSheet.AttributeUsed: Grundegenskap använd
+DGYZE.ItemSheet.SkillUsed: Färdighet använd
+DGYZE.ItemSheet.WeaponMagazine: Magasin
+DGYZE.ItemSheet.Quantity: Antal
+DGYZE.ItemSheet.ItemType: Typ
+DGYZE.ItemSheet.Ammo: Ammunition
+DGYZE.ItemSheet.AmmoType: Ammunitionsidentifierare
+DGYZE.ItemSheet.OverrideOption: Åsidosätt vapnets funktioner
+DGYZE.ItemSheet.Reliability: Pål.
+DGYZE.ItemSheet.RoF: Eldh.
+DGYZE.ItemSheet.Damage: Skada
+DGYZE.ItemSheet.Crit: Krit.
+DGYZE.ItemSheet.Blast: Spräng.
+DGYZE.ItemSheet.Range: Räckv.
+DGYZE.ItemSheet.Mag: Mag.
+DGYZE.ItemSheet.Armor: Skydd
+DGYZE.ItemSheet.Weight: Vikt
+DGYZE.ItemSheet.Price: Pris
+DGYZE.ItemSheet.ArmorLocation: Skyddat område
+DGYZE.ItemSheet.Equipped: Utrustad
+DGYZE.ItemSheet.StoredInBackpack: Förvarad i ryggsäck
+DGYZE.ItemSheet.CreateAmmo: Generera ammunition
+DGYZE.ItemSheet.CreateAmmoNotif: Genererade 1x <b>{ammo}</b> för vapnet <b>{weapon}</b>
+DGYZE.ItemSheet.FeaturesForVehicle: Fordonsegenskaper
+DGYZE.InjurySheet.Category: Kategori
+DGYZE.InjurySheet.Location: Plats
+DGYZE.InjurySheet.TimeLimit: Tidsbegränsning
+DGYZE.InjurySheet.HealTime: Heal Time
+DGYZE.InjurySheet.Effect: Effekt
+DGYZE.InjurySheet.Lethal: Dödlig
+DGYZE.InjurySheet.day: dag
+DGYZE.InjurySheet.days: dagar
+DGYZE.Chat.Actions.Attack: Attackera
+DGYZE.Chat.Actions.Reload: Ladda om
+DGYZE.Chat.Actions.Roll: Slå
+DGYZE.Chat.Actions.Push: Pressa
+DGYZE.Chat.Actions.ApplyDamage: Applicera skada
+DGYZE.Chat.Roll.Success: Lyckat
+DGYZE.Chat.Roll.Successes: Lyckade
+DGYZE.Chat.Roll.Pushed: '— Pressat'
+DGYZE.Chat.Roll.Suppression: Nedhållen
+DGYZE.Chat.Roll.ExtraHit: Extra träff
+DGYZE.Chat.Roll.ExtraHits: Extra träffar
+DGYZE.Chat.Roll.Mishap: Missöde
+DGYZE.Chat.Roll.AmmoSpent: Använd ammunition
+DGYZE.Chat.Roll.NoItemNotif: Detta föremål existerar inte längre.
+DGYZE.Chat.Roll.NoReliabilityNotif:
   Föremålets nuvarande tillförlitlighet gör föremålet
   obrukbart.
-T2K4E.Chat.Damage.Incapacited: OSKADLIGGJORD
-T2K4E.Chat.Damage.DamagedArmor: Skadad
-T2K4E.Chat.Damage.DamageDealt: '<b>{name}</b> har tillfogat <b>{amount}</b> skada.'
-T2K4E.Chat.Damage.NoDamageDealt: Ingen skada tillfogades <b>{name}</b>.
-T2K4E.Chat.Damage.InitialAmount:
+DGYZE.Chat.Damage.Incapacited: OSKADLIGGJORD
+DGYZE.Chat.Damage.DamagedArmor: Skadad
+DGYZE.Chat.Damage.DamageDealt: '<b>{name}</b> har tillfogat <b>{amount}</b> skada.'
+DGYZE.Chat.Damage.NoDamageDealt: Ingen skada tillfogades <b>{name}</b>.
+DGYZE.Chat.Damage.InitialAmount:
   Attacken gjorde initialt <b>{damage}</b> skada, med
   en skyddsmodifikation av {mod}.
-T2K4E.Chat.Damage.DeflectedDamage: undvek {damage} skada
-T2K4E.Chat.Damage.DeflectedAllDamage: undvek all skada
-T2K4E.Chat.Damage.NoEffect: ingen effekt
-T2K4E.Combat.Attack: '{weapon} — Attack'
-T2K4E.Combat.Barrier: Barriär
-T2K4E.Combat.BodyArmor: Kroppsskydd
-T2K4E.Combat.NoQuantityLeft: Inga enheter kvar för vapnet {weapon}.
-T2K4E.Combat.NoAmmoLeft: Ingen ammunition kvar i magasinet för {weapon}.
-T2K4E.Combat.NoMag: Sätt i ett magasin i vapnet {weapon}.
-T2K4E.Dialog.Actions.Normal: Slå
-T2K4E.Dialog.Actions.Reload: Ladda om
-T2K4E.Dialog.Actions.Ok: OK
-T2K4E.Dialog.Actions.Cancel: Avbryt
-T2K4E.Dialog.Roll.Attribute: Egenskap
-T2K4E.Dialog.Roll.Skill: Färdighet
-T2K4E.Dialog.Roll.Formula: Formel
-T2K4E.Dialog.Roll.RoF: Eldhastighet
-T2K4E.Dialog.Roll.Modifier: Modifierare
-T2K4E.Dialog.Roll.Locate: Lägg till en träfftärning?
-T2K4E.Dialog.Roll.MaxPush: Antal pressanden
-T2K4E.Dialog.Roll.RollMode: Visning
-T2K4E.Dialog.CuF.CoolnessUnderFire: Stridsvana
-T2K4E.Dialog.CuF.UnitMorale: Lägg till Stridsmoralen?
-T2K4E.Dialog.Actor.ChooseActor: Välj en aktör
-T2K4E.Dialog.Damage.ChooseDamage: Amount of Damage
-T2K4E.Dialog.Damage.Description: Choose how much damage to inflict to <b>{target}</b>.
-T2K4E.Dialog.Damage.DamageQuantity: Grundantal
-T2K4E.Dialog.Damage.ExtraHits: Extraträffar
-T2K4E.Dialog.Damage.BarrierArmors: Barriärens skyddsnivå
-T2K4E.Dialog.Damage.BarrierArmorsHint: Multipla barriärer kommasepareras.
-T2K4E.Macro.MultipleItems:
+DGYZE.Chat.Damage.DeflectedDamage: undvek {damage} skada
+DGYZE.Chat.Damage.DeflectedAllDamage: undvek all skada
+DGYZE.Chat.Damage.NoEffect: ingen effekt
+DGYZE.Combat.Attack: '{weapon} — Attack'
+DGYZE.Combat.Barrier: Barriär
+DGYZE.Combat.BodyArmor: Kroppsskydd
+DGYZE.Combat.NoQuantityLeft: Inga enheter kvar för vapnet {weapon}.
+DGYZE.Combat.NoAmmoLeft: Ingen ammunition kvar i magasinet för {weapon}.
+DGYZE.Combat.NoMag: Sätt i ett magasin i vapnet {weapon}.
+DGYZE.Dialog.Actions.Normal: Slå
+DGYZE.Dialog.Actions.Reload: Ladda om
+DGYZE.Dialog.Actions.Ok: OK
+DGYZE.Dialog.Actions.Cancel: Avbryt
+DGYZE.Dialog.Roll.Attribute: Egenskap
+DGYZE.Dialog.Roll.Skill: Färdighet
+DGYZE.Dialog.Roll.Formula: Formel
+DGYZE.Dialog.Roll.RoF: Eldhastighet
+DGYZE.Dialog.Roll.Modifier: Modifierare
+DGYZE.Dialog.Roll.Locate: Lägg till en träfftärning?
+DGYZE.Dialog.Roll.MaxPush: Antal pressanden
+DGYZE.Dialog.Roll.RollMode: Visning
+DGYZE.Dialog.CuF.CoolnessUnderFire: Stridsvana
+DGYZE.Dialog.CuF.UnitMorale: Lägg till Stridsmoralen?
+DGYZE.Dialog.Actor.ChooseActor: Välj en aktör
+DGYZE.Dialog.Damage.ChooseDamage: Amount of Damage
+DGYZE.Dialog.Damage.Description: Choose how much damage to inflict to <b>{target}</b>.
+DGYZE.Dialog.Damage.DamageQuantity: Grundantal
+DGYZE.Dialog.Damage.ExtraHits: Extraträffar
+DGYZE.Dialog.Damage.BarrierArmors: Barriärens skyddsnivå
+DGYZE.Dialog.Damage.BarrierArmorsHint: Multipla barriärer kommasepareras.
+DGYZE.Macro.MultipleItems:
   Din aktiva aktör {actor} har mer än ett föremål med namnet
   {item}. Det första matchade objektet kommer att väljas.
-T2K4E.Macro.NoItem: Din aktiva aktör {actor} har inte ett objekt som heter {item}.
+DGYZE.Macro.NoItem: Din aktiva aktör {actor} har inte ett objekt som heter {item}.
 FLPS.TAB.MAIN: Grupp
 FLPS.TAB.TRAVEL: Resehandlingar
 FLPS.TAB.NOTE: Anteckningar
