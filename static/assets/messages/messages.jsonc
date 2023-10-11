@@ -6,8 +6,8 @@
     "max-sys-version": "10.0.0", //optional, exclusive
     "type": "chat", // Type of message: [prompt, chat]
     "display": "once", // Time until it goes away: [once, infinite, mm.dd.yyyy]
-    "title": "Welcome to Twilight: 2000 (4th Edition)",
-    "content": "<img src=\"systems/dgyze/assets/t2k-banner.jpg\"><p class=\"nue\">Hi, {name}!</p><p class=\"nue\"><strong>Twilight: 2000</strong> is a roleplaying game about survival in mankind’s most desperate hour. Yet, in this bleak world, there is still hope. In the midst of utter destruction, you can start to build something new. Rally people to your ranks. Stake a claim and protect it. And maybe, if you live long enough, start turning the tide.</p><p class=\"nue\"><a href=\"https://github.com/JamesAlday/dg-yze-foundry-vtt/wiki\" title=\"github.com/JamesAlday/dg-yze-foundry-vtt/wiki\">Read the Wiki!</a></p>"
+    "title": "Welcome to Delta Green: Year Zero Engine ",
+    "content": "<img src=\"systems/dgyze/assets/burned_delta_green_banner.webp\"><p class=\"nue\">Hi, {name}!</p><p class=\"nue\"><strong>Delta Green</strong> is a roleplaying game about survival in mankind’s most desperate hour. Yet, in this bleak world, there is still hope. In the midst of utter destruction, you can start to build something new. Rally people to your ranks. Stake a claim and protect it. And maybe, if you live long enough, start turning the tide.</p><p class=\"nue\"><a href=\"https://github.com/JamesAlday/dg-yze-foundry-vtt/wiki\" title=\"github.com/JamesAlday/dg-yze-foundry-vtt/wiki\">Read the Wiki!</a></p>"
   },
   {
     // "min-core-version": "9.0.0", //optional, inclusive

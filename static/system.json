@@ -1,15 +1,20 @@
 {
   "id": "dgyze",
-  "title": "Twilight: 2000 🪖 (4th Edition)",
-  "description": "Twilight: 2000 is a roleplaying game about survival in mankind’s most desperate hour. Yet, in this bleak world, there is still hope. In the midst of utter destruction, you can start to build something new. Rally people to your ranks. Stake a claim and protect it. And maybe, if you live long enough, start turning the tide.",
-  "version": "11.0.1",
+  "title": "Delta Green: Year Zero Engine",
+  "description": "Delta Green: Year Zero Engine... is a roleplaying game about survival in mankind’s most desperate hour. Yet, in this bleak world, there is still hope. In the midst of utter destruction, you can start to build something new. Rally people to your ranks. Stake a claim and protect it. And maybe, if you live long enough, start turning the tide.",
+  "version": "11.5.01",
   "compatibility": {
     "minimum": 10,
     "verified": "11.304",
     "maximum": 11
   },
-  "author": "Stefouch",
+  "author": "James Alday",
   "authors": [
+    {
+      "name": "James Alday",
+      "url": "https://www.github.com/JamesAlday",
+      "discord": "arclyte23"
+    },
     {
       "name": "Stefouch",
       "url": "https://stefouch.be",
@@ -33,21 +38,6 @@
       "lang": "en",
       "name": "English",
       "path": "lang/en.json"
-    },
-    {
-      "lang": "fr",
-      "name": "French (Français)",
-      "path": "lang/fr.json"
-    },
-    {
-      "lang": "sv",
-      "name": "Swedish (Svenska)",
-      "path": "lang/sv.json"
-    },
-    {
-      "lang": "es",
-      "name": "Spanish (Española)",
-      "path": "lang/es.json"
     }
   ],
   "packs": [],
@@ -55,7 +45,7 @@
   "flags": {},
   "socket": false,
   "protected": false,
-  "background": "systems/dgyze/assets/gear-intro_c.jpg",
+  "background": "systems/dgyze/assets/Bowser_JR_skeletons_playing_poker_in_the_hanger_of_an_airforce.webp",
   "gridDistance": 2,
   "gridUnits": "m",
   "primaryTokenAttribute": "health",

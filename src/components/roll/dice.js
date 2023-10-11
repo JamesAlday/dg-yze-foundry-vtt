@@ -352,13 +352,13 @@ export function getRollingActor({ actorId, tokenKey } = {}) {
 export function registerDsN(dice3d) {
   dice3d.addSystem({
     id: 'dgyze',
-    name: 'Twilight 2000 4E',
+    name: 'Delta Green',
   }, 'preferred');
 
   dice3d.addColorset({
-    name: 't2k-base',
-    category: 'Twilight 2000 4E',
-    description: 'T2K Base Die',
+    name: 'dg-base',
+    category: 'Delta Green',
+    description: 'DG Base Die',
     foreground: '#E2C45F', // '#cfa826', // '#E2C45F',
     background: '#4E5B31', // '#262c23', // '#4C5847', // '#44544c',
     outline: 'none',
@@ -369,9 +369,9 @@ export function registerDsN(dice3d) {
   }, 'default');
 
   dice3d.addColorset({
-    name: 't2k-ammo',
-    category: 'Twilight 2000 4E',
-    description: 'T2K Ammo Die',
+    name: 'dg-ammo',
+    category: 'Delta Green',
+    description: 'DG Ammo Die',
     foreground: '#000',
     background: '#A3904D', // '#726435', // '#A3904D',
     outline: 'none',
@@ -383,9 +383,9 @@ export function registerDsN(dice3d) {
   }, 'default');
 
   dice3d.addColorset({
-    name: 't2k-loc',
-    category: 'Twilight 2000 4E',
-    description: 'T2K Hit Location Die',
+    name: 'dg-loc',
+    category: 'Delta Green',
+    description: 'DG Hit Location Die',
     foreground: '#000',
     background: '#fff', // '#9b978e', // '#DED8CC',
     outline: 'none',
@@ -411,7 +411,7 @@ export function registerDsN(dice3d) {
       'systems/dgyze/assets/dice/d6/t2k_d6_6_dsn_bump.png',
     ],
     system: 'dgyze',
-    colorset: 't2k-base',
+    colorset: 'dg-base',
   }, 'd6');
 
   dice3d.addDicePreset({
@@ -434,7 +434,7 @@ export function registerDsN(dice3d) {
       'systems/dgyze/assets/dice/d8/t2k_d8_8_dsn_bump.png',
     ],
     system: 'dgyze',
-    colorset: 't2k-base',
+    colorset: 'dg-base',
   }, 'd8');
 
   dice3d.addDicePreset({
@@ -461,7 +461,7 @@ export function registerDsN(dice3d) {
       'systems/dgyze/assets/dice/d10/t2k_d10_10_dsn_bump.png',
     ],
     system: 'dgyze',
-    colorset: 't2k-base',
+    colorset: 'dg-base',
   }, 'd10');
 
   dice3d.addDicePreset({
@@ -492,7 +492,7 @@ export function registerDsN(dice3d) {
       'systems/dgyze/assets/dice/d12/t2k_d12_12_dsn_bump.png',
     ],
     system: 'dgyze',
-    colorset: 't2k-base',
+    colorset: 'dg-base',
   }, 'd12');
 
   dice3d.addDicePreset({
@@ -511,7 +511,7 @@ export function registerDsN(dice3d) {
       'systems/dgyze/assets/dice/dm/t2k_dm_6_dsn.png',
     ],
     system: 'dgyze',
-    colorset: 't2k-ammo',
+    colorset: 'dg-ammo',
   }, 'd6');
 
   dice3d.addDicePreset({
@@ -533,34 +533,34 @@ export function registerDsN(dice3d) {
       'systems/dgyze/assets/dice/dl/hit_H.png',
     ],
     system: 'dgyze',
-    colorset: 't2k-loc',
+    colorset: 'dg-loc',
   }, 'd6');
 
   dice3d.addDicePreset({
     type: 'd2',
     labels: range(2),
     system: 'dgyze',
-    colorset: 't2k-ammo',
+    colorset: 'dg-ammo',
   }, 'd2');
 
   dice3d.addDicePreset({
     type: 'd4',
     labels: range(4),
     system: 'dgyze',
-    colorset: 't2k-base',
+    colorset: 'dg-base',
   }, 'd4');
 
   dice3d.addDicePreset({
     type: 'd100',
     labels: ['10', '20', '30', '40', '50', '60', '70', '80', '90', '00'],
     system: 'dgyze',
-    colorset: 't2k-base',
+    colorset: 'dg-base',
   }, 'd100');
 
   dice3d.addDicePreset({
     type: 'd20',
     labels: range(20),
     system: 'dgyze',
-    colorset: 't2k-base',
+    colorset: 'dg-base',
   }, 'd20');
 }

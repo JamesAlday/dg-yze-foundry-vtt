@@ -4,7 +4,7 @@ import { getAttributeAndSkill, T2KRoller } from '../components/roll/dice.js';
 import { enrichTextFields } from '@utils/utils.js';
 
 /**
- * Twilight 2000 Actor Sheet.
+ * Delta Green Actor Sheet.
  * @extends {ActorSheet} Extends the basic ActorSheet
  */
 export default class ActorSheetT2K extends ActorSheet {
@@ -56,6 +56,7 @@ export default class ActorSheetT2K extends ActorSheet {
     const alwaysAllowedItems = DGYZE.physicalItems;
     const allowedItems = {
       character: ['specialty', 'injury'],
+      unnatural: ['specialty'],
       npc: ['specialty'],
       vehicle: [],
     };

@@ -1,12 +1,12 @@
 import ActorSheetT2K from '../actorSheet.js';
 import { T2KRoller, getAttributeAndSkill } from '../../components/roll/dice.js';
-import { enrichTextFields } from '@utils/utils.js';
+// import { enrichTextFields } from '@utils/utils.js';
 
 /**
- * Delta Green Actor Sheet for Character.
+ * Delta Green Actor Sheet for Unnatural.
  * @extends {ActorSheetT2K} Extends the T2K ActorSheet
  */
-export default class ActorSheetT2KCharacter extends ActorSheetT2K {
+export default class ActorSheetDGUnnatural extends ActorSheetT2K {
   /* ------------------------------------------- */
   /*  Sheet Properties                           */
   /* ------------------------------------------- */
@@ -14,7 +14,7 @@ export default class ActorSheetT2KCharacter extends ActorSheetT2K {
   /** @override */
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ['dgyze', 'sheet', 'actor', 'character'],
+      classes: ['dgyze', 'sheet', 'actor', 'character', 'unnatural'],
       width: 570,
       height: 715,
     });
@@ -28,9 +28,9 @@ export default class ActorSheetT2KCharacter extends ActorSheetT2K {
   async getData() {
     const sheetData = await super.getData();
 
-    if (this.actor.type === 'character') {
-      await enrichTextFields(sheetData, ['system.bio.appearance']);
-    }
+    // if (this.actor.type === 'unnatural') {
+    //   await enrichTextFields(sheetData, ['system.bio.appearance']);
+    // }
     return sheetData;
   }
 
@@ -47,6 +47,7 @@ export default class ActorSheetT2KCharacter extends ActorSheetT2K {
     if (!this.isEditable) return;
 
     // html.find('.stat-score .score-selector').change(this._onAttributeChange.bind(this));
+    
     html.find('.boxes-radiation').on('click contextmenu', super._onValueChange.bind(this));
     html.find('.boxes-capacity').on('click contextmenu', this._onCapacityChange.bind(this));
     html.find('.capacity-increase').click(this._onCapacityIncrease.bind(this));

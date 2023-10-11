@@ -5,7 +5,7 @@ import { YearZeroRoll } from 'yzur';
 import Armor from '../components/armor.js';
 
 /**
- * Twilight 2000 Actor.
+ * Delta Green Actor.
  * @extends {Actor} Extends the basic Actor.
  */
 export default class ActorT2K extends Actor {
@@ -47,6 +47,9 @@ export default class ActorT2K extends Actor {
         break;
       case 'npc':
         this._prepareNpcData(actorData);
+        break;
+      case 'unnatural':
+        this._prepareUnnaturalData(actorData);
         break;
       case 'vehicle':
         this._prepareVehicleData(actorData);
@@ -117,6 +120,17 @@ export default class ActorT2K extends Actor {
    * @private
    */
   _prepareNpcData(actorData) {
+    this._prepareCharacterData(actorData);
+  }
+
+  /* ------------------------------------------- */
+
+  /**
+   * Prepares Unnatural NPC type specific data.
+   * @param {Object} actorData The Actor's data
+   * @private
+   */
+  _prepareUnnaturalData(actorData) {
     this._prepareCharacterData(actorData);
   }
 
@@ -414,6 +428,7 @@ export default class ActorT2K extends Actor {
         updateData.disposition = CONST.TOKEN_DISPOSITIONS.FRIENDLY;
         break;
       case 'npc':
+      case 'unnatural':
         updateData.bar2 = { attribute: null };
         break;
       case 'vehicle':
@@ -424,7 +439,7 @@ export default class ActorT2K extends Actor {
         break;
     }
     // Adds default character token size.
-    if (['character', 'npc'].includes(this.type)) {
+    if (['character', 'npc', 'unnatural'].includes(this.type)) {
       const size = game.settings.get('dgyze', 'defaultCharTokenSize');
       if (size >= 0.3 && size <= 2) {
         updateData.height = size;
@@ -551,6 +566,7 @@ export default class ActorT2K extends Actor {
     switch (this.type) {
       case 'character':
       case 'npc':
+      case 'unnatural':
         this.applyDamageToCharacter(amount, attackData, sendMessage);
         break;
       case 'vehicle':

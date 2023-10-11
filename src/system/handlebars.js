@@ -25,6 +25,7 @@ export async function preloadHandlebarsTemplates() {
     'systems/dgyze/templates/actor/parts/slots/armor-slot.hbs',
     'systems/dgyze/templates/actor/parts/slots/gear-slot.hbs',
     'systems/dgyze/templates/actor/parts/slots/ammo-slot.hbs',
+    'systems/dgyze/templates/actor/parts/unnatural-combat.hbs',
 
     // Vehicle Sheet Partials
     'systems/dgyze/templates/actor/parts/vehicle-crew.hbs',

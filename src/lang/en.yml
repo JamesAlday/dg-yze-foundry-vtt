@@ -1,28 +1,29 @@
 DGYZE.SheetClassCharacter: Character Sheet
+DGYZE.SheetClassUnnatural: Unnatural Sheet
 DGYZE.SheetClassVehicle: Vehicle Sheet
 DGYZE.SheetClassUnit: Unit Sheet
 DGYZE.SheetClassParty: Party Sheet
 DGYZE.Attribute: Attribute
 DGYZE.Attributes: Attributes
 DGYZE.AttributeNames.str: Strength
-DGYZE.AttributeNames.agl: Agility
+DGYZE.AttributeNames.agl: Dexterity
 DGYZE.AttributeNames.int: Intelligence
-DGYZE.AttributeNames.emp: Empathy
+DGYZE.AttributeNames.emp: Power
 DGYZE.Skill: Skill
 DGYZE.Skills: Skills
 DGYZE.SkillNames.none: –
-DGYZE.SkillNames.heavyWeapons: Heavy Weapons
+DGYZE.SkillNames.heavyWeapons: Force
 DGYZE.SkillNames.closeCombat: Close Combat
-DGYZE.SkillNames.stamina: Stamina
-DGYZE.SkillNames.driving: Driving
+DGYZE.SkillNames.stamina: Constitution
+DGYZE.SkillNames.driving: Drive
 DGYZE.SkillNames.mobility: Mobility
-DGYZE.SkillNames.rangedCombat: Ranged Combat
-DGYZE.SkillNames.recon: Recon
+DGYZE.SkillNames.rangedCombat: Firearms
+DGYZE.SkillNames.recon: Survival
 DGYZE.SkillNames.survival: Survival
 DGYZE.SkillNames.tech: Tech
-DGYZE.SkillNames.command: Command
-DGYZE.SkillNames.persuasion: Persuasion
-DGYZE.SkillNames.medicalAid: Medical Aid
+DGYZE.SkillNames.command: Bureaucracy
+DGYZE.SkillNames.persuasion: Persuade
+DGYZE.SkillNames.medicalAid: First Aid
 DGYZE.Action: Action
 DGYZE.Actions: Actions
 DGYZE.ActionNames.unarmedAttack: Unarmed attack
@@ -34,7 +35,7 @@ DGYZE.ActionNames.clearJam: Clear jam
 DGYZE.ActionNames.aimSniper: Sniper aim
 DGYZE.ActionNames.shootBow: Shoot bow
 DGYZE.ActionNames.throwWeapon: Throw weapon
-DGYZE.ActionNames.aimMortar: Aim mortar or howitzer
+DGYZE.ActionNames.aimMortar: Aim heavy weapon
 DGYZE.ActionNames.shootHeavyWeapon: Fire heavy weapon
 DGYZE.ActionNames.firstAid: First aid
 DGYZE.ActionNames.rally: Rally
@@ -80,6 +81,7 @@ DGYZE.InjuryCategoryNames.physical: Physical
 DGYZE.InjuryCategoryNames.mental: Mental
 DGYZE.ActionTypes.fast: Fast
 DGYZE.ActionTypes.slow: Slow
+DGYZE.ActionTypes.movement: Movement
 DGYZE.Ranges.close: In close combat
 DGYZE.Ranges.short: Short
 DGYZE.Ranges.medium: Medium
@@ -90,7 +92,7 @@ DGYZE.ItemTypes.armor: Armor
 DGYZE.ItemTypes.gear: Gear
 DGYZE.ItemTypes.grenade: Explosive
 DGYZE.ItemTypes.injury: Injury
-DGYZE.ItemTypes.specialty: Specialty
+DGYZE.ItemTypes.specialty: Special Training
 DGYZE.ItemTypes.weapon: Weapon
 DGYZE.ItemPropNames.twoHanded: Two-Handed
 DGYZE.ItemPropNames.mounted: Mounted
@@ -106,6 +108,7 @@ DGYZE.ItemPropNames.bayonet: Bayonet
 DGYZE.ItemPropNames.suppressor: Suppressor
 DGYZE.ActorTypes.character: Player Character (PC)
 DGYZE.ActorTypes.npc: Non-Player Character (NPC)
+DGYZE.ActorTypes.unnatural: Unnatural Entity (NPC)
 DGYZE.ActorTypes.vehicle: Vehicle
 DGYZE.ActorSheet.Name: Name
 DGYZE.ActorSheet.MainTab: Stats
@@ -123,16 +126,16 @@ DGYZE.ActorSheet.Experience: Experience
 DGYZE.ActorSheet.ExperienceCurrent: XP Current
 DGYZE.ActorSheet.ExperienceTotal: XP Total
 DGYZE.ActorSheet.Appearance: Appearance
-DGYZE.ActorSheet.MoralCode: Moral Code
+DGYZE.ActorSheet.MoralCode: Motivation
 DGYZE.ActorSheet.Buddy: Buddy
 DGYZE.ActorSheet.BigDream: Big Dream
 DGYZE.ActorSheet.GroupMeeting: 'How you met the group:'
-DGYZE.ActorSheet.AttributesAndSkills: Attributes & Skills
+DGYZE.ActorSheet.AttributesAndSkills: Statistics & Skills
 DGYZE.ActorSheet.Rating: Rating
 DGYZE.ActorSheet.BaseDie: Base Die
-DGYZE.ActorSheet.Specialties: Specialties
-DGYZE.ActorSheet.AddSpecialty: Add a new specialty
-DGYZE.ActorSheet.NoSpecialty: This character has no specialty. Click the "+" icon to add a new specialty.
+DGYZE.ActorSheet.Specialties: Special Training
+DGYZE.ActorSheet.AddSpecialty: Add a new special training
+DGYZE.ActorSheet.NoSpecialty: This character has no special training. Click the "+" icon to add new special training.
 DGYZE.ActorSheet.Combat: Combat
 DGYZE.ActorSheet.Actions: Actions
 DGYZE.ActorSheet.Current: Current
@@ -145,8 +148,8 @@ DGYZE.ActorSheet.CriticalInjuries: Critical Injuries
 DGYZE.ActorSheet.AddInjury: Add a new injury
 DGYZE.ActorSheet.InjuryTimeLeft: '{time} left'
 DGYZE.ActorSheet.Diseases: Diseases
-DGYZE.ActorSheet.Radiation: Radiation
-DGYZE.ActorSheet.RadiationRoll: Rad Attack
+DGYZE.ActorSheet.Radiation: Sanity (SAN)
+DGYZE.ActorSheet.RadiationRoll: SAN Roll
 DGYZE.ActorSheet.TemporaryRadiation: Temporary
 DGYZE.ActorSheet.PermanentRadiation: Permanent
 DGYZE.ActorSheet.EncumbranceFull: FULL
@@ -170,7 +173,7 @@ DGYZE.ActorSheet.NewItem.weapon: New Weapon
 DGYZE.ActorSheet.NewItem.armor: New Armor
 DGYZE.ActorSheet.NewItem.gear: New Gear
 DGYZE.ActorSheet.NewItem.ammunition: New Ammunition
-DGYZE.ActorSheet.NewItem.specialty: New Specialty
+DGYZE.ActorSheet.NewItem.specialty: New Special Training
 DGYZE.ActorSheet.NewItem.injury: New Injury
 DGYZE.ActorSheet.NotifWrongItemType: '"{type}" items cannot be added to a {actor}!'
 DGYZE.VehicleSheet.CrewTab: Crew
@@ -457,9 +460,10 @@ YZUR.DIETERMS.D10TwilightDie: Base D10
 YZUR.DIETERMS.D12TwilightDie: Base D12
 YZUR.DIETERMS.AmmoDie: Ammo
 YZUR.DIETERMS.LocationDie: Hit Die
-GAME.Paused: War Paused
+GAME.Paused: Operation Paused
 TYPES.Actor.character: Player Character
 TYPES.Actor.npc: Non-Player Character
+TYPES.Actor.unnatural: Unnatural Entity
 TYPES.Actor.vehicle: Vehicle
 TYPES.Actor.unit: Military Unit
 TYPES.Actor.party: Travel Party
@@ -469,7 +473,7 @@ TYPES.Item.ammunition: Ammo
 TYPES.Item.grenade: Explosive
 TYPES.Item.gear: Gear
 TYPES.Item.injury: Critical Injury
-TYPES.Item.specialty: Specialty
+TYPES.Item.specialty: Special Training
 EFFECT.StatusFullCover: Full Cover
 EFFECT.StatusPartialCover: Partial Cover
 EFFECT.StatusOverwatch: Overwatch

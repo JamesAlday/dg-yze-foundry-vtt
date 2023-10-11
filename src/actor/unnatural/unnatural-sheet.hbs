@@ -1,0 +1,131 @@
+<form class="{{cssClass}} flexcol" autocomplete="off">
+
+  {{!-- Actor Sheet Header --}}
+  <header class="sheet-header">
+
+    <img class="t2k-trombone" src="./systems/dgyze/assets/textures/trombone.png" name="trombone"/>
+
+    <div class="grid-actor-header">
+
+      {{!-- Actor's name --}}
+      <h1 class="name">
+        <input type="text" name="name" value="{{actor.name}}" placeholder="{{localize 'DGYZE.ActorSheet.Name'}}"/>
+      </h1>
+
+      {{!-- Nationality, Branch & Rank --}}
+      <div class="nation">
+        <h3>{{localize "DGYZE.ActorSheet.Nationality"}}</h3>
+        <input type="text" name="system.bio.nationality" value="{{system.bio.nationality}}"/>
+      </div>
+      <div class="branch">
+        <h3>{{localize "DGYZE.ActorSheet.Branch"}}</h3>
+        <input type="text" name="system.bio.branch" value="{{system.bio.branch}}"/>
+      </div>
+      <div class="rank">
+        <h3>{{localize "DGYZE.ActorSheet.MilitaryRank"}}</h3>
+        <input type="text" name="system.bio.militaryRank" value="{{system.bio.militaryRank}}"/>
+      </div>
+      <div class="age">
+        <h3>{{localize "DGYZE.ActorSheet.Age"}}</h3>
+        <input type="text" name="system.bio.age" value="{{system.bio.age}}"/>
+      </div>
+
+      {{!-- Hit Capacity --}}
+      <div class="capacity hit flexrow flex-middle">
+        <div>
+          <h3>{{localize "DGYZE.ActorSheet.HitCapacity"}}</h3>
+          {{> "systems/dgyze/templates/actor/parts/capacity-boxes.hbs" field="health" value=system.health.trauma min=0 max=system.hitCapacity}}
+        </div>
+        <div class="capacity-value boxed-value" title="{{localize 'DGYZE.ActorSheet.CapacityModifier'}} {{#if (gte system.health.modifier 1)}}+{{/if}}{{system.health.modifier}}">{{system.health.value}}/{{system.hitCapacity}}</div>
+        {{#unless hideCapacitiesButtons}}
+        <div class="capacity-buttons flexcol">
+          <a class="button capacity-increase" data-field="health">
+            <i class="far fa-plus-square"></i>
+          </a>
+          <a class="button capacity-decrease" data-field="health">
+            <i class="far fa-minus-square"></i>
+          </a>
+        </div>
+        {{/unless}}
+      </div>
+
+      {{!-- Stress Capacity --}}
+      {{!-- TODO: Will Points --}}
+      {{!-- {{#if (eq actor.type 'unnatural')}}
+      <div class="capacity stress flexrow flex-middle">
+        <div>
+          <h3>{{localize "DGYZE.ActorSheet.StressCapacity"}}</h3>
+          {{> "systems/dgyze/templates/actor/parts/capacity-boxes.hbs" field="sanity" value=system.sanity.trauma min=0 max=system.stressCapacity}}
+        </div>
+        <div class="capacity-value boxed-value" title="{{localize 'DGYZE.ActorSheet.CapacityModifier'}} {{#if (gte system.sanity.modifier 1)}}+{{/if}}{{system.sanity.modifier}}">{{system.sanity.value}}/{{system.stressCapacity}}</div>
+        {{#unless hideCapacitiesButtons}}
+        <div class="capacity-buttons flexcol">
+          <a class="button capacity-increase" data-field="sanity">
+            <i class="far fa-plus-square"></i>
+          </a>
+          <a class="button capacity-decrease" data-field="sanity">
+            <i class="far fa-minus-square"></i>
+          </a>
+        </div>
+        {{/unless}}
+      </div>
+      {{/if}} --}}
+
+      {{!-- Profile IMG & XP --}}
+      <div class="img">
+        <img class="profile" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="64" width="64"/>
+
+        {{#if (eq actor.type 'character')}}
+        <div class="experience flexrow flex-middle">
+          <h5>{{localize "DGYZE.ActorSheet.ExperienceCurrent"}}</h5>
+          <input type="number" class="smallbox" name="system.xp.value" value="{{system.xp.value}}"/>
+        </div>
+        <div class="experience flexrow flex-middle">
+          <h5>{{localize "DGYZE.ActorSheet.ExperienceTotal"}}</h5>
+          <input type="number" class="smallbox" name="system.xp.total" value="{{system.xp.total}}"/>
+        </div>
+        {{/if}}
+
+      </div>
+    </div>
+  </header>
+  
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="sheet-tabs slanted-tabs flexrow flex-center" data-group="primary">
+    <a class="item" data-tab="main">{{localize "DGYZE.ActorSheet.MainTab"}}</a>
+    <a class="item" data-tab="combat">{{localize "DGYZE.ActorSheet.CombatTab"}}</a>
+    <a class="item" data-tab="equipment">{{localize "DGYZE.ActorSheet.EquipmentTab"}}</a>
+    <a class="item" data-tab="description">{{localize "DGYZE.ActorSheet.NoteTab"}}</a>
+  </nav>
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+
+    {{!-- Main Tab --}}
+    {{!-- Main Tab --}}
+    <div class="tab tab-main flexcol" data-group="primary" data-tab="main">
+      {{> "systems/dgyze/templates/actor/parts/actor-stats.hbs"}}
+    </div>
+
+    {{!-- Combat Tab --}}
+    <div class="tab tab-combat" data-group="primary" data-tab="combat">
+{{!-- HANDLEBAR.JS BUG WITH TEXTAREA INSIDE PARTIALS: --}}
+{{!-- ADDS INFINTE SPACES AFTER A LINE BREAK!! --}}
+{{!-- SOLUTION: REMOVE LEADING SPACES WHEN CALLING THE PARTIAL --}}
+{{!-- SEE: https://codepen.io/Munvier/post/stranges-white-spaces-with-backbone-handlebars --}}
+{{> "systems/dgyze/templates/actor/parts/unnatural-combat.hbs"}}
+    </div>
+
+    {{!-- Equipment Tab --}}
+    <div class="tab tab-equipment flexcol" data-group="primary" data-tab="equipment">
+      {{> "systems/dgyze/templates/actor/parts/actor-equipment.hbs"}}
+    </div>
+
+    {{!-- Description Tab --}}
+    <div class="tab tab-description" data-group="primary" data-tab="description">
+      {{> "systems/dgyze/templates/actor/parts/actor-description.hbs"}}
+    </div>
+
+  </section>
+
+</form>

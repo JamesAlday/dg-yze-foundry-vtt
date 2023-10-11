@@ -5,7 +5,7 @@ import { T2KRoller } from '../components/roll/dice.js';
 import T2KDialog from '../components/dialog/dialog.js';
 
 /**
- * Twilight 2000 Item.
+ * Delta Green Item.
  * @extends {Item} Extends the basic Item
  */
 export default class ItemT2K extends Item {
@@ -240,7 +240,7 @@ export default class ItemT2K extends Item {
             this.update({ 'system.healTime': healTime });
           }
           catch (e) {
-            console.warn('t2k4 | Item#_onCreate | Invalid formula for Injury heal time roll.');
+            console.warn('dgyze | Item#_onCreate | Invalid formula for Injury heal time roll.');
           }
         }
       }

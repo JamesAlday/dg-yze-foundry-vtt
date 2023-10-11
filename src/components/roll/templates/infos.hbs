@@ -18,10 +18,10 @@
     {{/if}}
   {{/if}}
 
-  {{! TWILIGHT 2000 4E }}
+  {{! DELTA GREEN }}
   {{#if (eq roll.game 't2k')}}
 
-    {{! T2K: Hit Location }}
+    {{! DG: Hit Location }}
     {{#if roll.bestHitLocation}}
       <div class='dice-info roll-hit-location'>
         {{#if (gt (lookup roll.hitLocations 'length') 1)}}
@@ -35,7 +35,7 @@
       </div>
     {{/if}}
 
-    {{! T2K: Extra Hits }}
+    {{! DG: Extra Hits }}
     {{#if roll.hitCount}}
       <div class='dice-info roll-hit-count'>
         {{#if (gt roll.baseSuccessQty 0)}}
@@ -49,7 +49,7 @@
       </div>
     {{/if}}
 
-    {{! T2K: Damage/Stress }}
+    {{! DG: Damage/Stress }}
     {{#if (and roll.pushed roll.attributeTrauma)}}
       <div class='dice-info roll-trauma'>
         <span class='label'>{{localize 'YZUR.CHAT.ROLL.DamageOrStress'}}</span>
@@ -57,14 +57,14 @@
       </div>
     {{/if}}
 
-    {{! T2K: Ammo Spent }}
+    {{! DG: Ammo Spent }}
     {{#if roll.ammoSpent}}
       <div class='dice-info roll-ammo-spent'>
         <span class='label'>{{localize 'YZUR.CHAT.ROLL.AmmoSpent'}}</span>
         <span class='result'>{{add roll.ammoSpent 1}}</span>
       </div>
 
-      {{! T2K: Jamming }}
+      {{! DG: Jamming }}
       {{#if (and roll.pushed roll.jamCount)}}
         <div class='dice-info roll-jam-count'>
           <span class='label'>{{localize 'YZUR.CHAT.ROLL.JamCount'}}</span>

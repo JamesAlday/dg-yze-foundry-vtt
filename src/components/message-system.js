@@ -50,7 +50,7 @@ const displayPrompt = (title, content) => {
   content = content.replace('{name}', game.user.name);
   return Dialog.prompt({
     title: title,
-    content: `<img src="systems/dgyze/assets/t2k-banner-small.webp"/>${content}`,
+    content: `<img src="systems/dgyze/assets/Delta-Green-title-logo-wide-150.png"/>${content}`,
     label: 'Understood!',
     options: { width: 400, classes: [SYSTEM_NAME, 'dialog'] },
     callback: () => setDisplayed(title),
@@ -63,7 +63,7 @@ const sendToChat = (title, content) => {
   const footer = `<footer class="nue">${game.i18n.localize('NUE.FirstLaunchHint')}</footer>`;
   return ChatMessage.create({
     whisper: [game.user.id],
-    speaker: { alias: 'Twilight: 2000 4E' },
+    speaker: { alias: 'Delta Green: YZE' },
     flags: { core: { canPopout: true } },
     title: title,
     content: `<div class="chat-card"><h3 class="nue">${title}</h3>${content}${footer}</div>`,

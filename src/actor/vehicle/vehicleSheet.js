@@ -2,7 +2,7 @@ import ActorSheetT2K from '../actorSheet.js';
 import { DGYZE } from '../../system/config.js';
 
 /**
- * Twilight 2000 Actor Sheet for Vehicles.
+ * Delta Green Actor Sheet for Vehicles.
  * @extends {ActorSheetT2K} Extends the T2K ActorSheet
  */
 export default class ActorSheetT2KVehicle extends ActorSheetT2K {

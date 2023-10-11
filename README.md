@@ -29,7 +29,7 @@ The **UNOFFICIAL** game system for [Delta Green] using the Year Zero Engine (TW2
 
 <p align="center">
   <a href="http://delta-green.com/" target="_blank">
-    <img src="https://github.com/JamesAlday/dg-yze-foundry-vtt/raw/master/static/assets/t2k-banner.jpg" alt="Delta Green"/>
+    <img src="https://github.com/JamesAlday/dg-yze-foundry-vtt/raw/master/static/assets/burned_delta_green_banner.webp" alt="Delta Green"/>
   </a>
 </p>
 <a href="https://frialigan.se/en/games/twilight-2000/" target="_blank">Twilight 2000 4E</a>

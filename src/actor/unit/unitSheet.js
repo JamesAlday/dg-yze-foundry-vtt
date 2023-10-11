@@ -1,7 +1,7 @@
 import ActorSheetT2K from '../actorSheet.js';
 
 /**
- * Twilight 2000 Actor Sheet for Units.
+ * Delta Green Actor Sheet for Units.
  * @extends {ActorSheetT2K} Extends the T2K ActorSheet
  */
 export default class ActorSheetT2KUnit extends ActorSheetT2K {

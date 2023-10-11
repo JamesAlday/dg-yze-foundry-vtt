@@ -34,6 +34,7 @@ import ItemT2K from './item/item.js';
 
 // Imports Applications.
 import ActorSheetT2KCharacter from './actor/character/characterSheet.js';
+import ActorSheetDGUnnatural from './actor/unnatural/unnaturalSheet.js';
 import ActorSheetT2KVehicle from './actor/vehicle/vehicleSheet.js';
 import ActorSheetT2KUnit from './actor/unit/unitSheet.js';
 import ActorSheetT2KParty from './actor/party/partySheet.js';
@@ -66,6 +67,7 @@ Hooks.once('init', function () {
   game.dgyze = {
     applications: {
       ActorSheetT2KCharacter,
+      ActorSheetDGUnnatural,
       ActorSheetT2KVehicle,
       ActorSheetT2KUnit,
       ActorSheetT2KParty,
@@ -133,6 +135,11 @@ Hooks.once('init', function () {
     types: ['character', 'npc'],
     makeDefault: true,
     label: 'DGYZE.SheetClassCharacter',
+  });
+  Actors.registerSheet('dgyze', ActorSheetDGUnnatural, {
+    types: ['unnatural'],
+    makeDefault: true,
+    label: 'DGYZE.SheetClassUnnatural',
   });
   Actors.registerSheet('dgyze', ActorSheetT2KVehicle, {
     types: ['vehicle'],

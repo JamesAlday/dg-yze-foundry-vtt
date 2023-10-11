@@ -1,7 +1,7 @@
 import { enrichTextFields } from '@utils/utils';
 
 /**
- * Twilight 2000 Item Sheet.
+ * Delta Green Item Sheet.
  * @extends {ItemSheet} Extends the basic ItemSheet
  */
 export default class ItemSheetT2K extends ItemSheet {
