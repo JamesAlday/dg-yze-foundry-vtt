@@ -15,10 +15,10 @@ DGYZE.SkillNames.none: –
 DGYZE.SkillNames.heavyWeapons: Force
 DGYZE.SkillNames.closeCombat: Close Combat
 DGYZE.SkillNames.stamina: Constitution
-DGYZE.SkillNames.driving: Drive
+DGYZE.SkillNames.driving: Sleight
 DGYZE.SkillNames.mobility: Mobility
 DGYZE.SkillNames.rangedCombat: Firearms
-DGYZE.SkillNames.recon: Survival
+DGYZE.SkillNames.recon: Search
 DGYZE.SkillNames.survival: Survival
 DGYZE.SkillNames.tech: Tech
 DGYZE.SkillNames.command: Bureaucracy
@@ -54,7 +54,7 @@ DGYZE.ActionNames.drive: Drive
 DGYZE.Constants: Constants
 DGYZE.ConstantNames.encumbrance: Encumbrance
 DGYZE.ConstantNames.awareness: Combat awareness
-DGYZE.ConstantNames.cuf: CUF
+DGYZE.ConstantNames.cuf: SAN
 DGYZE.TravelTasks: Travel Tasks
 DGYZE.TravelTaskNames.marching: Marching
 DGYZE.TravelTaskNames.driving: Driving
@@ -117,15 +117,15 @@ DGYZE.ActorSheet.EquipmentTab: Gear
 DGYZE.ActorSheet.BiographyTab: Bio
 DGYZE.ActorSheet.NoteTab: Notes
 DGYZE.ActorSheet.Nationality: Nationality
-DGYZE.ActorSheet.Branch: Branch
-DGYZE.ActorSheet.MilitaryRank: Rank
+DGYZE.ActorSheet.Branch: Employer
+DGYZE.ActorSheet.MilitaryRank: Profession/Rank
 DGYZE.ActorSheet.HitCapacity: Hit Capacity
 DGYZE.ActorSheet.StressCapacity: Stress Capacity
 DGYZE.ActorSheet.CapacityModifier: 'Modifier:'
 DGYZE.ActorSheet.Experience: Experience
 DGYZE.ActorSheet.ExperienceCurrent: XP Current
 DGYZE.ActorSheet.ExperienceTotal: XP Total
-DGYZE.ActorSheet.Appearance: Appearance
+DGYZE.ActorSheet.Appearance: Physical Description
 DGYZE.ActorSheet.MoralCode: Motivation
 DGYZE.ActorSheet.Buddy: Buddy
 DGYZE.ActorSheet.BigDream: Big Dream
@@ -140,16 +140,16 @@ DGYZE.ActorSheet.Combat: Combat
 DGYZE.ActorSheet.Actions: Actions
 DGYZE.ActorSheet.Current: Current
 DGYZE.ActorSheet.Max: Max
-DGYZE.ActorSheet.CuF: Coolness Under Fire
-DGYZE.ActorSheet.UnitMorale: Unit Morale
+DGYZE.ActorSheet.CuF: Sanity (SAN)
+DGYZE.ActorSheet.UnitMorale: Team Morale
 DGYZE.ActorSheet.NoArmor: This character has no equipped armor.
 DGYZE.ActorSheet.Conditions: Conditions
 DGYZE.ActorSheet.CriticalInjuries: Critical Injuries
 DGYZE.ActorSheet.AddInjury: Add a new injury
 DGYZE.ActorSheet.InjuryTimeLeft: '{time} left'
 DGYZE.ActorSheet.Diseases: Diseases
-DGYZE.ActorSheet.Radiation: Sanity (SAN)
-DGYZE.ActorSheet.RadiationRoll: SAN Roll
+DGYZE.ActorSheet.Radiation: Radiation
+DGYZE.ActorSheet.RadiationRoll: Radiation Roll
 DGYZE.ActorSheet.TemporaryRadiation: Temporary
 DGYZE.ActorSheet.PermanentRadiation: Permanent
 DGYZE.ActorSheet.EncumbranceFull: FULL
@@ -354,8 +354,8 @@ DGYZE.Dialog.Roll.Modifier: Modifier
 DGYZE.Dialog.Roll.Locate: Add a Hit Die?
 DGYZE.Dialog.Roll.MaxPush: Max Pushes
 DGYZE.Dialog.Roll.RollMode: Roll Mode
-DGYZE.Dialog.CuF.CoolnessUnderFire: Coolness Under Fire (CUF)
-DGYZE.Dialog.CuF.UnitMorale: Add the Unit Morale?
+DGYZE.Dialog.CuF.CoolnessUnderFire: Sanity (SAN)
+DGYZE.Dialog.CuF.UnitMorale: Add the Team Morale?
 DGYZE.Dialog.Actor.ChooseActor: Choose an Actor
 DGYZE.Dialog.Damage.ChooseDamage: Amount of Damage
 DGYZE.Dialog.Damage.Description: Choose how much damage to inflict to <b>{target}</b>.
