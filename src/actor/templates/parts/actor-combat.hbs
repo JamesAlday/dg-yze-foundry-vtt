@@ -18,7 +18,7 @@
         </div>
       </div>
 
-      {{!-- Coolness Under Fire --}}
+      {{!-- Sanity --}}
       <div class="stat stat-cuf flexrow" data-type="cuf">
         <div class="col-6 stat-name">
           <h4><a class="button cuf-roll">{{localize "DGYZE.ActorSheet.CuF"}}</a></h4>
@@ -34,7 +34,23 @@
         </div>
       </div>
 
-      {{!-- Unit Morale --}}
+      {{!-- Unnatural --}}
+      <div class="stat stat-unnatural flexrow" data-type="unnatural">
+        <div class="col-6 stat-name">
+          <h4><a class="button unnatural-roll">{{localize "DGYZE.ActorSheet.Unnatural"}}</a></h4>
+        </div>
+        <div class="col-3 stat-score">
+          {{> scoreSelector name="system.unnatural.score" selected=system.unnatural.score}}
+        </div>
+        <div class="col-3 stat-value">
+          {{#if (lte system.unnatural.value 0)}}–
+          {{else}}
+          <div class="boxed-value unnatural-roll rollable">D{{system.unnatural.value}}</div>
+          {{/if}}
+        </div>
+      </div>
+
+      {{!-- Team Morale --}}
       <div class="stat stat-unit-morale flexrow" data-type="unit">
         <div class="col-6 stat-name">
           <h4><a class="button unit-morale-roll">{{localize "DGYZE.ActorSheet.UnitMorale"}}</a></h4>

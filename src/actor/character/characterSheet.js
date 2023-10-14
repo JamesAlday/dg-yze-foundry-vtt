@@ -57,6 +57,7 @@ export default class ActorSheetT2KCharacter extends ActorSheetT2K {
       html.find('.attribute-roll').click(this._onAttributeRoll.bind(this));
       html.find('.skill-roll').click(this._onSkillRoll.bind(this));
       html.find('.cuf-roll').click(this._onCoolnessRoll.bind(this));
+      html.find('.unnatural-roll').click(this._onUnnaturalRoll.bind(this));
       html.find('.unit-morale-roll').click(this._onUnitMoraleRoll.bind(this));
       html.find('.radiation-roll').click(this._onRadiationRoll.bind(this));
     }
@@ -103,6 +104,22 @@ export default class ActorSheetT2KCharacter extends ActorSheetT2K {
     const stat = event.currentTarget.closest('.stat');
     const type = stat.dataset.type;
     return this._onMoraleRoll(type);
+  }
+
+  _onUnnaturalRoll(event) {
+    event.preventDefault();
+    const stat = event.currentTarget.closest('.stat');
+    // const type = stat.dataset.type;
+    const value = getProperty(this.actor, 'system.unnatural.value') || 0;
+    const title = game.i18n.localize('DGYZE.ActorSheet.Unnatural');
+    return T2KRoller.taskCheck({
+      title: title,
+      actor: this.actor,
+      attribute: value,
+      maxPush: 0,
+      skipDialog: true,
+      rollmode: 'blindroll',
+    })
   }
 
   _onUnitMoraleRoll(event) {

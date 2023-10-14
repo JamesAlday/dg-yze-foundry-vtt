@@ -102,6 +102,7 @@ export default class ActorT2K extends Actor {
     this._prepareScores(system.skills);
     if (system.cuf) this._prepareScores(system.cuf);
     if (system.unitMorale) this._prepareScores(system.unitMorale);
+    if (system.unnatural) this._prepareScores(system.unnatural);
     this._prepareAwareness(system);
 
     this._prepareCapacities(system);
