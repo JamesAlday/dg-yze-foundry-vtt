@@ -4,7 +4,6 @@
     {{!-- Sheet Tab Navigation --}}
     <nav class="sheet-tabs slanted-tabs flexrow flex-center" data-group="primary">
         <a class="item" data-tab="bond">{{localize "DGYZE.ItemSheet.BondTab"}}</a>
-        <a class="item" data-tab="description">{{localize "DGYZE.ItemSheet.DescriptionTab"}}</a>
     </nav>
     {{!-- Sheet Body --}}
     <section class="sheet-body">
@@ -16,10 +15,6 @@
                     <input type="checkbox" name="system.damaged" {{checked system.damaged}}/>
                 </div>
                 <div class="flexcol">
-                    <label>{{localize "DGYZE.ItemSheet.BondName"}}</label>
-                    <input type="text" name="system.name" value="{{system.name}}"/>
-                </div>
-                <div class="flexcol">
                     <label>{{localize "DGYZE.ItemSheet.Relationship"}}</label>
                     <input type="text" name="system.relationship" value="{{system.relationship}}"/>
                 </div>
@@ -27,16 +22,13 @@
                     <label>{{localize "DGYZE.ItemSheet.Score"}}</label>
                     <input type="number" name="system.score" value="{{system.score}}" data-dtype="Number"/>
                 </div>
-                {{!-- <div class="flexcol">
-                    <label>{{localize "DGYZE.ItemSheet.Blast"}}</label>
-                    {{> scoreSelector name="system.blast" selected=system.blast}}
-                </div> --}}
             </div>
-        </div>
-        {{!-- Description Tab --}}
-        {{!-- <div class="tab tab-description" data-group="primary" data-tab="description"> --}}
-        <div class="" data-group="primary" data-tab="description">
-            {{> "systems/dgyze/templates/item/parts/item-description.hbs"}}
+            <div class="item-description item-motivation">
+                <div class="flexcol">
+                    <h2>{{localize "DGYZE.ItemSheet.Description"}}</h2>
+                    {{> "systems/dgyze/templates/item/parts/item-description.hbs"}}
+                </div>
+            </div>
         </div>
     </section>
 </form>
