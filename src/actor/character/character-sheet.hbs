@@ -130,8 +130,8 @@
         <h2>{{localize "DGYZE.ActorSheet.Appearance"}}</h2>
         {{editor system.bio.appearance target="system.bio.appearance" button=true editable=editable}}
 
-        <h2>{{localize "DGYZE.ActorSheet.Buddy"}}</h2>
-        <input type="text" name="system.bio.buddy" value="{{system.bio.buddy}}"/>
+        {{!-- <h2>{{localize "DGYZE.ActorSheet.Buddy"}}</h2> --}}
+        {{!-- <input type="text" name="system.bio.buddy" value="{{system.bio.buddy}}"/>
 
         <h2>{{localize "DGYZE.ActorSheet.MoralCode"}}</h2>
         <input type="text" name="system.bio.moralCode" value="{{system.bio.moralCode}}"/>
@@ -140,7 +140,65 @@
         <input type="text" name="system.bio.bigDream" value="{{system.bio.bigDream}}"/>
 
         <h2>{{localize "DGYZE.ActorSheet.GroupMeeting"}}</h2>
-        <textarea name="system.bio.groupMeeting" rows="5">{{system.bio.groupMeeting}}</textarea>
+        <textarea name="system.bio.groupMeeting" rows="2">{{system.bio.groupMeeting}}</textarea> --}}
+
+        <div class="inventory">
+          {{!-- Motivations --}}
+          <div class="inventory-weapons">
+            <div class="items-header flexrow">
+              <div class="item-name">
+                <h2>{{localize "DGYZE.ActorSheet.Motivations"}}</h2>
+              </div>
+              <div class="item-detail item-disorder">
+                <h5>{{localize "DGYZE.ItemSheet.Disorder"}}</h5>
+              </div>
+              <div class="item-controls bond-controls">
+                <a class="button item-create" data-type="motivation" title="{{localize "DGYZE.ActorSheet.AddMotivation"}}">
+                  {{{config.Icons.buttons.plus}}}
+                </a>
+              </div>
+            </div>
+            <div class="item-list">
+              {{#each actor.itemTypes.motivation}}
+              {{> "systems/dgyze/templates/actor/parts/slots/motivation-slot.hbs" this}}
+              {{else}}
+              <div class="item">–</div>
+              {{/each}}
+            </div>
+          </div>
+        </div>
+
+        <div class="inventory">
+          {{!-- Bonds --}}
+          <div class="inventory-weapons">
+            <div class="items-header flexrow">
+              <div class="item-name">
+                <h2>{{localize "DGYZE.ActorSheet.Bonds"}}</h2>
+              </div>
+              <div class="item-detail item-relationship">
+                <h5>{{localize "DGYZE.ItemSheet.Relationship"}}</h5>
+              </div>
+              <div class="item-detail item-score">
+                <h5>{{localize "DGYZE.ItemSheet.Score"}}</h5>
+              </div>
+              <div class="item-detail item-damaged">
+                <h5>{{localize "DGYZE.ItemSheet.BondDamaged"}}</h5>
+              </div>
+              <div class="item-controls bond-controls">
+                <a class="button item-create" data-type="bond" title="{{localize "DGYZE.ActorSheet.AddBond"}}">
+                  {{{config.Icons.buttons.plus}}}
+                </a>
+              </div>
+            </div>
+            <div class="item-list">
+              {{#each actor.itemTypes.bond}}
+              {{> "systems/dgyze/templates/actor/parts/slots/bond-slot.hbs" this}}
+              {{else}}
+              <div class="item">–</div>
+              {{/each}}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     {{/if}}

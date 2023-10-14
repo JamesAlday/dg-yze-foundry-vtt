@@ -94,6 +94,8 @@ DGYZE.ItemTypes.grenade: Explosive
 DGYZE.ItemTypes.injury: Injury
 DGYZE.ItemTypes.specialty: Special Training
 DGYZE.ItemTypes.weapon: Weapon
+DGYZE.ItemTypes.bond: Bond
+DGYZE.ItemTypes.motivation: Motivation
 DGYZE.ItemPropNames.twoHanded: Two-Handed
 DGYZE.ItemPropNames.mounted: Mounted
 DGYZE.ItemPropNames.disposable: Disposable
@@ -118,7 +120,7 @@ DGYZE.ActorSheet.BiographyTab: Bio
 DGYZE.ActorSheet.NoteTab: Notes
 DGYZE.ActorSheet.Nationality: Nationality
 DGYZE.ActorSheet.Branch: Employer
-DGYZE.ActorSheet.MilitaryRank: Profession/Rank
+DGYZE.ActorSheet.MilitaryRank: Profession
 DGYZE.ActorSheet.HitCapacity: Hit Capacity
 DGYZE.ActorSheet.StressCapacity: Stress Capacity
 DGYZE.ActorSheet.CapacityModifier: 'Modifier:'
@@ -126,10 +128,12 @@ DGYZE.ActorSheet.Experience: Experience
 DGYZE.ActorSheet.ExperienceCurrent: XP Current
 DGYZE.ActorSheet.ExperienceTotal: XP Total
 DGYZE.ActorSheet.Appearance: Physical Description
-DGYZE.ActorSheet.MoralCode: Motivation
+DGYZE.ActorSheet.MoralCode: Moral Code
 DGYZE.ActorSheet.Buddy: Buddy
 DGYZE.ActorSheet.BigDream: Big Dream
 DGYZE.ActorSheet.GroupMeeting: 'How you met the group:'
+DGYZE.ActorSheet.Bonds: Bonds
+DGYZE.ActorSheet.Motivations: Motivations
 DGYZE.ActorSheet.AttributesAndSkills: Statistics & Skills
 DGYZE.ActorSheet.Rating: Rating
 DGYZE.ActorSheet.BaseDie: Base Die
@@ -162,6 +166,7 @@ DGYZE.ActorSheet.Add: Add
 DGYZE.ActorSheet.AddArmor: Add a new armor
 DGYZE.ActorSheet.AddGear: Add new gear
 DGYZE.ActorSheet.AddAmmo: Add new ammunition
+DGYZE.ActorSheet.AddBond: Add Bond
 DGYZE.ActorSheet.Encumbrance: Encumbrance
 DGYZE.ActorSheet.CombatGearEncumbrance: Combat Gear (Encumbrance)
 DGYZE.ActorSheet.BackpackEncumbrance: Backpack (Encumbrance)
@@ -175,6 +180,8 @@ DGYZE.ActorSheet.NewItem.gear: New Gear
 DGYZE.ActorSheet.NewItem.ammunition: New Ammunition
 DGYZE.ActorSheet.NewItem.specialty: New Special Training
 DGYZE.ActorSheet.NewItem.injury: New Injury
+DGYZE.ActorSheet.NewItem.bond: New Bond
+DGYZE.ActorSheet.NewItem.motivation: New Motivation
 DGYZE.ActorSheet.NotifWrongItemType: '"{type}" items cannot be added to a {actor}!'
 DGYZE.VehicleSheet.CrewTab: Crew
 DGYZE.VehicleSheet.ComponentsTab: Components
@@ -303,6 +310,15 @@ DGYZE.ItemSheet.StoredInBackpack: Stored in the backpack
 DGYZE.ItemSheet.CreateAmmo: Generate Ammo
 DGYZE.ItemSheet.CreateAmmoNotif: Generated 1x <b>{ammo}</b> for weapon <b>{weapon}</b>
 DGYZE.ItemSheet.FeaturesForVehicle: Vehicle Features
+DGYZE.ItemSheet.Bonds: Bonds
+DGYZE.ItemSheet.BondTab: Status
+DGYZE.ItemSheet.BondDamaged: Damaged
+DGYZE.ItemSheet.Relationship: Relationship
+DGYZE.ItemSheet.Score: Score
+DGYZE.ItemSheet.MotivationTab: Motivation
+DGYZE.ItemSheet.MotivationReplaced: Replaced
+DGYZE.ItemSheet.Disorder: Disorder
+DGYZE.ItemSheet.DisorderCured: Cured
 DGYZE.InjurySheet.Category: Category
 DGYZE.InjurySheet.Location: Location
 DGYZE.InjurySheet.TimeLimit: Time Limit

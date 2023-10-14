@@ -1,0 +1,32 @@
+<form class="{{cssClass}} flexcol" autocomplete="off">
+    {{!-- Item Sheet Header --}}
+    {{> "systems/dgyze/templates/item/parts/item-header.hbs"}}
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs slanted-tabs flexrow flex-center" data-group="primary">
+        <a class="item" data-tab="motivation">{{localize "DGYZE.ItemSheet.MotivationTab"}}</a>
+        {{!-- <a class="item" data-tab="description">{{localize "DGYZE.ItemSheet.DescriptionTab"}}</a> --}}
+    </nav>
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+        {{!-- Motivation Tab --}}
+        <div class="tab tab-motivation" data-group="primary" data-tab="motivation">
+            <div class="grid grid-2col item-motivation">
+                <div class="flexcol">
+                    <label>{{localize "DGYZE.ItemSheet.Disorder"}}</label>
+                    <input type="text" name="system.disorder" placeholder="None" value="{{system.disorder}}"/>
+                </div>
+                <div class="flexcol">
+                    <label>{{localize "DGYZE.ItemSheet.DisorderCured"}}</label>
+                    <input type="checkbox" name="system.cured" {{checked system.cured}}/>    
+                </div>
+            </div>
+            <div>
+                {{> "systems/dgyze/templates/item/parts/item-description.hbs"}}
+            </div>
+        </div>
+        {{!-- Description Tab --}}
+        {{!-- <div class="tab tab-description" data-group="primary" data-tab="description">
+            {{> "systems/dgyze/templates/item/parts/item-description.hbs"}}
+        </div> --}}
+    </section>
+</form>

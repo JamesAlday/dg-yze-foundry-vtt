@@ -328,7 +328,9 @@
       "grenade",
       "gear",
       "specialty",
-      "injury"
+      "injury",
+      "bond",
+      "motivation"
     ],
     "templates": {
       "itemBase": {
@@ -451,6 +453,17 @@
       "lethal": false,
       "timeLimit": "Shift",
       "healTime": ""
+    },
+    "bond": {
+      "templates": ["itemBase"],
+      "relationship": "",
+      "score": 0,
+      "damaged": false
+    },
+    "motivation": {
+      "templates": ["itemBase"],
+      "disorder": "",
+      "cured": false
     }
   }
 }

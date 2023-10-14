@@ -1,0 +1,14 @@
+<div class="item item-weapon flexrow" data-item-id="{{id}}">
+    <div class="item-name flexrow">
+        <img class="item-roll" src="{{img}}" title="{{name}}" width="24" height="24"/>
+        <a class="item-roll">{{detailedName}}</a>
+    </div>
+    <div class="item-detail item-relationship">{{system.relationship}}</div>
+    <div class="item-detail item-score">{{system.score}}</div>
+    <div class="item-detail item-damaged">
+        <input type="checkbox" name="system.damaged" {{checked system.damaged}}/>
+    </div>
+    <div class="item-controls bond-controls">
+        {{> "systems/dgyze/templates/actor/parts/slots/slot-buttons.hbs"}}
+    </div>
+</div>
