@@ -317,6 +317,7 @@ DGYZE.ItemSheet.Relationship: Relationship
 DGYZE.ItemSheet.Score: Score
 DGYZE.ItemSheet.MotivationTab: Motivation
 DGYZE.ItemSheet.MotivationReplaced: Replaced
+DGYZE.ItemSheet.Description: Description
 DGYZE.ItemSheet.Disorder: Disorder
 DGYZE.ItemSheet.DisorderCured: Cured
 DGYZE.InjurySheet.Category: Category
