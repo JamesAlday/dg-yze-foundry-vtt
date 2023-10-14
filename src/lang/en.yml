@@ -140,11 +140,12 @@ DGYZE.ActorSheet.BaseDie: Base Die
 DGYZE.ActorSheet.Specialties: Special Training
 DGYZE.ActorSheet.AddSpecialty: Add a new special training
 DGYZE.ActorSheet.NoSpecialty: This character has no special training. Click the "+" icon to add new special training.
-DGYZE.ActorSheet.Combat: Combat
+DGYZE.ActorSheet.Combat: Sanity
 DGYZE.ActorSheet.Actions: Actions
 DGYZE.ActorSheet.Current: Current
 DGYZE.ActorSheet.Max: Max
 DGYZE.ActorSheet.CuF: Sanity (SAN)
+DGYZE.ActorSheet.Unnatural: Unnatural
 DGYZE.ActorSheet.UnitMorale: Team Morale
 DGYZE.ActorSheet.NoArmor: This character has no equipped armor.
 DGYZE.ActorSheet.Conditions: Conditions
