@@ -55,7 +55,7 @@ export default class ActorSheetT2K extends ActorSheet {
     const type = itemData.type;
     const alwaysAllowedItems = DGYZE.physicalItems;
     const allowedItems = {
-      character: ['specialty', 'injury'],
+      character: ['specialty', 'injury', 'bond', 'motivation'],
       unnatural: ['specialty'],
       npc: ['specialty'],
       vehicle: [],
