@@ -153,10 +153,9 @@ DGYZE.ActorSheet.CriticalInjuries: Critical Injuries
 DGYZE.ActorSheet.AddInjury: Add a new injury
 DGYZE.ActorSheet.InjuryTimeLeft: '{time} left'
 DGYZE.ActorSheet.Diseases: Diseases
-DGYZE.ActorSheet.Radiation: Radiation
-DGYZE.ActorSheet.RadiationRoll: Radiation Roll
-DGYZE.ActorSheet.TemporaryRadiation: Temporary
-DGYZE.ActorSheet.PermanentRadiation: Permanent
+DGYZE.ActorSheet.Adaptations: Adaptations
+DGYZE.ActorSheet.Violence: Violence
+DGYZE.ActorSheet.Helplessness: Helplessness
 DGYZE.ActorSheet.EncumbranceFull: FULL
 DGYZE.ActorSheet.EncumbranceTooHeavy: TOO HEAVY
 DGYZE.ActorSheet.Weapons: Weapons

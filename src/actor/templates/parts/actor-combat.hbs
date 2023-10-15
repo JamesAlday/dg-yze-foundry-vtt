@@ -199,18 +199,24 @@
 </div>
 {{/if}}
 
-{{!-- RADIATION --}}
+{{!-- ADAPTATION --}}
 {{#if (eq actor.type 'character')}}
 <div class="radiation col-12">
-  <h2><a class="radiation-roll">{{localize "DGYZE.ActorSheet.Radiation"}}</a></h2>
+  <h2>{{localize "DGYZE.ActorSheet.Adaptations"}}</h2>
   <div class="flexrow">
     <div>
-      <h3>{{localize "DGYZE.ActorSheet.TemporaryRadiation"}}</h3>
+      <h3>{{localize "DGYZE.ActorSheet.Violence"}}</h3>
       {{> "systems/dgyze/templates/actor/parts/radiation-boxes.hbs" field="temporary" value=system.rads.temporary}}
+      {{#if (gte system.rads.temporary 3)}}
+      <span>Adapted</span>
+      {{/if}}
     </div>
     <div>
-      <h3>{{localize "DGYZE.ActorSheet.PermanentRadiation"}}</h3>
+      <h3>{{localize "DGYZE.ActorSheet.Helplessness"}}</h3>
       {{> "systems/dgyze/templates/actor/parts/radiation-boxes.hbs" field="permanent" value=system.rads.permanent}}
+      {{#if (gte system.rads.permanent 3)}}
+      <span>Adapted</span>
+      {{/if}}
     </div>
   </div>
 </div>
