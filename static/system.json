@@ -53,6 +53,6 @@
   "initiative": "1d10",
   "url": "https://github.com/JamesAlday/dg-yze-foundry-vtt",
   "manifest": "https://github.com/JamesAlday/dg-yze-foundry-vtt/releases/latest/download/system.json",
-  "download": "https://github.com/JamesAlday/dg-yze-foundry-vtt/archive/refs/tags/11.5.6.zip",
+  "download": "https://github.com/JamesAlday/dg-yze-foundry-vtt/archive/refs/tags/11.5.6.zip", 
   "license": "GPL-3.0-or-later"
 }
