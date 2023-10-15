@@ -534,28 +534,28 @@ export default class ActorT2K extends Actor {
    * @param {object} options Additional task check options
    * @returns {Promise<import('../../lib/yzur.js').YearZeroRoll|ChatMessage>}
    */
-  async rollRadiationAttack(options) {
-    if (this.type !== 'character') return;
+  // async rollRadiationAttack(options) {
+  //   if (this.type !== 'character') return;
 
-    const system = this.system;
-    const rads = system.rads || {};
-    const sievert = rads.temporary + rads.permanent;
+  //   const system = this.system;
+  //   const rads = system.rads || {};
+  //   const sievert = rads.temporary + rads.permanent;
 
-    if (sievert <= 0) return;
+  //   if (sievert <= 0) return;
 
-    const rollConfig = foundry.utils.mergeObject(
-      {
-        title: game.i18n.localize('DGYZE.ActorSheet.RadiationRoll'),
-        attribute: system.attributes.str.value,
-        skill: system.skills.stamina.value,
-        modifier: DGYZE.radiationVirulence - sievert,
-      },
-      options,
-    );
-    rollConfig.actor = this;
+  //   const rollConfig = foundry.utils.mergeObject(
+  //     {
+  //       title: game.i18n.localize('DGYZE.ActorSheet.RadiationRoll'),
+  //       attribute: system.attributes.str.value,
+  //       skill: system.skills.stamina.value,
+  //       modifier: DGYZE.radiationVirulence - sievert,
+  //     },
+  //     options,
+  //   );
+  //   rollConfig.actor = this;
 
-    return T2KRoller.taskCheck(rollConfig);
-  }
+  //   return T2KRoller.taskCheck(rollConfig);
+  // }
 
   /* ------------------------------------------- */
   /*  Combat & Damage                            */

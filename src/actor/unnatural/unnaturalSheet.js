@@ -59,7 +59,7 @@ export default class ActorSheetDGUnnatural extends ActorSheetT2K {
       html.find('.skill-roll').click(this._onSkillRoll.bind(this));
       html.find('.cuf-roll').click(this._onCoolnessRoll.bind(this));
       html.find('.unit-morale-roll').click(this._onUnitMoraleRoll.bind(this));
-      html.find('.radiation-roll').click(this._onRadiationRoll.bind(this));
+      // html.find('.radiation-roll').click(this._onRadiationRoll.bind(this));
     }
   }
 
@@ -122,10 +122,10 @@ export default class ActorSheetDGUnnatural extends ActorSheetT2K {
 
   /* ------------------------------------------- */
 
-  _onRadiationRoll(event) {
-    event.preventDefault();
-    return this.actor.rollRadiationAttack({ askForOptions: event.shiftKey });
-  }
+  // _onRadiationRoll(event) {
+  //   event.preventDefault();
+  //   return this.actor.rollRadiationAttack({ askForOptions: event.shiftKey });
+  // }
 
   /* ------------------------------------------- */
 
