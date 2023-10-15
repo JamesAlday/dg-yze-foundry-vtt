@@ -65,9 +65,13 @@ You may help localize the game system in your language by translating the [langu
 
 # 🖼️ Previews
 
-<img src="https://github.com/JamesAlday/dg-yze-foundry-vtt/raw/master/static/screenshots/210117-characterSheet-stats.png" height=300 alt="T2K Foundry"/> <img src="https://github.com/JamesAlday/dg-yze-foundry-vtt/raw/master/static/screenshots/210117-characterSheet-combat.png" height=300 alt="T2K Foundry"/> <img src="https://github.com/JamesAlday/dg-yze-foundry-vtt/raw/master/static/screenshots/210117-characterSheet-equipment.png" height=300 alt="T2K Foundry"/>
-<img src="https://github.com/JamesAlday/dg-yze-foundry-vtt/raw/master/static/screenshots/210117-itemSheets-weapon-armor.png" height=300 alt="T2K Foundry"/>
-<img src="https://github.com/JamesAlday/dg-yze-foundry-vtt/raw/master/static/screenshots/210117-chatlog.png" height=400 alt="T2K Foundry"/>
+<img src="https://github.com/JamesAlday/dg-yze-foundry-vtt/raw/master/static/screenshots/231015-characterSheet-stats" height=300 alt="DG:YZE Foundry"/> 
+<img src="https://github.com/JamesAlday/dg-yze-foundry-vtt/raw/master/static/screenshots/231015-characterSheet-combat.png" height=300 alt="DG:YZE Foundry"/> 
+<img src="https://github.com/JamesAlday/dg-yze-foundry-vtt/raw/master/static/screenshots/210117-characterSheet-equipment.png" height=300 alt="DG:YZE Foundry"/> 
+<img src="https://github.com/JamesAlday/dg-yze-foundry-vtt/raw/master/static/screenshots/231015-characterSheet-bio.png" height=300 alt="DG:YZE Foundry"/> 
+<img src="https://github.com/JamesAlday/dg-yze-foundry-vtt/raw/master/static/screenshots/210117-itemSheets-weapon-armor.png" height=300 alt="DG:YZE Foundry"/> 
+<img src="https://github.com/JamesAlday/dg-yze-foundry-vtt/raw/master/static/screenshots/231015-itemSheets-bond-motivation" height=300 alt="DG:YZE Foundry"/> 
+<img src="https://github.com/JamesAlday/dg-yze-foundry-vtt/raw/master/static/screenshots/210117-chatlog.png" height=400 alt="DG:YZE Foundry"/> 
 
 # 🛠️ Contributing
 
