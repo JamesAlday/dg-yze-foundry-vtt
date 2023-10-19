@@ -1,4 +1,4 @@
-import { getDieSize, T2KRoller } from '../components/roll/dice.js';
+import { getDieSize } from '../components/roll/dice.js';
 import { DGYZE } from '../system/config.js';
 import Modifier from '../components/modifier.js';
 import { YearZeroRoll } from 'yzur';

@@ -46,6 +46,7 @@ export async function preloadHandlebarsTemplates() {
     'systems/dgyze/templates/item/parts/item-header.hbs',
     'systems/dgyze/templates/item/parts/item-modifiers.hbs',
     'systems/dgyze/templates/item/parts/item-description.hbs',
+    'systems/dgyze/templates/item/parts/item-expense.hbs',
 
     // Chat Partials
   ]);
