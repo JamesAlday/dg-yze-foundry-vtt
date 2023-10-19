@@ -68,8 +68,9 @@
           <input type="text" name="system.weight" value="{{numberFormat system.weight decimals=2}}" data-dtype="Number"/>
         </div>
         <div class="flexcol">
-          <label>{{localize "DGYZE.ItemSheet.Price"}}</label>
-          <input type="text" name="system.price" value="{{system.price}}" data-dtype="Number"/>
+          <label>{{localize "DGYZE.ItemSheet.Expense"}}</label>
+          {{!-- Expense Category --}}
+          {{> "systems/dgyze/templates/item/parts/item-expense.hbs"}}
         </div>
       </div>
 

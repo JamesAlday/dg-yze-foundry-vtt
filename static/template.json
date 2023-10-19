@@ -340,7 +340,10 @@
         "qty": 1,
         "itemType": "",
         "weight": 1,
-        "price": 0,
+        "expense": {
+          "category": "",
+          "color": ""
+        },
         "equipped": false,
         "backpack": false,
         "description": ""

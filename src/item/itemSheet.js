@@ -53,6 +53,10 @@ export default class ItemSheetT2K extends ItemSheet {
       sheetData.ammunitionTargets = this._getItemAmmunitionTargets();
     }
 
+    if (sheetData.system.expense && sheetData.system.expense.category in sheetData.config.expenses.categoriesColors) {
+      sheetData.system.expense.color = sheetData.config.expenses.categoriesColors[sheetData.system.expense.category];
+    }
+
     return sheetData;
   }
 

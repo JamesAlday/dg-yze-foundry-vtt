@@ -5,7 +5,6 @@
   {{!-- ================================================== --}}
 
   <header class="sheet-header">
-
     <div class="grid-vehicle-header">
 
       {{!-- Header Info: IMG, NAME, TYPE --}}
@@ -85,16 +84,14 @@
           </div>
         </div>
 
-        {{!-- PRICE --}}
-        <div class="price flexcol">
-          <label>{{localize "DGYZE.VehicleSheet.Price"}}</label>
-          <input type="number" name="system.price" value={{system.price}} data-dtype="Number"/>
+        {{!-- EXPENSE --}}
+        <div class="flexcol">
+          <label>{{localize "DGYZE.ItemSheet.Expense"}}</label>
+          {{!-- Expense Category --}}
+          {{> "systems/dgyze/templates/item/parts/item-expense.hbs"}}
         </div>
-
       </div>
-
     </div>
-
   </header>
 
   {{!-- ================================================== --}}

@@ -79,6 +79,11 @@ DGYZE.ConditionNames.sleepless: Sleep Deprived
 DGYZE.ConditionNames.hypothermic: Hypothermic
 DGYZE.InjuryCategoryNames.physical: Physical
 DGYZE.InjuryCategoryNames.mental: Mental
+DGYZE.ExpenseCategoryNames.Incidental: Incidental
+DGYZE.ExpenseCategoryNames.Standard: Standard
+DGYZE.ExpenseCategoryNames.Unusual: Unusual
+DGYZE.ExpenseCategoryNames.Major: Major
+DGYZE.ExpenseCategoryNames.Extreme: Extreme
 DGYZE.ActionTypes.fast: Fast
 DGYZE.ActionTypes.slow: Slow
 DGYZE.ActionTypes.movement: Movement
@@ -222,7 +227,6 @@ DGYZE.VehicleSheet.VehicleEncumbrance: Encumbrance (Vehicle)
 DGYZE.VehicleSheet.Mount: Mount weapon
 DGYZE.VehicleSheet.Unmount: Unmount weapon
 DGYZE.VehicleSheet.MoveMount: Toggle weapon mount
-DGYZE.VehicleSheet.Price: Price
 DGYZE.VehicleSheet.CrewPositions.Driver: DRIVER
 DGYZE.VehicleSheet.CrewPositions.Gunner: GUNNER
 DGYZE.VehicleSheet.CrewPositions.Commander: COMMANDER
@@ -303,7 +307,7 @@ DGYZE.ItemSheet.Range: Range
 DGYZE.ItemSheet.Mag: Mag
 DGYZE.ItemSheet.Armor: Armor
 DGYZE.ItemSheet.Weight: Weight
-DGYZE.ItemSheet.Price: Price
+DGYZE.ItemSheet.Expense: Expense
 DGYZE.ItemSheet.ArmorLocation: Protected Location
 DGYZE.ItemSheet.Equipped: Equipped
 DGYZE.ItemSheet.StoredInBackpack: Stored in the backpack

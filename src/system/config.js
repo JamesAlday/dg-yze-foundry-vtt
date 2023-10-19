@@ -262,3 +262,20 @@ DGYZE.Icons = {
     legs: '<i class="fas fa-socks"></i>',
   },
 };
+
+DGYZE.expenses = {
+  categoriesColors: {
+    I: 'incidental',
+    S: 'standard', 
+    U: 'unusual',
+    M: 'major',
+    E: 'extreme',
+  },
+  categoriesLocalised: {
+    I: 'DGYZE.ExpenseCategoryNames.Incidental',
+    S: 'DGYZE.ExpenseCategoryNames.Standard',
+    U: 'DGYZE.ExpenseCategoryNames.Unusual',
+    M: 'DGYZE.ExpenseCategoryNames.Major',
+    E: 'DGYZE.ExpenseCategoryNames.Extreme'
+  }
+}
