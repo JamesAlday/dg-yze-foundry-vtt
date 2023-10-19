@@ -1,0 +1,51 @@
+<form class="{{cssClass}} flexcol" autocomplete="off">
+
+  {{!-- Item Sheet Header --}}
+  {{> "systems/dgyze/templates/item/parts/item-header.hbs"}}
+
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="sheet-tabs slanted-tabs flexrow" data-group="primary">
+    <a class="item" data-tab="description">{{localize "DGYZE.ItemSheet.DescriptionTab"}}</a>
+    <a class="item" data-tab="features">{{localize "DGYZE.ItemSheet.FeaturesTab"}}</a>
+  </nav>
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+    {{!-- Description Tab --}}
+    <div class="tab tab-description" data-group="primary" data-tab="description">
+      {{> "systems/dgyze/templates/item/parts/item-description.hbs"}}
+    </div>
+
+    {{!-- Features Tab --}}
+    <div class="tab tab-features" data-group="primary" data-tab="features">
+        <div class="grid grid-3col item-features">
+            <div class="flexcol">
+                <label>{{localize "DGYZE.ItemSheet.TomeLanguage"}}</label>
+                <input type="text" name="system.language" value="{{system.language}}"/>
+            </div>
+            <div class="flexcol">
+                <label>{{localize "DGYZE.ItemSheet.StudyTime"}}</label>
+                <input type="text" name="system.studyTime" value="{{system.studyTime}}"/>
+            </div>
+            <div class="flexcol">
+                <label>{{localize "DGYZE.ItemSheet.StudyCost"}}</label>
+                <input type="text" name="system.studyCost" value="{{system.studyCost}}"/>
+            </div>
+            <div class="flexcol">
+                <label>{{localize "DGYZE.ItemSheet.UnnaturalMod"}}</label>
+                <input type="text" name="system.unnatural" value="{{numberFormat system.unnatural sign=true}}" data-dtype="Number"/>
+            </div>
+            <div class="flexcol">
+                <label>{{localize "DGYZE.ItemSheet.TomeOccultMod"}}</label>
+                <input type="text" name="system.occult" value="{{numberFormat system.occult sign=true}}" data-dtype="Number"/>
+            </div>
+            <div class="flexcol">
+                <label>{{localize "DGYZE.ItemSheet.Expense"}}</label>
+                {{!-- Expense Category --}}
+                {{> "systems/dgyze/templates/item/parts/item-expense.hbs"}}
+            </div>
+        </div>
+    </div>
+  </section>
+
+</form>

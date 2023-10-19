@@ -135,6 +135,68 @@
     </div>
   </div>
 
+  {{!-- Tomes --}}
+  <div class="inventory-tomes">
+    <div class="items-header flexrow">
+      <div class="item-name">
+        <h2>{{localize "DGYZE.ItemTypes.tome"}}</h2>
+      </div>
+      <div class="item-detail item-language">
+        <h5>{{localize "DGYZE.ItemSheet.TomeLanguage"}}</h5>
+      </div>
+      <div class="item-detail item-rituals">
+        <h5>{{localize "DGYZE.ItemSheet.TomeHasRituals"}}</h5>
+      </div>
+      <div class="item-detail item-weight">
+        <h5>{{localize "DGYZE.ItemSheet.Weight"}}</h5>
+      </div>
+       <div class="item-controls">
+        <a class="button item-create" data-type="tome" title="{{localize "DGYZE.ActorSheet.AddTome"}}">
+          {{{config.Icons.buttons.plus}}}
+        </a>
+      </div>
+    </div>
+    <div class="item-list">
+      {{#each actor.itemTypes.tome}}
+      {{> "systems/dgyze/templates/actor/parts/slots/tome-slot.hbs" this}}
+      {{else}}
+      <div class="item">–</div>
+      {{/each}}
+    </div>
+  </div>
+
+  {{!-- Rituals --}}
+  <div class="inventory-tomes">
+    <div class="items-header flexrow">
+      <div class="item-name">
+        <h2>{{localize "DGYZE.ItemTypes.ritual"}}</h2>
+      </div>
+      <div class="item-detail item-type">
+        <h5>{{localize "DGYZE.ItemSheet.RitualType"}}</h5>
+      </div>
+      <div class="item-detail item-effect">
+        <h5>{{localize "DGYZE.ItemSheet.RitualEffectType"}}</h5>
+      </div>
+      <div class="item-detail item-activationtime">
+        <h5>{{localize "DGYZE.ItemSheet.RitualActivationTime"}}</h5>
+      </div>
+      <div class="item-detail item-weight">
+        <h5>{{localize "DGYZE.ItemSheet.Weight"}}</h5>
+      </div>
+      <div class="item-controls">
+        <a class="button item-create" data-type="ritual" title="{{localize "DGYZE.ActorSheet.AddRitual"}}">
+          {{{config.Icons.buttons.plus}}}
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="item-list">
+      {{#each actor.itemTypes.ritual}}
+      {{> "systems/dgyze/templates/actor/parts/slots/ritual-slot.hbs" this}}
+      {{else}}
+      <div class="item">–</div>
+      {{/each}}
+    </div>
 </div>
 
 {{!-- ENCUMBRANCE --}}

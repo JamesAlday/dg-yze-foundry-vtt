@@ -1,0 +1,15 @@
+<div class="item item-ritual flexrow" data-item-id="{{id}}">
+  <div class="item-name flexrow">
+    <img class="item-roll" src="{{img}}" title="{{name}}" width="24" height="24"/>
+    <a class="item-roll" title="{{system.itemType}}">{{detailedName}}</a>
+  </div>
+  <div class="item-detail item-type">{{system.type}}</div>
+  <div class="item-detail item-effect">{{system.effectType}}</div>
+  <div class="item-detail item-activation">{{system.activation}}</div>
+  <div class="item-detail item-weight">{{system.weight}}</div>
+
+  <div class="item-controls">
+    {{> "systems/dgyze/templates/actor/parts/slots/slot-buttons.hbs"}}
+  </div>
+
+</div>

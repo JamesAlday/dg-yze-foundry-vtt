@@ -333,7 +333,9 @@
       "specialty",
       "injury",
       "bond",
-      "motivation"
+      "motivation",
+      "tome",
+      "ritual"
     ],
     "templates": {
       "itemBase": {
@@ -470,6 +472,27 @@
       "templates": ["itemBase"],
       "disorder": "",
       "cured": false
+    },
+    "tome": {
+      "templates": ["itemBase"],
+      "language": "",
+      "studyTime": "",
+      "studyCost": "",
+      "unnatural": 0,
+      "occult": 0,
+      "rituals": []
+    },
+    "ritual" : {
+      "templates": ["itemBase"],
+      "type": "",
+      "effect": "",
+      "association": "None",
+      "studyTime": "",
+      "studyCost": "",
+      "unnatural": 0,
+      "activationTime": "",
+      "activationCost": "",
+      "duration": ""
     }
   }
 }

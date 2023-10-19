@@ -1,0 +1,78 @@
+<form class="{{cssClass}} flexcol" autocomplete="off">
+
+  {{!-- Item Sheet Header --}}
+  {{> "systems/dgyze/templates/item/parts/item-header.hbs"}}
+
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="sheet-tabs slanted-tabs flexrow" data-group="primary">
+    <a class="item" data-tab="features">{{localize "DGYZE.ItemSheet.FeaturesTab"}}</a>
+    <a class="item" data-tab="modifiers">{{localize "DGYZE.ItemSheet.ModifiersTab"}}</a>
+    <a class="item" data-tab="description">{{localize "DGYZE.ItemSheet.DescriptionTab"}}</a>
+  </nav>
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+
+    {{!-- Features Tab --}}
+    <div class="tab tab-features" data-group="primary" data-tab="features">
+        <div class="grid grid-3col item-features">
+            <div class="flexcol">
+                <label>{{localize "DGYZE.ItemSheet.RitualType"}}</label>
+                <select name='system.type'>
+                    {{selectOptions config.rituals.types selected=system.type localize=true}}
+                </select>
+            </div>
+            <div class="flexcol">
+                <label>{{localize "DGYZE.ItemSheet.RitualEffectType"}}</label>
+                <select name='system.effect'>
+                    {{selectOptions config.rituals.effects selected=system.effect localize=true}}
+                </select>
+            </div>
+            <div class="flexcol">
+                <label>{{localize "DGYZE.ItemSheet.RitualAssociations"}}</label>
+                <input type="number" name="system.association" value="{{system.association}}"/>
+            </div>
+            <div class="flexcol">
+                <label>{{localize "DGYZE.ItemSheet.StudyTime"}}</label>
+                <select name='system.studyTime'>
+                    {{selectOptions config.studyTime selected=system.studyTime localize=true}}
+                </select>
+            </div>
+            <div class="flexcol">
+                <label>{{localize "DGYZE.ItemSheet.StudyCost"}}</label>
+                <input type="text" name="system.studyCost" value="{{system.studyCost}}"/>
+            </div>
+            <div class="flexcol">
+                <label>{{localize "DGYZE.ItemSheet.UnnaturalMod"}}</label>
+                <input type="text" name="system.unnatural" value="{{numberFormat system.unnatural sign=true}}" data-dtype="Number"/>
+            </div>
+            <div class="flexcol">
+                <label>{{localize "DGYZE.ItemSheet.RitualActivationTime"}}</label>
+                <select name='system.studyTime'>
+                    {{selectOptions config.activationTime selected=system.activationTime localize=true}}
+                </select>
+            </div>
+            <div class="flexcol">
+                <label>{{localize "DGYZE.ItemSheet.RitualActivationCost"}}</label>
+                <input type="text" name="system.activationCost" value="{{system.activationCost}}"/>
+            </div>
+            <div class="flexcol">
+                <label>{{localize "DGYZE.ItemSheet.RitualDuration"}}</label>
+                <input type="text" name="system.duration" value="{{system.duration}}"/>
+            </div>
+        </div>
+    </div>
+
+    {{!-- Modifiers Tab --}}
+    <div class="tab tab-modifiers" data-group="primary" data-tab="modifiers">
+        {{> "systems/dgyze/templates/item/parts/item-modifiers.hbs"}}
+    </div>
+
+    {{!-- Description Tab --}}
+    <div class="tab tab-description" data-group="primary" data-tab="description">
+        {{> "systems/dgyze/templates/item/parts/item-description.hbs"}}
+    </div>
+
+  </section>
+
+</form>

@@ -101,6 +101,8 @@ DGYZE.ItemTypes.specialty: Special Training
 DGYZE.ItemTypes.weapon: Weapon
 DGYZE.ItemTypes.bond: Bond
 DGYZE.ItemTypes.motivation: Motivation
+DGYZE.ItemTypes.ritual: Ritual
+DGYZE.ItemTypes.tome: Tome
 DGYZE.ItemPropNames.twoHanded: Two-Handed
 DGYZE.ItemPropNames.mounted: Mounted
 DGYZE.ItemPropNames.disposable: Disposable
@@ -172,6 +174,9 @@ DGYZE.ActorSheet.AddArmor: Add a new armor
 DGYZE.ActorSheet.AddGear: Add new gear
 DGYZE.ActorSheet.AddAmmo: Add new ammunition
 DGYZE.ActorSheet.AddBond: Add Bond
+DGYZE.ActorSheet.AddMotivation: Add Motivation
+DGYZE.ActorSheet.AddTome: Add Tome
+DGYZE.ActorSheet.AddRitual: Add Ritual
 DGYZE.ActorSheet.Encumbrance: Encumbrance
 DGYZE.ActorSheet.CombatGearEncumbrance: Combat Gear (Encumbrance)
 DGYZE.ActorSheet.BackpackEncumbrance: Backpack (Encumbrance)
@@ -324,6 +329,39 @@ DGYZE.ItemSheet.MotivationReplaced: Replaced
 DGYZE.ItemSheet.Description: Description
 DGYZE.ItemSheet.Disorder: Disorder
 DGYZE.ItemSheet.DisorderCured: Cured
+DGYZE.ItemSheet.RitualType: Type
+DGYZE.ItemSheet.RitualAssociations: Associations
+DGYZE.ItemSheet.RitualEffectType: Effect Type
+DGYZE.ItemSheet.RitualActivationTime: Activation Time
+DGYZE.ItemSheet.RitualActivationCost: Activation Cost
+DGYZE.ItemSheet.RitualDuration: Duration
+DGYZE.ItemSheet.RitualCastingCost: Casting Cost
+DGYZE.ItemSheet.RitualSimple: Simple
+DGYZE.ItemSheet.RitualComplex: Complex
+DGYZE.ItemSheet.RitualElaborate: Elaborate
+DGYZE.ItemSheet.RitualHealing: Healing
+DGYZE.ItemSheet.RitualProtection: Protection
+DGYZE.ItemSheet.RitualPower: Willpower
+DGYZE.ItemSheet.RitualHarm: Harm
+DGYZE.ItemSheet.RitualScrying: Scrying
+DGYZE.ItemSheet.RitualSummoning: Summoning
+DGYZE.ItemSheet.RitualMovement: Movement
+DGYZE.ItemSheet.RitualOther: Other
+DGYZE.ItemSheet.StudyTimeHours: Hours
+DGYZE.ItemSheet.StudyTimeDays: Days
+DGYZE.ItemSheet.StudyTimeWeeks: Weeks
+DGYZE.ItemSheet.ActivationATurn: A Turn
+DGYZE.ItemSheet.ActivationTurns: Turns
+DGYZE.ItemSheet.ActivationMinutes: Minutes
+DGYZE.ItemSheet.ActivationADay: A Day
+DGYZE.ItemSheet.ActivationDays: Days
+DGYZE.ItemSheet.ActivationVaries: Varies
+DGYZE.ItemSheet.TomeLanguage: Language
+DGYZE.ItemSheet.TomeOccultMod: Occult Modifier
+DGYZE.ItemSheet.TomeHasRituals: Has Rituals
+DGYZE.ItemSheet.StudyCost: Study Cost
+DGYZE.ItemSheet.StudyTime: Study Time
+DGYZE.ItemSheet.UnnaturalMod: Unnatural Mod.
 DGYZE.InjurySheet.Category: Category
 DGYZE.InjurySheet.Location: Location
 DGYZE.InjurySheet.TimeLimit: Time Limit
@@ -495,6 +533,10 @@ TYPES.Item.grenade: Explosive
 TYPES.Item.gear: Gear
 TYPES.Item.injury: Critical Injury
 TYPES.Item.specialty: Special Training
+TYPES.Item.motivation: Motivation
+TYPES.Item.bond: Bond
+TYPES.Item.tome: Tome
+TYPES.Item.ritual: Ritual
 EFFECT.StatusFullCover: Full Cover
 EFFECT.StatusPartialCover: Partial Cover
 EFFECT.StatusOverwatch: Overwatch

@@ -279,3 +279,36 @@ DGYZE.expenses = {
     E: 'DGYZE.ExpenseCategoryNames.Extreme'
   }
 }
+
+DGYZE.rituals = {
+  types: {
+    "simple": "DGYZE.ItemSheet.RitualSimple",
+    "complex": "DGYZE.ItemSheet.RitualComplex",
+    "elaborate": "DGYZE.ItemSheet.RitualElaborate"
+  },
+  effects: {
+    "healing": "DGYZE.ItemSheet.RitualHealing",
+    "protection": "DGYZE.ItemSheet.RitualProtection",
+    "willpower": "DGYZE.ItemSheet.RitualPower",
+    "harm": "DGYZE.ItemSheet.RitualHarm",
+    "scrying": "DGYZE.ItemSheet.RitualScrying",
+    "summoning": "DGYZE.ItemSheet.RitualSummoning",
+    "movement": "DGYZE.ItemSheet.RitualMovement",
+    "other": "DGYZE.ItemSheet.RitualOther",
+  }
+}
+
+DGYZE.activationTime = {
+  "aturn": "DGYZE.ItemSheet.ActivationATurn",
+  "turns": "DGYZE.ItemSheet.ActivationTurns",
+  "minutes": "DGYZE.ItemSheet.ActivationMinutes",
+  "aday": "DGYZE.ItemSheet.ActivationADay",
+  "days": "DGYZE.ItemSheet.ActivationDays",
+  "varies": "DGYZE.ItemSheet.ActivationVaries"
+}
+
+DGYZE.studyTime = {
+  "hours": "DGYZE.ItemSheet.StudyTimeHours",
+  "days": "DGYZE.ItemSheet.StudyTimeDays",
+  "weeks": "DGYZE.ItemSheet.StudyTimeWeeks",
+}

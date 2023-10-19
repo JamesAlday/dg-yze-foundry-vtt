@@ -138,14 +138,7 @@ export default class ActorSheetT2KCharacter extends ActorSheetT2K {
 
   /* ------------------------------------------- */
 
-  // _onRadiationRoll(event) {
-  //   event.preventDefault();
-  //   return this.actor.rollRadiationAttack({ askForOptions: event.shiftKey });
-  // }
-
-  /* ------------------------------------------- */
-
-  /** Left-clic: -1, Right-clic: +1 */
+  /** Left-click: -1, Right-click: +1 */
   _onCapacityChange(event) {
     event.preventDefault();
     const elem = event.currentTarget;

@@ -27,6 +27,8 @@ export async function preloadHandlebarsTemplates() {
     'systems/dgyze/templates/actor/parts/slots/ammo-slot.hbs',
     'systems/dgyze/templates/actor/parts/slots/bond-slot.hbs',
     'systems/dgyze/templates/actor/parts/slots/motivation-slot.hbs',
+    'systems/dgyze/templates/actor/parts/slots/ritual-slot.hbs',
+    'systems/dgyze/templates/actor/parts/slots/tome-slot.hbs',
     'systems/dgyze/templates/actor/parts/unnatural-combat.hbs',
 
     // Vehicle Sheet Partials
